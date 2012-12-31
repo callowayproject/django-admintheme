@@ -1,0 +1,11 @@
+recursive-include doc_src *
+recursive-include docs *
+
+recursive-include admintheme/media *
+recursive-include admintheme/templates *
+
+include LICENSE
+include README
+include *.txt
+
+prune example/

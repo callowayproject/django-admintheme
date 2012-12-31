@@ -1,0 +1,207 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static %}
+
+{% block extrastyle %}{{ block.super }}
+<style>
+#signin-container {
+    background: white;
+    border: 1px solid #D4D4D4;
+    display: inline-block;
+    line-height: 1.63em;
+    margin: 100px auto 30px;
+    min-width: 451px;
+    min-height: 180px;
+    height: auto;
+    padding: 30px;
+    position: relative;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0px 1px 8px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 1px 8px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+#signin-container #signin-form-container {
+    border-left: 1px solid #DDD;
+    float: right;
+    margin-left: 30px;
+    min-height: 180px;
+    padding-left: 30px;
+    text-align: left;
+    width: 230px;
+}
+#signin-container h2#company-logo img {
+    vertical-align: middle;
+}
+.login #content {
+color: #222;
+font-family: "Helvetica Neue",Arial,Verdana,"Nimbus Sans L",sans-serif;
+font-size: 12px;
+font-weight: normal;
+height: 100%;
+line-height: normal;
+text-rendering: optimizeLegibility;
+margin:0;
+}
+body {
+  background: #F6F6F6;
+text-align: center;
+}
+.form-row {
+margin-bottom: 10px;
+}
+.form-row label {
+display: block;
+font-weight: bold;
+}
+.validation-div {
+position: relative;
+}
+input, textarea {
+background: white;
+border: 1px solid #AAA;
+font-family: "Helvetica Neue",Arial,Verdana,"Nimbus Sans L",sans-serif;
+font-size: 1em;
+margin: 0px;
+padding: 4px 5px;
+width: 90%;
+outline: none;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+-ms-border-radius: 3px;
+-khtml-border-radius: 3px;
+border-radius: 3px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.12);
+-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+-o-box-shadow: inset 0 1px 2px rgba(0,0,0,0.12);
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+display: block;
+font-size: 1.167em;
+width: 100%;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+input[type="submit"].btn-primary {
+background: #2E8D11;
+background: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0, #2E8D11), color-stop(0.7, #72C152));
+background: -moz-linear-gradient(center bottom, #2E8D11 0%, #72C152 70%) repeat scroll 0 0;
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#72c152', endColorstr='#2e8d11');
+font-weight: bold;
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#72c152', endColorstr='#2e8d11')";
+border: 1px solid #2E8D11;
+color: white;
+text-shadow: 0 0 2px #2E8D11;
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+-o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+input.btn-submit {
+height: 27px;
+padding-bottom: 2px;
+cursor: pointer;
+float: left;
+font-family: "Helvetica Neue",Arial,Verdana,"Nimbus Sans L",sans-serif;
+font-size: 12px;
+font-weight: bold;
+height: 25px;
+line-height: 25px;
+margin: 0px 5px 0px 0px;
+overflow: visible;
+padding: 0px 16px;
+text-align: center;
+text-decoration: none;
+width: auto;
+text-shadow: 0 1px 0 #F4F4F4;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: inset 0 1px 0 #fff;
+-webkit-box-shadow: inset 0 1px 0 white;
+-o-box-shadow: inset 0 1px 0 #fff;
+box-shadow: inset 0 1px 0 white;
+}
+#signin-container h2#company-logo {
+display: block;
+float: left;
+height: 180px;
+line-height: 176px;
+margin: 0;
+padding: 0;
+min-width: 160px;
+}
+</style>
+
+{% endblock %}
+
+{% block bodyclass %}login{% endblock %}
+
+{% block nav-global %}{% endblock %}
+{% block content_title %}{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+{% block content %}
+  {% block branding %}{% endblock %}
+
+{% if form.errors and not form.non_field_errors and not form.this_is_the_login_form.errors %}
+<p class="errornote">
+{% blocktrans count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
+</p>
+{% endif %}
+
+
+  <div id="signin-container">
+    <h2 id="company-logo">
+      {% block logo %}<img src="{{ STATIC_URL }}admin/img/logo.png" width="160" alt="Django Admin">{% endblock %}
+    </h2>
+    <div id="signin-form-container">
+      <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+        <div class="it-validates-errors">
+          {% if form.non_field_errors or form.this_is_the_login_form.errors %}
+            {% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+            <p class="errornote">
+              {{ error }}
+            </p>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <div class="form-row">
+          {% if not form.this_is_the_login_form.errors %}{{ form.username.errors }}{% endif %}
+          <label for="id_username" class="required">{% trans 'Username:' %}</label>
+          <div class="validation-div">{{ form.username }}</div>
+        </div>
+        <div class="form-row">
+          {% if not form.this_is_the_login_form.errors %}{{ form.password.errors }}{% endif %}
+          <label for="id_password" class="required">{% trans 'Password:' %}</label> {{ form.password }}
+          <input type="hidden" name="this_is_the_login_form" value="1" />
+          <input type="hidden" name="next" value="{{ next }}" />
+        </div>
+        {% url 'admin_password_reset' as password_reset_url %}
+        {% if password_reset_url %}
+        <div class="password-reset-link">
+          <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
+        </div>
+        {% endif %}
+        <div class="submit-row">
+          <label>&nbsp;</label><input type="submit" class="btn-primary btn-submit" value="{% trans 'Log in' %}" />
+        </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript">
+document.getElementById('id_username').focus()
+</script>
+</div>
+{% endblock %}
