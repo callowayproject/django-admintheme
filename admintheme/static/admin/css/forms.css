@@ -211,6 +211,13 @@ body.popup .submit-row {
     width: 8em;
 }
 
+p.datetime .vTimeField {
+    margin-top: 4px;
+}
+
+form .form-row p.datetime {
+    font-size: 1em;
+}
 .vURLField {
     width: 30em;
 }

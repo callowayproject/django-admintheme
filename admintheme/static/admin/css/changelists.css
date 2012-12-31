@@ -108,14 +108,16 @@
     z-index: 1000;
     width: 160px;
     border-left: 1px solid #ddd;
-    background: #efefef;
     margin: 0;
 }
 
 #changelist-filter h2 {
-    font-size: 11px;
-    padding: 2px 5px;
+    padding: 4px 5px;
     border-bottom: 1px solid #ddd;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -o-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 #changelist-filter h3 {
