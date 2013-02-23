@@ -1,13 +1,14 @@
 """
-django-admintheme
+A CSS-only skin for the Django Admin app.
 """
 __version_info__ = {
     'major': 0,
     'minor': 1,
     'micro': 0,
-    'releaselevel': 'final',
+    'releaselevel': 'beta',
     'serial': 1
 }
+
 
 def get_version(short=False):
     assert __version_info__['releaselevel'] in ('alpha', 'beta', 'final')
