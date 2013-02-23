@@ -1,0 +1,84 @@
+@import "buttons";
+@import "icons";
+
+.dashboard {
+    #content-main {
+        float: left;
+    }
+    table {
+        td, th {
+            border-left: 0;
+        }
+        tr:first-child {
+            td, th {
+                border-top: 0;
+            }
+        }
+    }
+    // addlink and changelink classes are used in different places, like the recent
+    // actions list. its selectors need to be more specific.
+
+    a.addlink, button.addlink, div.addlink {
+        @include minibutton;
+        @include icon-plus;
+    }
+
+    a.changelink, button.changelink, div.changelink {
+        @include minibutton;
+        @include icon-edit;
+    }
+}
+
+#content-related {
+    float: right;
+    width: 18em;
+    position: relative;
+    margin-right: -19em;
+    h3 {
+        padding: 0;
+        margin: 0;
+        margin-left: 1em;
+    }
+
+    .actionlist {
+        @include nested-reset;
+        @include no-bullets;
+        padding: 5px;
+        font-size: .8rem;
+        line-height: 1em;
+        margin: 0;
+        margin-left: 1em;
+
+        li {
+            margin-bottom: 8px;
+        }
+        li span {
+            margin-left: 1rem;
+        }
+        .mini {
+            font-size: .7rem;
+        }
+        .quiet {
+            color: #777;
+            font-weight: normal;
+        }
+        li.deletelink {
+            @include icon-remove;
+            &:before {
+                margin-right: .2em;
+            }
+        }
+        li.changelink {
+            @include icon-edit;
+            &:before {
+                margin-right: .2em;
+            }
+        }
+        li.addlink {
+            @include icon-plus;
+            &:before {
+                margin-right: .2em;
+            }
+        }
+    }
+}

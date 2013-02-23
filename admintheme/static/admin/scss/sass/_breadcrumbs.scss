@@ -1,0 +1,17 @@
+@import "compass";
+
+.breadcrumbs {
+    background: white;
+    padding: 2px 8px 3px 8px;
+    font-size: .8rem;
+    color: #999;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    @include box-shadow(rgba(#000, 0.4) 0 0 5px);
+
+    a:link, a:visited {
+        color: #5B80B2;
+        text-decoration: none;
+    }
+}

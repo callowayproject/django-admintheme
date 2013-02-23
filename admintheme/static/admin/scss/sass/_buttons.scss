@@ -1,0 +1,104 @@
+@import "compass";
+
+@mixin button {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  @include text-shadow(0 1px 1px rgba(255, 255, 255, 0.75));
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  @include background-image(linear-gradient(#fff, #e6e6e6));
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  @include border-radius(4px);
+  @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05));
+  &:hover {
+    color: #333333;
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+    text-decoration: none;
+    background-position: 0 -15px;
+    @include transition-property(background-position);
+    @include transition-duration(0.1s);
+  }
+
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  &:active{
+    position: relative;
+    top: 1px;
+  }
+  box-sizing: border-box;
+
+  a {
+    @include unstyled-link;
+  }
+}
+
+@mixin buttonBackground($startColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+  color: $textColor;
+  @include text-shadow($textShadow);
+  background-color: darken($endColor, 5%);
+  *background-color: $endColor; /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  @include background-image(linear-gradient($startColor, $endColor));
+  border-color: $startColor $startColor $endColor;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    color: $textColor;
+    background-color: $endColor;
+    *background-color: darken($endColor, 5%);
+    background-position: 0 -15px;
+    @include transition-property(background-position);
+    @include transition-duration(0.1s);
+  }
+}
+
+@mixin successBackground {
+  @include buttonBackground(#62c462, #51a351);
+}
+
+@mixin cancelBackground {
+  @include buttonBackground(#ee5f5b, #bd362f);
+}
+
+@mixin minibutton {
+  @include button;
+  font-size: 10.5px;
+  @include border-radius(3px);
+  padding: 0 6px;
+}
+
+
+// Mozilla: don't show border around the button's text on click
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"] {
+  @include button;
+  &::-moz-focus-inner{
+      border: none;
+    }
+}
+
+input[type="submit"].default, button.default {
+  @include successBackground;
+}

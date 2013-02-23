@@ -1,0 +1,139 @@
+@import "compass";
+
+/* SELECTOR (FILTER INTERFACE) */
+
+.selector {
+    @include clearfix;
+    select {
+        width: 270px;
+        height: 17.2em;
+    }
+    .selector-filter {
+        background: white;
+        border: 1px solid #ccc;
+        border-width: 0 1px;
+        padding: 3px;
+        font-size: .625rem;
+        margin: 0;
+        text-align: left;
+        label {
+            width: 16px;
+            padding: 2px;
+            padding-top: 4px;
+            margin: 0;
+            margin-right: 5px;
+        }
+    }
+    .selector-available input {
+        width: 220px;
+    }
+    ul.selector-chooser {
+        float: left;
+        height: 50px;
+        margin: 10em 5px 0 5px;
+        padding: 0;
+    }
+}
+
+.selector-available, .selector-chosen {
+    float: left;
+    width: 270px;
+    text-align: center;
+    margin-bottom: 5px;
+
+    h2 {
+        border: 1px solid #ccc;
+    }
+}
+
+.selector-chosen select {
+    border-top: none;
+}
+
+.selector-chooser li {
+    margin: 0;
+    padding: 3px;
+    list-style-type: none;
+}
+
+.selector select {
+    margin-bottom: 10px;
+    margin-top: 0;
+    @include border-radius(0);
+}
+
+.selector-add, .selector-remove {
+    @include minibutton
+}
+
+.selector-add {
+    @include icon-caret-right-after;
+}
+
+.selector-remove {
+    @include icon-caret-left;
+}
+
+a.selector-chooseall, a.selector-clearall {
+    @include minibutton;
+}
+
+a.selector-chooseall {
+    @include icon-forward-after;
+}
+
+a.selector-clearall {
+    @include icon-backward;
+}
+
+
+/* STACKED SELECTORS */
+
+.stacked {
+    float: left;
+    width: 485px;
+
+    .selector-add {
+        @include icon-caret-down-after;
+    }
+
+    .selector-remove {
+        @include icon-caret-up;
+    }
+    select {
+        width: 480px;
+        height: 10.1em;
+    }
+
+    .selector-available, .selector-chosen {
+        width: 480px;
+    }
+
+    .selector-available {
+        margin-bottom: 0;
+    }
+
+    .selector-available input {
+        width: 442px;
+    }
+
+    ul.selector-chooser {
+        margin: 0 0 3px 40%;
+        width: 480px;
+        @include horizontal-list;
+        padding-left: 160px;
+    }
+
+    .selector-chooser li {
+        float: left;
+        padding: 3px 3px 3px 5px;
+    }
+    .selector-chooseall, .selector-clearall {
+        display: none;
+    }
+}
+
+
+
+
+

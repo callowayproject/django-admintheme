@@ -1,0 +1,167 @@
+@import "compass";
+@import "buttons";
+@import "config";
+
+#changelist {
+    position: relative;
+    width: 100%;
+    background: $body-bkgnd;
+    border: 0;
+}
+
+#changelist.filtered {
+    min-height: 400px;
+    .actions, .results, .xfull, .paginator {
+        margin-right: 160px;
+    }
+}
+#changelist-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 160px;
+    border: $table-border;
+    @include border-radius(0 $border-radius 0 0);
+    background: $filter-bkgnd;
+    margin: 0;
+
+    h2 {
+        @include background(linear-gradient(rgb(238, 238, 243), rgb(214, 218, 223)));
+        @include border-radius(0 $border-radius 0 0);
+        line-height: 1.2rem;
+        border-bottom: $table-border;
+    }
+    h3 {
+        margin: 0;
+        padding-bottom:0;
+        @include text-shadow(0px 1px 1px rgba(255,255,255,.6));
+    }
+    ul {
+        @include no-bullets;
+        font-size: .8rem;
+        line-height: 1.3em;
+        padding-left: 0;
+        a {
+            @include hover-link;
+            color: #333;
+        }
+        li {
+            padding-left: 1em;
+        }
+        li.selected {
+            background-color: darken($filter-bkgnd, 10%);
+        }
+    }
+}
+
+#changelist-search {
+    @include border-top-radius(4px);
+    line-height: $base-line-height;
+    border: $table-border;
+    margin-bottom: 0;
+    padding: 5px;
+    background-color: $tabletools-bkgnd;
+    label {
+        font-size: 13px;
+        width: auto;
+        margin: 0;
+        margin-left: .5em;
+        padding: 0;
+        float: none;
+        display: inline;
+        position: absolute;
+        left: 6px;
+        img {
+            vertical-align: middle;
+        }
+    }
+    #searchbar {
+        text-indent: 10px;
+    }
+    input[type=submit] {
+        @include minibutton;
+        margin-top: 0;
+    }
+}
+
+.results {
+    border: $table-border;
+    background: #fff;
+}
+#result_list {
+    @include border-radius(4px);
+    th {
+        width: auto;
+    }
+    th.action-checkbox-column, td.action-checkbox {
+        width: 1.5em;
+        text-align: center;
+
+        input {
+            margin: 0;
+        }
+    }
+}
+
+.actions {
+    vertical-align: middle;
+    line-height: $base-line-height;
+    background-color: $tabletools-bkgnd;
+    padding: 5px;
+    border-left: $table-border;
+    border-right: $table-border;
+    label {
+        font-size: 13px;
+        width: auto;
+        margin: 0;
+        margin-right: .5em;
+        padding: 0;
+        float: none;
+        display: inline-block;
+
+        select {
+            font-size: inherit;
+            height: $base-line-height;
+        }
+    }
+    .action-counter, .all {
+        display: inline-block;
+        color: #999;
+        margin: 0 .5em;
+        vertical-align: middle;
+        font-size: 13px;
+        display: none;
+    }
+    .button {
+        @include minibutton;
+        margin: 0;
+    }
+    .clear, .question {
+        display: none;
+    }
+    .clear a, .question a {
+        @include minibutton;
+    }
+
+    @include clearfix;
+}
+.xfull {
+    vertical-align: middle;
+    line-height: $base-line-height;
+    background-color: $tabletools-bkgnd;
+    padding: 5px;
+    border-left: $table-border;
+    border-right: $table-border;
+    border-bottom: $table-border;
+    .toplinks {
+        padding-left: 0;
+        li {
+            @include minibutton;
+        }
+    }
+    br.clear {
+        clear: both;
+        display: none;
+    }
+}

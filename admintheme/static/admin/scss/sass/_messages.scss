@@ -1,0 +1,37 @@
+@import "compass";
+@import "config";
+@import "icons";
+
+@mixin messagebox($bkgdColor, $borderColor, $textColor: #fff) {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: $base-line-height;
+    color: $textColor;
+    @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
+    border: 1px solid $borderColor;
+    background-color: $bkgdColor;
+}
+
+.messagelist {
+    @include messagebox(#fcf8e3, #fbeed5, #3a87ad);
+    li {
+        line-height: $base-line-height * 1.5;
+    }
+    .debug {
+        @include icon-cogs;
+    }
+    .info {
+        @include icon-info-sign;
+    }
+    .success {
+        color: #468847;
+        @include icon-ok-sign;
+    }
+    .warning {
+        color: #c09853;
+        @include icon-warning-sign;
+    }
+    .error {
+        color: #b94a48;
+        @include icon-ban-circle;
+    }
+}

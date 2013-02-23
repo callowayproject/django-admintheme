@@ -1,0 +1,178 @@
+@import "config";
+@import "compass";
+@import "buttons";
+@import "icons";
+@import "breadcrumbs";
+@import "selectorwidget";
+@import "messages";
+@import "tables";
+@import "pagination";
+
+@mixin admin-link-color {
+    @include link-colors($link-color-normal, $link-color-hover, $link-color-active, $link-color-visited, $link-color-focus);
+}
+
+ul {
+    margin: 0;
+}
+
+body {
+    background: $body-bkgnd;
+    color: $text-color;
+    font-family: $font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.3rem;
+    padding: 0 .4rem 0 0;
+    margin: 0 0 .2rem 0;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+
+#header {
+    @include background($header-background);
+    @include box-shadow(rgba(#000, 0.4) 0 0 5px);
+    color: #fff;
+    overflow: hidden;
+    width: 100%;
+
+    h1 {
+        padding: 0 10px;
+        font-size: 1.1rem;
+        margin: 8px 0;
+        font-weight: normal;
+        line-height: $base-line-height;
+    }
+}
+
+#user-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem 10px;
+    font-size: .8rem;
+    text-align: right;
+
+    a {
+        @include hover-link;
+        @include link-colors(#fff);
+    }
+}
+
+.add-another {
+    @include minibutton;
+    @include icon-plus;
+    &:before{
+        margin-right:0;
+    };
+    img {
+        display: none;
+    }
+    margin-left: .5em;
+}
+
+#content {
+    margin: 10px 15px;
+}
+
+#content.colMS {
+    margin-right: 20em;
+}
+
+/* A module is a box used in a variety of ways in the admin:
+    Dashboard:
+        Apps: Each app is a module containing a table
+        Recent Actions: Module with an h2, h3 and a p or a ul;
+*/
+
+@mixin module-head {
+    margin: 0;
+    padding: 2px 5px 3px 5px;
+    font-size: .9rem;
+    text-align: left;
+    font-weight: bold;
+    @include border-radius(8px 8px 0 0);
+    @include background($module-head-bkgnd);
+    border-bottom: 1px solid #C8C8CB;
+    a {
+        @include unstyled-link;
+    }
+}
+
+.module {
+    margin-bottom: .3rem;
+    background: white;
+    border: 1px solid #D4D4D4;
+    line-height: 1.63rem;
+    @include border-radius(4px);
+    //@include box-shadow(rgba(#000, 0.4) 0 0 5px);
+
+    table {
+        width: 100%;
+        font-size: .9em;
+        th {
+            font-weight: bold;
+            width: 100%;
+            a {
+                @include admin-link-color;
+                text-decoration: none;
+            }
+        }
+    }
+    caption, h2 {
+        @include module-head;
+    }
+    h3 {
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 5px;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+}
+
+.object-tools {
+    padding-left: 0;
+    padding-top: 0;
+    float: right;
+    position: relative;
+    margin-top: -2.1em;
+    margin-bottom: -2em;
+
+    li {
+        @include button;
+        @include border-radius(0);
+        float: left;
+    }
+    li + li {
+        margin-left: -1px;
+    }
+    li:first-child {
+        margin-left: 0;
+        @include border-left-radius($border-radius);
+    }
+    li:last-child {
+        margin-right: 0;
+        @include border-right-radius($border-radius);
+    }
+
+    .viewsitelink {
+        @include icon-arrow-right-after;
+    }
+    .addlink {
+        @include icon-plus;
+    }
+}
+
+#change-history {
+    tbody th {
+        width: 18em;
+    }
+    thead th {
+        width: auto;
+    }
+}

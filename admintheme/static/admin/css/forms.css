@@ -1,379 +1,1250 @@
-@import url('widgets.css');
-
-/* FORM ROWS */
-
-.form-row {
-    overflow: hidden;
-    padding: 8px 12px;
-    font-size: 0.9em;
-    border-bottom: 1px solid #eee;
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../scss/../fonts/fontawesome-webfont.eot');
+  src: url('../scss/../fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('../scss/../fonts/fontawesome-webfont.woff') format('woff'), url('../scss/../fonts/fontawesome-webfont.ttf') format('truetype'), url('../scss/../fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.form-row:last-child {
-    border-bottom: 0;
+/* line 14, ../scss/sass/_icons.scss */
+.fontawesome {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
 }
 
-.form-row img, .form-row input {
-    vertical-align: middle;
+/* line 57, ../scss/sass/_icons.scss */
+.icon-2x {
+  font-size: 2em;
+}
+/* line 59, ../scss/sass/_icons.scss */
+.icon-2x.icon-border {
+  border-width: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
-form .form-row p {
-    padding-left: 0;
-    font-size: 0.9em;
+/* line 64, ../scss/sass/_icons.scss */
+.icon-3x {
+  font-size: 3em;
+}
+/* line 66, ../scss/sass/_icons.scss */
+.icon-3x.icon-border {
+  border-width: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
-/* FORM LABELS */
-
-form h4 {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
+/* line 71, ../scss/sass/_icons.scss */
+.icon-4x {
+  font-size: 4em;
+}
+/* line 73, ../scss/sass/_icons.scss */
+.icon-4x.icon-border {
+  border-width: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
 }
 
+/* \f020 doesn't work in Safari. all shifted one down */
+/* \f020 doesn't work in Safari. all shifted one down */
+/* line 18, ../scss/sass/_wells.scss */
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 12, ../scss/sass/_wells.scss */
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 22, ../scss/sass/_wells.scss */
+.well-large {
+  min-height: 20px;
+  padding: 24px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 12, ../scss/sass/_wells.scss */
+.well-large blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 25, ../scss/sass/_wells.scss */
+.well-small {
+  min-height: 20px;
+  padding: 9px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 12, ../scss/sass/_wells.scss */
+.well-small blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 95, ../scss/sass/_buttons.scss */
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"] {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="file"] > input[type="button"]:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+button:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="file"] > input[type="button"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+button:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="file"] > input[type="button"]:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+button a,
+input[type="reset"] a,
+input[type="button"] a,
+input[type="submit"] a,
+input[type="file"] > input[type="button"] a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+button a:active, button a:focus,
+input[type="reset"] a:active,
+input[type="reset"] a:focus,
+input[type="button"] a:active,
+input[type="button"] a:focus,
+input[type="submit"] a:active,
+input[type="submit"] a:focus,
+input[type="file"] > input[type="button"] a:active,
+input[type="file"] > input[type="button"] a:focus {
+  outline: none;
+}
+/* line 97, ../scss/sass/_buttons.scss */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+/* line 102, ../scss/sass/_buttons.scss */
+input[type="submit"].default, button.default {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #499249;
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62c462), color-stop(100%, #51a351));
+  background-image: -webkit-linear-gradient(#62c462, #51a351);
+  background-image: -moz-linear-gradient(#62c462, #51a351);
+  background-image: -o-linear-gradient(#62c462, #51a351);
+  background-image: -ms-linear-gradient(#62c462, #51a351);
+  background-image: linear-gradient(#62c462, #51a351);
+  border-color: #62c462 #62c462 #51a351;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+/* line 64, ../scss/sass/_buttons.scss */
+input[type="submit"].default:hover, button.default:hover {
+  color: white;
+  background-color: #51a351;
+  *background-color: #499249;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+/* line 4, ../scss/sass/_calendarwidget.scss */
+.datetime {
+  margin-left: 200px;
+  line-height: 2rem;
+}
+
+/* line 8, ../scss/sass/_calendarwidget.scss */
+.datetimeshortcuts {
+  font-size: .8em;
+}
+/* line 10, ../scss/sass/_calendarwidget.scss */
+.datetimeshortcuts a {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+.datetimeshortcuts a:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+.datetimeshortcuts a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+.datetimeshortcuts a:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+.datetimeshortcuts a a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.datetimeshortcuts a a:active, .datetimeshortcuts a a:focus {
+  outline: none;
+}
+
+/* line 16, ../scss/sass/_calendarwidget.scss */
+.clockbox {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  font-size: .8rem;
+}
+/* line 19, ../scss/sass/_calendarwidget.scss */
+.clockbox li, .clockbox .calendar-cancel {
+  padding: 2px 5px;
+}
+/* line 22, ../scss/sass/_calendarwidget.scss */
+.clockbox li:hover, .clockbox .calendar-cancel:hover {
+  background-color: #b1c6ec;
+}
+/* line 25, ../scss/sass/_calendarwidget.scss */
+.clockbox a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.clockbox a:active, .clockbox a:focus {
+  outline: none;
+}
+
+/* line 30, ../scss/sass/_calendarwidget.scss */
+.calendarbox {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
+}
+
+/* line 33, ../scss/sass/_calendarwidget.scss */
+.module .calendar {
+  margin: 0;
+  padding: 0;
+}
+/* line 37, ../scss/sass/_calendarwidget.scss */
+.module .calendar table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  background: white;
+  width: 100%;
+}
+/* line 43, ../scss/sass/_calendarwidget.scss */
+.module .calendar table th {
+  font-size: 10px;
+  color: #666;
+  padding: 2px 3px;
+  text-align: center;
+  background: #e1e1e1 url(../img/nav-bg.gif) 0 50% repeat-x;
+  border-bottom: 1px solid #ddd;
+  width: auto;
+}
+/* line 52, ../scss/sass/_calendarwidget.scss */
+.module .calendar table td {
+  font-size: 11px;
+  text-align: center;
+  padding: 0;
+  border-top: 1px solid #eee;
+  border-bottom: none;
+}
+
+/* line 61, ../scss/sass/_calendarwidget.scss */
+.calendar table caption, .calendarbox h2 {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+  border-top: none;
+}
+
+/* line 68, ../scss/sass/_calendarwidget.scss */
+.calendar td.selected a {
+  background: #C9DBED;
+}
+
+/* line 72, ../scss/sass/_calendarwidget.scss */
+.calendar td.nonday {
+  background: #efefef;
+}
+
+/* line 76, ../scss/sass/_calendarwidget.scss */
+.calendar td.today a {
+  background: #ffc;
+}
+
+/* line 80, ../scss/sass/_calendarwidget.scss */
+.calendar td a, .timelist a {
+  display: block;
+  font-weight: bold;
+  padding: 0 4px;
+  text-decoration: none;
+  color: #444;
+}
+
+/* line 88, ../scss/sass/_calendarwidget.scss */
+.calendar td a:hover, .timelist a:hover {
+  background: #5b80b2;
+  color: white;
+}
+
+/* line 93, ../scss/sass/_calendarwidget.scss */
+.calendar td a:active, .timelist a:active {
+  background: #036;
+  color: white;
+}
+
+/* line 98, ../scss/sass/_calendarwidget.scss */
+.calendarnav {
+  font-size: 10px;
+  text-align: center;
+  color: #ccc;
+  margin: 0;
+  padding: 1px 3px;
+}
+
+/* line 106, ../scss/sass/_calendarwidget.scss */
+.calendarnav a:link, #calendarnav a:visited, #calendarnav a:hover {
+  color: #999;
+}
+
+/* line 110, ../scss/sass/_calendarwidget.scss */
+.calendar-shortcuts, .calendar-cancel {
+  line-height: 1.2rem;
+  padding: 4px;
+}
+/* line 113, ../scss/sass/_calendarwidget.scss */
+.calendar-shortcuts a, .calendar-cancel a {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+.calendar-shortcuts a:hover, .calendar-cancel a:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+.calendar-shortcuts a:focus, .calendar-cancel a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+.calendar-shortcuts a:active, .calendar-cancel a:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+.calendar-shortcuts a a, .calendar-cancel a a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.calendar-shortcuts a a:active, .calendar-shortcuts a a:focus, .calendar-cancel a a:active, .calendar-cancel a a:focus {
+  outline: none;
+}
+
+/* line 118, ../scss/sass/_calendarwidget.scss */
+.calendar-cancel {
+  background: #e1e1e1;
+  border-top: 1px solid #ddd;
+}
+/* line 121, ../scss/sass/_calendarwidget.scss */
+.calendar-cancel a {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #a9302a;
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ee5f5b), color-stop(100%, #bd362f));
+  background-image: -webkit-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -ms-linear-gradient(#ee5f5b, #bd362f);
+  background-image: linear-gradient(#ee5f5b, #bd362f);
+  border-color: #ee5f5b #ee5f5b #bd362f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+/* line 64, ../scss/sass/_buttons.scss */
+.calendar-cancel a:hover {
+  color: white;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+/* line 126, ../scss/sass/_calendarwidget.scss */
+.calendarbox .calendarnav-previous, .calendarbox .calendarnav-next {
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+  background: #C9DBED;
+  padding: 1px 4px 2px 4px;
+  color: white;
+}
+
+/* line 136, ../scss/sass/_calendarwidget.scss */
+.calendarnav-previous:hover, .calendarnav-next:hover {
+  background: #036;
+}
+
+/* line 140, ../scss/sass/_calendarwidget.scss */
+.calendarnav-previous {
+  top: 0;
+  left: 0;
+}
+
+/* line 145, ../scss/sass/_calendarwidget.scss */
+.calendarnav-next {
+  top: 0;
+  right: 0;
+}
+
+/* line 7, ../scss/sass/forms.scss */
+form {
+  margin: 0 0 20px;
+}
+
+/* line 11, ../scss/sass/forms.scss */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 17, ../scss/sass/forms.scss */
+fieldset .description {
+  color: #595959;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: .9rem;
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 20px;
+}
+
+/* line 28, ../scss/sass/forms.scss */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 38, ../scss/sass/forms.scss */
+legend small {
+  font-size: 15px;
+  color: #999999;
+}
+
+/* line 48, ../scss/sass/forms.scss */
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* line 59, ../scss/sass/forms.scss */
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  *display: inline-block;
+  *margin-left: 0;
+}
+/* line 63, ../scss/sass/forms.scss */
+input:first-child,
+button:first-child,
+select:first-child,
+textarea:first-child {
+  *padding-left: 20px;
+}
+
+/* line 68, ../scss/sass/forms.scss */
 label {
-    font-weight: normal !important;
-    color: #333;
-    font-size: 1em;
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
 }
 
-.required label, label.required {
-    font-weight: bold !important;
-    color: #333 !important;
+/* line 77, ../scss/sass/forms.scss */
+label.required {
+  font-weight: bold;
 }
 
-/* RADIO BUTTONS */
-
-form ul.radiolist li {
-    list-style-type: none;
+/* line 97, ../scss/sass/forms.scss */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
 }
 
-form ul.radiolist label {
-    float: none;
-    display: inline;
+/* line 108, ../scss/sass/forms.scss */
+input {
+  width: 206px;
 }
 
-form ul.inline {
-    margin-left: 0;
-    padding: 0;
+/* line 112, ../scss/sass/forms.scss */
+textarea {
+  height: auto;
+  width: 400px;
 }
 
-form ul.inline li {
-    float: left;
-    padding-right: 7px;
+/* line 132, ../scss/sass/forms.scss */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition-property: border;
+  -moz-transition-property: border;
+  -ms-transition-property: border;
+  -o-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 141, ../scss/sass/forms.scss */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-/* ALIGNED FIELDSETS */
-
-.aligned label {
-    display: block;
-    padding: 3px 10px 0 0;
-    float: left;
-    width: 8em;
+/* line 151, ../scss/sass/forms.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+  *margin-top: 0;
+  /* IE7 */
+  margin-top: 1px \9;
+  /* IE8-9 */
+  line-height: normal;
+  cursor: pointer;
+  margin-left: 180px;
 }
 
-.aligned ul label {
-    display: inline;
-    float: none;
-    width: auto;
+/* line 161, ../scss/sass/forms.scss */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  float: none;
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
 }
 
-.colMS .aligned .vLargeTextField, .colMS .aligned .vXMLLargeTextField {
-    width: 350px;
+/* line 175, ../scss/sass/forms.scss */
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
 }
 
-form .aligned p, form .aligned ul {
-    margin-left: 7em;
-    padding-left: 30px;
+/* line 180, ../scss/sass/forms.scss */
+select,
+input[type="file"] {
+  height: 26px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+  line-height: 26px;
 }
 
-form .aligned table p {
-    margin-left: 0;
-    padding-left: 0;
+/* line 187, ../scss/sass/forms.scss */
+select {
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
 }
 
-form .aligned p.help {
-    padding-left: 2em;
+/* line 194, ../scss/sass/forms.scss */
+select[multiple],
+select[size] {
+  height: auto;
+  min-height: 300px;
 }
 
-.aligned .vCheckboxLabel {
-    float: none !important;
-    display: inline;
-    padding-left: 4px;
+/* line 202, ../scss/sass/forms.scss */
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
-form .aligned .vCheckboxLabel + p.help {
-    margin-left: 0;
-    padding-left: 0;
-}
-.colM .aligned .vLargeTextField, .colM .aligned .vXMLLargeTextField {
-    width: 610px;
+/* line 209, ../scss/sass/forms.scss */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999999;
 }
 
-.checkbox-row p.help {
-    margin-left: 0;
-    padding-left: 0 !important;
+/* line 214, ../scss/sass/forms.scss */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
 }
 
-fieldset .field-box {
-    float: left;
-    margin-right: 20px;
+/* line 219, ../scss/sass/forms.scss */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
 }
 
-/* WIDE FIELDSETS */
-
-.wide label {
-    width: 15em !important;
+/* line 228, ../scss/sass/forms.scss */
+.form-row.errors label,
+.form-row.errors .help {
+  color: #b94a48;
 }
 
-form .wide p {
-    margin-left: 15em;
+/* line 236, ../scss/sass/forms.scss */
+.form-row.errors .checkbox,
+.form-row.errors .radio,
+.form-row.errors input,
+.form-row.errors select,
+.form-row.errors textarea {
+  color: #b94a48;
 }
 
-form .wide p.help {
-    padding-left: 38px;
+/* line 242, ../scss/sass/forms.scss */
+.form-row.errors input,
+.form-row.errors select,
+.form-row.errors textarea {
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-.colM fieldset.wide .vLargeTextField, .colM fieldset.wide .vXMLLargeTextField {
-    width: 450px;
+/* line 249, ../scss/sass/forms.scss */
+.form-row.errors input:focus,
+.form-row.errors select:focus,
+.form-row.errors textarea:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 
-/* COLLAPSED FIELDSETS */
-
-fieldset.collapsed * {
-    display: none;
+/* line 255, ../scss/sass/forms.scss */
+.errornote, .errorlist {
+  color: #b94a48;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #EED3D7;
+  background-color: #F2DEDE;
 }
 
-fieldset.collapsed h2, fieldset.collapsed {
-    display: block !important;
+/* line 262, ../scss/sass/forms.scss */
+.errornote {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 24, ../scss/sass/_icons.scss */
+.errornote:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f05e";
 }
 
-fieldset.collapsed h2 {
-    background-image: url(../img/nav-bg.gif);
-    background-position: bottom left;
-    color: #999;
+/* line 269, ../scss/sass/forms.scss */
+.errorlist {
+  padding: 0 35px 0 14px;
+  margin: 4px 0;
+}
+/* line 272, ../scss/sass/forms.scss */
+.errorlist li {
+  list-style: none;
 }
 
-fieldset.collapsed .collapse-toggle {
-    background: transparent;
-    display: inline !important;
+/* line 280, ../scss/sass/forms.scss */
+.form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 287, ../scss/sass/forms.scss */
+.form-actions:before, .form-actions:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+/* line 293, ../scss/sass/forms.scss */
+.form-actions:after {
+  clear: both;
 }
 
-/* MONOSPACE TEXTAREAS */
-
-fieldset.monospace textarea {
-    font-family: "Bitstream Vera Sans Mono",Monaco,"Courier New",Courier,monospace;
+/* line 303, ../scss/sass/forms.scss */
+.help {
+  color: #595959;
+  display: block;
+  margin-left: 200px;
+  margin-right: 20px;
+  font-size: .9rem;
+  line-height: 18px;
+  text-indent: -20px;
+}
+/* line 24, ../scss/sass/_icons.scss */
+.help:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f05a";
 }
 
-/* SUBMIT ROW */
+/* line 314, ../scss/sass/forms.scss */
+.help.help-tooltip {
+  margin: 0;
+  display: inline-block;
+}
 
+/* line 323, ../scss/sass/forms.scss */
+input.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* line 334, ../scss/sass/forms.scss */
+.form-row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 339, ../scss/sass/forms.scss */
+.form-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 344, ../scss/sass/forms.scss */
+.form-row:first-child {
+  margin-top: 10px;
+}
+
+/* line 348, ../scss/sass/forms.scss */
+h2 + .form-row {
+  margin-top: 10px;
+  -webkit-margin-top-collapse: separate;
+}
+
+/* line 353, ../scss/sass/forms.scss */
+a.related-lookup {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+a.related-lookup:active, a.related-lookup:focus {
+  outline: none;
+}
+
+/* line 357, ../scss/sass/forms.scss */
 .submit-row {
-    padding: 5px 7px;
-    text-align: right;
-    background: white;
-    border: 1px solid #ccc;
-    margin: 5px 0;
-    overflow: hidden;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  text-align: right;
 }
-
-body.popup .submit-row {
-    overflow: auto;
+/* line 12, ../scss/sass/_wells.scss */
+.submit-row blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
 }
-
+/* line 361, ../scss/sass/forms.scss */
 .submit-row input {
-    margin: 0 0 0 5px;
+  margin: 0 0 0 5px;
 }
-
-.submit-row p {
-    /*margin: 0.3em;*/
-}
-
+/* line 364, ../scss/sass/forms.scss */
 .submit-row p.deletelink-box {
-    float: left;
+  float: left;
+  margin: 0;
 }
-
+/* line 368, ../scss/sass/forms.scss */
+.submit-row .default {
+  float: right;
+}
+/* line 371, ../scss/sass/forms.scss */
 .submit-row .deletelink {
-    background: url(../img/icon_deletelink.gif) 0 50% no-repeat;
-    padding-left: 14px;
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #a9302a;
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ee5f5b), color-stop(100%, #bd362f));
+  background-image: -webkit-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -moz-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(#ee5f5b, #bd362f);
+  background-image: -ms-linear-gradient(#ee5f5b, #bd362f);
+  background-image: linear-gradient(#ee5f5b, #bd362f);
+  border-color: #ee5f5b #ee5f5b #bd362f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-
-/* CUSTOM FORM FIELDS */
-
-.vSelectMultipleField {
-    vertical-align: top !important;
+/* line 28, ../scss/sass/_buttons.scss */
+.submit-row .deletelink:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
-
-.vCheckboxField {
-    border: none;
+/* line 38, ../scss/sass/_buttons.scss */
+.submit-row .deletelink:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
-
-.vDateField, .vTimeField {
-    margin-right: 2px;
-    width: 8em;
+/* line 44, ../scss/sass/_buttons.scss */
+.submit-row .deletelink:active {
+  position: relative;
+  top: 1px;
 }
-
-p.datetime .vTimeField {
-    margin-top: 4px;
+/* line 50, ../scss/sass/_buttons.scss */
+.submit-row .deletelink a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
 }
-
-form .form-row p.datetime {
-    font-size: 1em;
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.submit-row .deletelink a:active, .submit-row .deletelink a:focus {
+  outline: none;
 }
-.vURLField {
-    width: 30em;
-}
-
-.vLargeTextField, .vXMLLargeTextField {
-    width: 48em;
-}
-
-.flatpages-flatpage #id_content {
-    height: 40.2em;
-}
-
-.module table .vPositiveSmallIntegerField {
-    width: 2.2em;
-}
-
-.vTextField {
-    width: 20em;
-}
-
-.vIntegerField {
-    width: 5em;
-}
-
-.vBigIntegerField {
-    width: 10em;
-}
-
-.vForeignKeyRawIdAdminField {
-    width: 5em;
-}
-
-/* INLINES */
-
-.inline-group {
-    padding: 0;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-}
-
-.inline-group .aligned label {
-    width: 8em;
-}
-
-.inline-related {
-    position: relative;
-}
-
-.inline-related h3 {
-    margin: 0;
-    color: #666;
-    padding: 3px 5px;
-    font-size: 0.9em;
-    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
-    border-bottom: 1px solid #ddd;
-}
-
-.inline-related h3 span.delete {
-    float: right;
-}
-
-.inline-related h3 span.delete label {
-    margin-left: 2px;
-    font-size: 0.9em;
-}
-
-.inline-related fieldset {
-    margin: 0;
-    background: #fff;
-    border: none;
-    width: 100%;
-}
-
-.inline-related fieldset.module h3 {
-    margin: 0;
-    padding: 2px 5px 3px 5px;
-    font-size: 0.9em;
-    text-align: left;
-    font-weight: bold;
-    background: #bcd;
-    color: #fff;
-}
-
-.inline-group .tabular fieldset.module {
-    border: none;
-    border-bottom: 1px solid #ddd;
-}
-
-.inline-related.tabular fieldset.module table {
-    width: 100%;
-}
-
-.last-related fieldset {
-    border: none;
-}
-
-.inline-group .tabular tr.has_original td {
-    padding-top: 2em;
-}
-
-.inline-group .tabular tr td.original {
-    padding: 2px 0 0 0;
-    width: 0;
-    _position: relative;
-}
-
-.inline-group .tabular th.original {
-    width: 0px;
-    padding: 0;
-}
-
-.inline-group .tabular td.original p {
-    position: absolute;
-    left: 0;
-    height: 1.1em;
-    padding: 2px 7px;
-    overflow: hidden;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #666;
-    _width: 700px;
-}
-
-.inline-group ul.tools {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.inline-group ul.tools li {
-    display: inline;
-    padding: 0 5px;
-}
-
-.inline-group div.add-row,
-.inline-group .tabular tr.add-row td {
-    color: #666;
-    padding: 3px 5px;
-    border-bottom: 1px solid #ddd;
-    background: #e1e1e1 url(../img/nav-bg.gif) top left repeat-x;
-}
-
-.inline-group .tabular tr.add-row td {
-    padding: 4px 5px 3px;
-    border-bottom: none;
-}
-
-.inline-group ul.tools a.add,
-.inline-group div.add-row a,
-.inline-group .tabular tr.add-row td a {
-    background: url(../img/icon_addlink.gif) 0 50% no-repeat;
-    padding-left: 14px;
-    font-size: 0.9em;
-    outline: 0; /* Remove dotted border around link */
-}
-
-.empty-form {
-    display: none;
+/* line 64, ../scss/sass/_buttons.scss */
+.submit-row .deletelink:hover {
+  color: white;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }

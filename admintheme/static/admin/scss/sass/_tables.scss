@@ -1,0 +1,75 @@
+@import "compass";
+@import "config";
+
+table {
+    border-spacing: 0;
+    th, td {
+        line-height: $base-line-height;
+        text-align: left;
+        border-top: 1px solid $table-border;
+        border-left: 1px solid $table-border;
+        padding: 5px;
+    }
+    th {
+        font-weight: bold;
+        padding: 2px 5px;
+    }
+    tr {
+        th:first-child, td:first-child {
+            border-left: 0;
+        }
+    }
+    thead {
+        th {
+            border-top: 0;
+            @include background($table-head-bkgnd);
+            font-size: .8rem;
+            .text a {
+                display: block;
+                cursor: pointer;
+                padding: 2px 5px;
+            }
+            &:hover {
+                .sortremove {
+                    @include icon-remove-sign;
+                }
+                @include background($table-head-bkgnd-hover);
+            }
+        }
+        th.sorted .sortoptions {
+            display: block;
+            float: right;
+            text-align: right;
+            a {
+                display: inline-block;
+                width: 14px;
+                height: 1.1em;
+            }
+        }
+    }
+    tbody {
+        th, td {
+            border-top: 1px solid $table-border;
+            @include background($table-bkgnd);
+        }
+        tr {
+            &.row2 {
+                @include background($table-bkgnd-accent);
+            }
+            &:hover, &.row2:hover {
+                @include background($table-bkgnd-hover);
+            }
+        }
+    }
+}
+
+.sortoptions {
+    a {
+    }
+    .ascending {
+        @include icon-sort-up;
+    }
+    .descending {
+        @include icon-sort-down;
+    }
+}

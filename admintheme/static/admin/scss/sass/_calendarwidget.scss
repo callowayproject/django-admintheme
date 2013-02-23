@@ -1,0 +1,148 @@
+@import "compass";
+@import "buttons";
+
+.datetime {
+  margin-left: 200px;
+  line-height: 2rem;
+}
+  .datetimeshortcuts {
+    font-size: .8em;
+    a {
+      @include minibutton;
+    }
+  }
+
+
+.clockbox {
+  @include box-shadow(rgba(#000, 0.4) 0 0 5px);
+  font-size: .8rem;
+  li, .calendar-cancel {
+    padding: 2px 5px;
+  }
+  li:hover, .calendar-cancel:hover {
+    background-color: #b1c6ec;
+  }
+  a {
+    @include unstyled-link;
+  }
+}
+
+.calendarbox {
+  @include box-shadow(rgba(#000, 0.4) 0 0 5px);
+}
+.module .calendar {
+  margin: 0;
+  padding: 0;
+
+  table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    background: white;
+    width: 100%;
+    th {
+      font-size: 10px;
+      color: #666;
+      padding: 2px 3px;
+      text-align: center;
+      background: #e1e1e1 url(../img/nav-bg.gif) 0 50% repeat-x;
+      border-bottom: 1px solid #ddd;
+      width: auto;
+    }
+    td {
+      font-size: 11px;
+      text-align: center;
+      padding: 0;
+      border-top: 1px solid #eee;
+      border-bottom: none;
+    }
+  }
+}
+.calendar table caption, .calendarbox h2 {
+    margin: 0;
+    font-size: 11px;
+    text-align: center;
+    border-top: none;
+}
+
+.calendar td.selected a {
+    background: #C9DBED;
+}
+
+.calendar td.nonday {
+    background: #efefef;
+}
+
+.calendar td.today a {
+    background: #ffc;
+}
+
+.calendar td a, .timelist a {
+    display: block;
+    font-weight: bold;
+    padding: 0 4px;
+    text-decoration: none;
+    color: #444;
+}
+
+.calendar td a:hover, .timelist a:hover {
+    background: #5b80b2;
+    color: white;
+}
+
+.calendar td a:active, .timelist a:active {
+    background: #036;
+    color: white;
+}
+
+.calendarnav {
+    font-size: 10px;
+    text-align: center;
+    color: #ccc;
+    margin: 0;
+    padding: 1px 3px;
+}
+
+.calendarnav a:link, #calendarnav a:visited, #calendarnav a:hover {
+    color: #999;
+}
+
+.calendar-shortcuts, .calendar-cancel {
+  line-height: 1.2rem;
+  padding: 4px;
+  a {
+    @include minibutton;
+  }
+}
+
+.calendar-cancel {
+    background: #e1e1e1 ;
+    border-top: 1px solid #ddd;
+    a {
+      @include cancelBackground;
+    }
+}
+
+.calendarbox .calendarnav-previous, .calendarbox .calendarnav-next {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    background: #C9DBED;
+    padding: 1px 4px 2px 4px;
+    color: white;
+}
+
+.calendarnav-previous:hover, .calendarnav-next:hover {
+    background: #036;
+}
+
+.calendarnav-previous {
+    top: 0;
+    left: 0;
+}
+
+.calendarnav-next {
+    top: 0;
+    right: 0;
+}

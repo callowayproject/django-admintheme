@@ -1,0 +1,50 @@
+//
+// Typography
+//
+$font-family:       'Helvetica Neue', Arial, Helvetica, sans-serif;
+$fixed-font-family: 'andale mono', 'lucida console', monospace;
+$base-font-size:         16px;
+$base-line-height:       20px;
+$text-color:        #333;
+$head-font-family: inherit;
+$head-font-weight: bold;
+$head-color: inherit;
+
+
+//
+// Link colors
+//
+$link-color-normal: #5b80b2;
+$link-color-hover:  shade(#5b80b2, 15%);
+$link-color-active: tint(#5b80b2, 15%);
+$link-color-visited:#5b80b2;
+$link-color-focus:  #5b80b2;
+
+
+$body-bkgnd:  #eee;
+$header-background: linear-gradient(#6C7A95, #4D5B76);
+$module-head-bkgnd: linear-gradient(#fff, #efefef);
+$border-radius:     4px;
+$border-radius-large: 6px;
+$border-radius-mini: 3px;
+
+//
+// Tables
+//
+$table-bkgnd: transparent;
+$table-bkgnd-accent: #f9f9f9;
+$table-bkgnd-hover: #f5f5f5;
+$table-border-color: #ddd;
+$table-border: 1px solid $table-border-color;
+$table-head-bkgnd: linear-gradient(#fff, #e6e6e6);
+$table-head-bkgnd-hover: linear-gradient(#e6e6e6, #d9d9d9);
+//$filter-bkgnd: #e4e8ed;
+$filter-bkgnd: #fff;
+$tabletools-bkgnd: #f5f5f5;
+
+//
+// Forms
+//
+$placeholder-color: #999;
+$error-color: #b94a48;
+$error-bkgnd: #f2dede;

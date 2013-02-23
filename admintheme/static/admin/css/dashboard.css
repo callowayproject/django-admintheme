@@ -1,0 +1,539 @@
+/* line 95, ../scss/sass/_buttons.scss */
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="file"] > input[type="button"] {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="file"] > input[type="button"]:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+button:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="file"] > input[type="button"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+button:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="file"] > input[type="button"]:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+button a,
+input[type="reset"] a,
+input[type="button"] a,
+input[type="submit"] a,
+input[type="file"] > input[type="button"] a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+button a:active, button a:focus,
+input[type="reset"] a:active,
+input[type="reset"] a:focus,
+input[type="button"] a:active,
+input[type="button"] a:focus,
+input[type="submit"] a:active,
+input[type="submit"] a:focus,
+input[type="file"] > input[type="button"] a:active,
+input[type="file"] > input[type="button"] a:focus {
+  outline: none;
+}
+/* line 97, ../scss/sass/_buttons.scss */
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+/* line 102, ../scss/sass/_buttons.scss */
+input[type="submit"].default, button.default {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #499249;
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #62c462), color-stop(100%, #51a351));
+  background-image: -webkit-linear-gradient(#62c462, #51a351);
+  background-image: -moz-linear-gradient(#62c462, #51a351);
+  background-image: -o-linear-gradient(#62c462, #51a351);
+  background-image: -ms-linear-gradient(#62c462, #51a351);
+  background-image: linear-gradient(#62c462, #51a351);
+  border-color: #62c462 #62c462 #51a351;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+/* line 64, ../scss/sass/_buttons.scss */
+input[type="submit"].default:hover, button.default:hover {
+  color: white;
+  background-color: #51a351;
+  *background-color: #499249;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url('../scss/../fonts/fontawesome-webfont.eot');
+  src: url('../scss/../fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('../scss/../fonts/fontawesome-webfont.woff') format('woff'), url('../scss/../fonts/fontawesome-webfont.ttf') format('truetype'), url('../scss/../fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../scss/sass/_icons.scss */
+.fontawesome {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+}
+
+/* line 57, ../scss/sass/_icons.scss */
+.icon-2x {
+  font-size: 2em;
+}
+/* line 59, ../scss/sass/_icons.scss */
+.icon-2x.icon-border {
+  border-width: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 64, ../scss/sass/_icons.scss */
+.icon-3x {
+  font-size: 3em;
+}
+/* line 66, ../scss/sass/_icons.scss */
+.icon-3x.icon-border {
+  border-width: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 71, ../scss/sass/_icons.scss */
+.icon-4x {
+  font-size: 4em;
+}
+/* line 73, ../scss/sass/_icons.scss */
+.icon-4x.icon-border {
+  border-width: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* \f020 doesn't work in Safari. all shifted one down */
+/* \f020 doesn't work in Safari. all shifted one down */
+/* line 5, ../scss/sass/dashboard.scss */
+.dashboard #content-main {
+  float: left;
+}
+/* line 9, ../scss/sass/dashboard.scss */
+.dashboard table td, .dashboard table th {
+  border-left: 0;
+}
+/* line 13, ../scss/sass/dashboard.scss */
+.dashboard table tr:first-child td, .dashboard table tr:first-child th {
+  border-top: 0;
+}
+/* line 21, ../scss/sass/dashboard.scss */
+.dashboard a.addlink, .dashboard button.addlink, .dashboard div.addlink {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+.dashboard a.addlink:hover, .dashboard button.addlink:hover, .dashboard div.addlink:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+.dashboard a.addlink:focus, .dashboard button.addlink:focus, .dashboard div.addlink:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+.dashboard a.addlink:active, .dashboard button.addlink:active, .dashboard div.addlink:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+.dashboard a.addlink a, .dashboard button.addlink a, .dashboard div.addlink a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.dashboard a.addlink a:active, .dashboard a.addlink a:focus, .dashboard button.addlink a:active, .dashboard button.addlink a:focus, .dashboard div.addlink a:active, .dashboard div.addlink a:focus {
+  outline: none;
+}
+/* line 24, ../scss/sass/_icons.scss */
+.dashboard a.addlink:before, .dashboard button.addlink:before, .dashboard div.addlink:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f067";
+}
+/* line 26, ../scss/sass/dashboard.scss */
+.dashboard a.changelink, .dashboard button.changelink, .dashboard div.changelink {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+/* line 28, ../scss/sass/_buttons.scss */
+.dashboard a.changelink:hover, .dashboard button.changelink:hover, .dashboard div.changelink:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -ms-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+/* line 38, ../scss/sass/_buttons.scss */
+.dashboard a.changelink:focus, .dashboard button.changelink:focus, .dashboard div.changelink:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 44, ../scss/sass/_buttons.scss */
+.dashboard a.changelink:active, .dashboard button.changelink:active, .dashboard div.changelink:active {
+  position: relative;
+  top: 1px;
+}
+/* line 50, ../scss/sass/_buttons.scss */
+.dashboard a.changelink a, .dashboard button.changelink a, .dashboard div.changelink a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.dashboard a.changelink a:active, .dashboard a.changelink a:focus, .dashboard button.changelink a:active, .dashboard button.changelink a:focus, .dashboard div.changelink a:active, .dashboard div.changelink a:focus {
+  outline: none;
+}
+/* line 24, ../scss/sass/_icons.scss */
+.dashboard a.changelink:before, .dashboard button.changelink:before, .dashboard div.changelink:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f044";
+}
+
+/* line 32, ../scss/sass/dashboard.scss */
+#content-related {
+  float: right;
+  width: 18em;
+  position: relative;
+  margin-right: -19em;
+}
+/* line 37, ../scss/sass/dashboard.scss */
+#content-related h3 {
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+}
+/* line 43, ../scss/sass/dashboard.scss */
+#content-related .actionlist {
+  list-style: none;
+  padding: 5px;
+  font-size: .8rem;
+  line-height: 1em;
+  margin: 0;
+  margin-left: 1em;
+}
+/* line 50, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist div, #content-related .actionlist span, #content-related .actionlist applet, #content-related .actionlist object, #content-related .actionlist iframe,
+#content-related .actionlist h1, #content-related .actionlist h2, #content-related .actionlist h3, #content-related .actionlist h4, #content-related .actionlist h5, #content-related .actionlist h6, #content-related .actionlist p, #content-related .actionlist blockquote, #content-related .actionlist pre,
+#content-related .actionlist a, #content-related .actionlist abbr, #content-related .actionlist acronym, #content-related .actionlist address, #content-related .actionlist big, #content-related .actionlist cite, #content-related .actionlist code,
+#content-related .actionlist del, #content-related .actionlist dfn, #content-related .actionlist em, #content-related .actionlist img, #content-related .actionlist ins, #content-related .actionlist kbd, #content-related .actionlist q, #content-related .actionlist s, #content-related .actionlist samp,
+#content-related .actionlist small, #content-related .actionlist strike, #content-related .actionlist strong, #content-related .actionlist sub, #content-related .actionlist sup, #content-related .actionlist tt, #content-related .actionlist var,
+#content-related .actionlist b, #content-related .actionlist u, #content-related .actionlist i, #content-related .actionlist center,
+#content-related .actionlist dl, #content-related .actionlist dt, #content-related .actionlist dd, #content-related .actionlist ol, #content-related .actionlist ul, #content-related .actionlist li,
+#content-related .actionlist fieldset, #content-related .actionlist form, #content-related .actionlist label, #content-related .actionlist legend,
+#content-related .actionlist table, #content-related .actionlist caption, #content-related .actionlist tbody, #content-related .actionlist tfoot, #content-related .actionlist thead, #content-related .actionlist tr, #content-related .actionlist th, #content-related .actionlist td,
+#content-related .actionlist article, #content-related .actionlist aside, #content-related .actionlist canvas, #content-related .actionlist details, #content-related .actionlist embed,
+#content-related .actionlist figure, #content-related .actionlist figcaption, #content-related .actionlist footer, #content-related .actionlist header, #content-related .actionlist hgroup,
+#content-related .actionlist menu, #content-related .actionlist nav, #content-related .actionlist output, #content-related .actionlist ruby, #content-related .actionlist section, #content-related .actionlist summary,
+#content-related .actionlist time, #content-related .actionlist mark, #content-related .actionlist audio, #content-related .actionlist video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* line 53, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 55, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist caption, #content-related .actionlist th, #content-related .actionlist td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+/* line 57, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist q, #content-related .actionlist blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist q:before, #content-related .actionlist q:after, #content-related .actionlist blockquote:before, #content-related .actionlist blockquote:after {
+  content: "";
+  content: none;
+}
+/* line 59, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+#content-related .actionlist a img {
+  border: none;
+}
+/* line 11, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+#content-related .actionlist li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 52, ../scss/sass/dashboard.scss */
+#content-related .actionlist li {
+  margin-bottom: 8px;
+}
+/* line 55, ../scss/sass/dashboard.scss */
+#content-related .actionlist li span {
+  margin-left: 1rem;
+}
+/* line 58, ../scss/sass/dashboard.scss */
+#content-related .actionlist .mini {
+  font-size: .7rem;
+}
+/* line 61, ../scss/sass/dashboard.scss */
+#content-related .actionlist .quiet {
+  color: #777;
+  font-weight: normal;
+}
+/* line 24, ../scss/sass/_icons.scss */
+#content-related .actionlist li.deletelink:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f00d";
+}
+/* line 67, ../scss/sass/dashboard.scss */
+#content-related .actionlist li.deletelink:before {
+  margin-right: .2em;
+}
+/* line 24, ../scss/sass/_icons.scss */
+#content-related .actionlist li.changelink:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f044";
+}
+/* line 73, ../scss/sass/dashboard.scss */
+#content-related .actionlist li.changelink:before {
+  margin-right: .2em;
+}
+/* line 24, ../scss/sass/_icons.scss */
+#content-related .actionlist li.addlink:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: .9em;
+  margin-right: .5em;
+  content: "\f067";
+}
+/* line 79, ../scss/sass/dashboard.scss */
+#content-related .actionlist li.addlink:before {
+  margin-right: .2em;
+}

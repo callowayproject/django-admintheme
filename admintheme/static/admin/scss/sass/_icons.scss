@@ -1,0 +1,607 @@
+@import "compass";
+@import "compass/css3/font-face";
+
+@include font-face(
+    'FontAwesome',
+    font-files(
+        "../fonts/fontawesome-webfont.woff", woff,
+        "../fonts/fontawesome-webfont.ttf", truetype,
+        "../fonts/fontawesome-webfont.svg#FontAwesomeRegular", svg),
+    '../fonts/fontawesome-webfont.eot',
+    normal,
+    normal);
+
+.fontawesome {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    line-height: .9em;
+}
+$borderColor:       #eee;
+$iconMuted:         #eee;
+
+@mixin icon($content) {
+    &:before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        line-height: .9em;
+        margin-right: .5em;
+        content: $content;
+    }
+}
+
+@mixin iconafter($content) {
+    &:after {
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        line-height: .9em;
+        margin-left: .5em;
+        content: $content;
+    }
+}
+
+// Icon Borders
+// -------------------------
+
+@mixin icon-border {
+  border: solid 1px $borderColor;
+  padding: .2em .25em .15em;
+  @include border-radius(3px);
+}
+
+// Icon Sizes
+// -------------------------
+
+.icon-2x {
+  font-size: 2em;
+  &.icon-border {
+    border-width: 2px;
+    @include border-radius(4px);
+  }
+}
+.icon-3x {
+  font-size: 3em;
+  &.icon-border {
+    border-width: 3px;
+    @include border-radius(5px);
+  }
+}
+.icon-4x {
+  font-size: 4em;
+  &.icon-border {
+    border-width: 4px;
+    @include border-radius(6px);
+  }
+}
+
+
+@mixin icon-glass                { @include icon("\f000"); }
+@mixin icon-music                { @include icon("\f001"); }
+@mixin icon-search               { @include icon("\f002"); }
+@mixin icon-envelope             { @include icon("\f003"); }
+@mixin icon-heart                { @include icon("\f004"); }
+@mixin icon-star                 { @include icon("\f005"); }
+@mixin icon-star-empty           { @include icon("\f006"); }
+@mixin icon-user                 { @include icon("\f007"); }
+@mixin icon-film                 { @include icon("\f008"); }
+@mixin icon-th-large             { @include icon("\f009"); }
+@mixin icon-th                   { @include icon("\f00a"); }
+@mixin icon-th-list              { @include icon("\f00b"); }
+@mixin icon-ok                   { @include icon("\f00c"); }
+@mixin icon-remove               { @include icon("\f00d"); }
+@mixin icon-zoom-in              { @include icon("\f00e"); }
+
+@mixin icon-zoom-out             { @include icon("\f010"); }
+@mixin icon-off                  { @include icon("\f011"); }
+@mixin icon-signal               { @include icon("\f012"); }
+@mixin icon-cog                  { @include icon("\f013"); }
+@mixin icon-trash                { @include icon("\f014"); }
+@mixin icon-home                 { @include icon("\f015"); }
+@mixin icon-file                 { @include icon("\f016"); }
+@mixin icon-time                 { @include icon("\f017"); }
+@mixin icon-road                 { @include icon("\f018"); }
+@mixin icon-download-alt         { @include icon("\f019"); }
+@mixin icon-download             { @include icon("\f01a"); }
+@mixin icon-upload               { @include icon("\f01b"); }
+@mixin icon-inbox                { @include icon("\f01c"); }
+@mixin icon-play-circle          { @include icon("\f01d"); }
+@mixin icon-repeat               { @include icon("\f01e"); }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+@mixin icon-refresh              { @include icon("\f021"); }
+@mixin icon-list-alt             { @include icon("\f022"); }
+@mixin icon-lock                 { @include icon("\f023"); }
+@mixin icon-flag                 { @include icon("\f024"); }
+@mixin icon-headphones           { @include icon("\f025"); }
+@mixin icon-volume-off           { @include icon("\f026"); }
+@mixin icon-volume-down          { @include icon("\f027"); }
+@mixin icon-volume-up            { @include icon("\f028"); }
+@mixin icon-qrcode               { @include icon("\f029"); }
+@mixin icon-barcode              { @include icon("\f02a"); }
+@mixin icon-tag                  { @include icon("\f02b"); }
+@mixin icon-tags                 { @include icon("\f02c"); }
+@mixin icon-book                 { @include icon("\f02d"); }
+@mixin icon-bookmark             { @include icon("\f02e"); }
+@mixin icon-print                { @include icon("\f02f"); }
+
+@mixin icon-camera               { @include icon("\f030"); }
+@mixin icon-font                 { @include icon("\f031"); }
+@mixin icon-bold                 { @include icon("\f032"); }
+@mixin icon-italic               { @include icon("\f033"); }
+@mixin icon-text-height          { @include icon("\f034"); }
+@mixin icon-text-width           { @include icon("\f035"); }
+@mixin icon-align-left           { @include icon("\f036"); }
+@mixin icon-align-center         { @include icon("\f037"); }
+@mixin icon-align-right          { @include icon("\f038"); }
+@mixin icon-align-justify        { @include icon("\f039"); }
+@mixin icon-list                 { @include icon("\f03a"); }
+@mixin icon-indent-left          { @include icon("\f03b"); }
+@mixin icon-indent-right         { @include icon("\f03c"); }
+@mixin icon-facetime-video       { @include icon("\f03d"); }
+@mixin icon-picture              { @include icon("\f03e"); }
+
+@mixin icon-pencil               { @include icon("\f040"); }
+@mixin icon-map-marker           { @include icon("\f041"); }
+@mixin icon-adjust               { @include icon("\f042"); }
+@mixin icon-tint                 { @include icon("\f043"); }
+@mixin icon-edit                 { @include icon("\f044"); }
+@mixin icon-share                { @include icon("\f045"); }
+@mixin icon-check                { @include icon("\f046"); }
+@mixin icon-move                 { @include icon("\f047"); }
+@mixin icon-step-backward        { @include icon("\f048"); }
+@mixin icon-fast-backward        { @include icon("\f049"); }
+@mixin icon-backward             { @include icon("\f04a"); }
+@mixin icon-play                 { @include icon("\f04b"); }
+@mixin icon-pause                { @include icon("\f04c"); }
+@mixin icon-stop                 { @include icon("\f04d"); }
+@mixin icon-forward              { @include icon("\f04e"); }
+
+@mixin icon-fast-forward         { @include icon("\f050"); }
+@mixin icon-step-forward         { @include icon("\f051"); }
+@mixin icon-eject                { @include icon("\f052"); }
+@mixin icon-chevron-left         { @include icon("\f053"); }
+@mixin icon-chevron-right        { @include icon("\f054"); }
+@mixin icon-plus-sign            { @include icon("\f055"); }
+@mixin icon-minus-sign           { @include icon("\f056"); }
+@mixin icon-remove-sign          { @include icon("\f057"); }
+@mixin icon-ok-sign              { @include icon("\f058"); }
+@mixin icon-question-sign        { @include icon("\f059"); }
+@mixin icon-info-sign            { @include icon("\f05a"); }
+@mixin icon-screenshot           { @include icon("\f05b"); }
+@mixin icon-remove-circle        { @include icon("\f05c"); }
+@mixin icon-ok-circle            { @include icon("\f05d"); }
+@mixin icon-ban-circle           { @include icon("\f05e"); }
+
+@mixin icon-arrow-left           { @include icon("\f060"); }
+@mixin icon-arrow-right          { @include icon("\f061"); }
+@mixin icon-arrow-up             { @include icon("\f062"); }
+@mixin icon-arrow-down           { @include icon("\f063"); }
+@mixin icon-share-alt            { @include icon("\f064"); }
+@mixin icon-resize-full          { @include icon("\f065"); }
+@mixin icon-resize-small         { @include icon("\f066"); }
+@mixin icon-plus                 { @include icon("\f067"); }
+@mixin icon-minus                { @include icon("\f068"); }
+@mixin icon-asterisk             { @include icon("\f069"); }
+@mixin icon-exclamation-sign     { @include icon("\f06a"); }
+@mixin icon-gift                 { @include icon("\f06b"); }
+@mixin icon-leaf                 { @include icon("\f06c"); }
+@mixin icon-fire                 { @include icon("\f06d"); }
+@mixin icon-eye-open             { @include icon("\f06e"); }
+
+@mixin icon-eye-close            { @include icon("\f070"); }
+@mixin icon-warning-sign         { @include icon("\f071"); }
+@mixin icon-plane                { @include icon("\f072"); }
+@mixin icon-calendar             { @include icon("\f073"); }
+@mixin icon-random               { @include icon("\f074"); }
+@mixin icon-comment              { @include icon("\f075"); }
+@mixin icon-magnet               { @include icon("\f076"); }
+@mixin icon-chevron-up           { @include icon("\f077"); }
+@mixin icon-chevron-down         { @include icon("\f078"); }
+@mixin icon-retweet              { @include icon("\f079"); }
+@mixin icon-shopping-cart        { @include icon("\f07a"); }
+@mixin icon-folder-close         { @include icon("\f07b"); }
+@mixin icon-folder-open          { @include icon("\f07c"); }
+@mixin icon-resize-vertical      { @include icon("\f07d"); }
+@mixin icon-resize-horizontal    { @include icon("\f07e"); }
+
+@mixin icon-bar-chart            { @include icon("\f080"); }
+@mixin icon-twitter-sign         { @include icon("\f081"); }
+@mixin icon-facebook-sign        { @include icon("\f082"); }
+@mixin icon-camera-retro         { @include icon("\f083"); }
+@mixin icon-key                  { @include icon("\f084"); }
+@mixin icon-cogs                 { @include icon("\f085"); }
+@mixin icon-comments             { @include icon("\f086"); }
+@mixin icon-thumbs-up            { @include icon("\f087"); }
+@mixin icon-thumbs-down          { @include icon("\f088"); }
+@mixin icon-star-half            { @include icon("\f089"); }
+@mixin icon-heart-empty          { @include icon("\f08a"); }
+@mixin icon-signout              { @include icon("\f08b"); }
+@mixin icon-linkedin-sign        { @include icon("\f08c"); }
+@mixin icon-pushpin              { @include icon("\f08d"); }
+@mixin icon-external-link        { @include icon("\f08e"); }
+
+@mixin icon-signin               { @include icon("\f090"); }
+@mixin icon-trophy               { @include icon("\f091"); }
+@mixin icon-github-sign          { @include icon("\f092"); }
+@mixin icon-upload-alt           { @include icon("\f093"); }
+@mixin icon-lemon                { @include icon("\f094"); }
+@mixin icon-phone                { @include icon("\f095"); }
+@mixin icon-check-empty          { @include icon("\f096"); }
+@mixin icon-bookmark-empty       { @include icon("\f097"); }
+@mixin icon-phone-sign           { @include icon("\f098"); }
+@mixin icon-twitter              { @include icon("\f099"); }
+@mixin icon-facebook             { @include icon("\f09a"); }
+@mixin icon-github               { @include icon("\f09b"); }
+@mixin icon-unlock               { @include icon("\f09c"); }
+@mixin icon-credit-card          { @include icon("\f09d"); }
+@mixin icon-rss                  { @include icon("\f09e"); }
+
+@mixin icon-hdd                  { @include icon("\f0a0"); }
+@mixin icon-bullhorn             { @include icon("\f0a1"); }
+@mixin icon-bell                 { @include icon("\f0a2"); }
+@mixin icon-certificate          { @include icon("\f0a3"); }
+@mixin icon-hand-right           { @include icon("\f0a4"); }
+@mixin icon-hand-left            { @include icon("\f0a5"); }
+@mixin icon-hand-up              { @include icon("\f0a6"); }
+@mixin icon-hand-down            { @include icon("\f0a7"); }
+@mixin icon-circle-arrow-left    { @include icon("\f0a8"); }
+@mixin icon-circle-arrow-right   { @include icon("\f0a9"); }
+@mixin icon-circle-arrow-up      { @include icon("\f0aa"); }
+@mixin icon-circle-arrow-down    { @include icon("\f0ab"); }
+@mixin icon-globe                { @include icon("\f0ac"); }
+@mixin icon-wrench               { @include icon("\f0ad"); }
+@mixin icon-tasks                { @include icon("\f0ae"); }
+
+@mixin icon-filter               { @include icon("\f0b0"); }
+@mixin icon-briefcase            { @include icon("\f0b1"); }
+@mixin icon-fullscreen           { @include icon("\f0b2"); }
+
+@mixin icon-group                { @include icon("\f0c0"); }
+@mixin icon-link                 { @include icon("\f0c1"); }
+@mixin icon-cloud                { @include icon("\f0c2"); }
+@mixin icon-beaker               { @include icon("\f0c3"); }
+@mixin icon-cut                  { @include icon("\f0c4"); }
+@mixin icon-copy                 { @include icon("\f0c5"); }
+@mixin icon-paper-clip           { @include icon("\f0c6"); }
+@mixin icon-save                 { @include icon("\f0c7"); }
+@mixin icon-sign-blank           { @include icon("\f0c8"); }
+@mixin icon-reorder              { @include icon("\f0c9"); }
+@mixin icon-list-ul              { @include icon("\f0ca"); }
+@mixin icon-list-ol              { @include icon("\f0cb"); }
+@mixin icon-strikethrough        { @include icon("\f0cc"); }
+@mixin icon-underline            { @include icon("\f0cd"); }
+@mixin icon-table                { @include icon("\f0ce"); }
+
+@mixin icon-magic                { @include icon("\f0d0"); }
+@mixin icon-truck                { @include icon("\f0d1"); }
+@mixin icon-pinterest            { @include icon("\f0d2"); }
+@mixin icon-pinterest-sign       { @include icon("\f0d3"); }
+@mixin icon-google-plus-sign     { @include icon("\f0d4"); }
+@mixin icon-google-plus          { @include icon("\f0d5"); }
+@mixin icon-money                { @include icon("\f0d6"); }
+@mixin icon-caret-down           { @include icon("\f0d7"); }
+@mixin icon-caret-up             { @include icon("\f0d8"); }
+@mixin icon-caret-left           { @include icon("\f0d9"); }
+@mixin icon-caret-right          { @include icon("\f0da"); }
+@mixin icon-columns              { @include icon("\f0db"); }
+@mixin icon-sort                 { @include icon("\f0dc"); }
+@mixin icon-sort-down            { @include icon("\f0dd"); }
+@mixin icon-sort-up              { @include icon("\f0de"); }
+
+@mixin icon-envelope-alt         { @include icon("\f0e0"); }
+@mixin icon-linkedin             { @include icon("\f0e1"); }
+@mixin icon-undo                 { @include icon("\f0e2"); }
+@mixin icon-legal                { @include icon("\f0e3"); }
+@mixin icon-dashboard            { @include icon("\f0e4"); }
+@mixin icon-comment-alt          { @include icon("\f0e5"); }
+@mixin icon-comments-alt         { @include icon("\f0e6"); }
+@mixin icon-bolt                 { @include icon("\f0e7"); }
+@mixin icon-sitemap              { @include icon("\f0e8"); }
+@mixin icon-umbrella             { @include icon("\f0e9"); }
+@mixin icon-paste                { @include icon("\f0ea"); }
+
+@mixin icon-user-md              { @include icon("\f200"); }
+@mixin icon-stethoscope          { @include icon("\f0f1"); }
+@mixin icon-suitcase             { @include icon("\f0f2"); }
+@mixin icon-bell-alt             { @include icon("\f0f3"); }
+@mixin icon-coffee               { @include icon("\f0f4"); }
+@mixin icon-food                 { @include icon("\f0f5"); }
+@mixin icon-file-alt             { @include icon("\f0f6"); }
+@mixin icon-building             { @include icon("\f0f7"); }
+@mixin icon-hospital             { @include icon("\f0f8"); }
+@mixin icon-ambulance            { @include icon("\f0f9"); }
+@mixin icon-medkit               { @include icon("\f0fa"); }
+@mixin icon-fighter-jet          { @include icon("\f0fb"); }
+@mixin icon-beer                 { @include icon("\f0fc"); }
+@mixin icon-h-sign               { @include icon("\f0fd"); }
+@mixin icon-plus-sign-alt        { @include icon("\f0fe"); }
+
+@mixin icon-double-angle-left    { @include icon("\f100"); }
+@mixin icon-double-angle-right   { @include icon("\f101"); }
+@mixin icon-double-angle-up      { @include icon("\f102"); }
+@mixin icon-double-angle-down    { @include icon("\f103"); }
+@mixin icon-angle-left           { @include icon("\f104"); }
+@mixin icon-angle-right          { @include icon("\f105"); }
+@mixin icon-angle-up             { @include icon("\f106"); }
+@mixin icon-angle-down           { @include icon("\f107"); }
+@mixin icon-desktop              { @include icon("\f108"); }
+@mixin icon-laptop               { @include icon("\f109"); }
+@mixin icon-tablet               { @include icon("\f10a"); }
+@mixin icon-mobile-phone         { @include icon("\f10b"); }
+@mixin icon-circle-blank         { @include icon("\f10c"); }
+@mixin icon-quote-left           { @include icon("\f10d"); }
+@mixin icon-quote-right          { @include icon("\f10e"); }
+
+@mixin icon-spinner              { @include icon("\f110"); }
+@mixin icon-circle               { @include icon("\f111"); }
+@mixin icon-reply                { @include icon("\f112"); }
+@mixin icon-github-alt           { @include icon("\f113"); }
+@mixin icon-folder-close-alt     { @include icon("\f114"); }
+@mixin icon-folder-open-alt      { @include icon("\f115"); }
+
+
+@mixin icon-glass-after                { @include iconafter("\f000"); }
+@mixin icon-music-after                { @include iconafter("\f001"); }
+@mixin icon-search-after               { @include iconafter("\f002"); }
+@mixin icon-envelope-after             { @include iconafter("\f003"); }
+@mixin icon-heart-after                { @include iconafter("\f004"); }
+@mixin icon-star-after                 { @include iconafter("\f005"); }
+@mixin icon-star-empty-after           { @include iconafter("\f006"); }
+@mixin icon-user-after                 { @include iconafter("\f007"); }
+@mixin icon-film-after                 { @include iconafter("\f008"); }
+@mixin icon-th-large-after             { @include iconafter("\f009"); }
+@mixin icon-th-after                   { @include iconafter("\f00a"); }
+@mixin icon-th-list-after              { @include iconafter("\f00b"); }
+@mixin icon-ok-after                   { @include iconafter("\f00c"); }
+@mixin icon-remove-after               { @include iconafter("\f00d"); }
+@mixin icon-zoom-in-after              { @include iconafter("\f00e"); }
+
+@mixin icon-zoom-out-after             { @include iconafter("\f010"); }
+@mixin icon-off-after                  { @include iconafter("\f011"); }
+@mixin icon-signal-after               { @include iconafter("\f012"); }
+@mixin icon-cog-after                  { @include iconafter("\f013"); }
+@mixin icon-trash-after                { @include iconafter("\f014"); }
+@mixin icon-home-after                 { @include iconafter("\f015"); }
+@mixin icon-file-after                 { @include iconafter("\f016"); }
+@mixin icon-time-after                 { @include iconafter("\f017"); }
+@mixin icon-road-after                 { @include iconafter("\f018"); }
+@mixin icon-download-alt-after         { @include iconafter("\f019"); }
+@mixin icon-download-after             { @include iconafter("\f01a"); }
+@mixin icon-upload-after               { @include iconafter("\f01b"); }
+@mixin icon-inbox-after                { @include iconafter("\f01c"); }
+@mixin icon-play-circle-after          { @include iconafter("\f01d"); }
+@mixin icon-repeat-after               { @include iconafter("\f01e"); }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+@mixin icon-refresh-after              { @include iconafter("\f021"); }
+@mixin icon-list-alt-after             { @include iconafter("\f022"); }
+@mixin icon-lock-after                 { @include iconafter("\f023"); }
+@mixin icon-flag-after                 { @include iconafter("\f024"); }
+@mixin icon-headphones-after           { @include iconafter("\f025"); }
+@mixin icon-volume-off-after           { @include iconafter("\f026"); }
+@mixin icon-volume-down-after          { @include iconafter("\f027"); }
+@mixin icon-volume-up-after            { @include iconafter("\f028"); }
+@mixin icon-qrcode-after               { @include iconafter("\f029"); }
+@mixin icon-barcode-after              { @include iconafter("\f02a"); }
+@mixin icon-tag-after                  { @include iconafter("\f02b"); }
+@mixin icon-tags-after                 { @include iconafter("\f02c"); }
+@mixin icon-book-after                 { @include iconafter("\f02d"); }
+@mixin icon-bookmark-after             { @include iconafter("\f02e"); }
+@mixin icon-print-after                { @include iconafter("\f02f"); }
+
+@mixin icon-camera-after               { @include iconafter("\f030"); }
+@mixin icon-font-after                 { @include iconafter("\f031"); }
+@mixin icon-bold-after                 { @include iconafter("\f032"); }
+@mixin icon-italic-after               { @include iconafter("\f033"); }
+@mixin icon-text-height-after          { @include iconafter("\f034"); }
+@mixin icon-text-width-after           { @include iconafter("\f035"); }
+@mixin icon-align-left-after           { @include iconafter("\f036"); }
+@mixin icon-align-center-after         { @include iconafter("\f037"); }
+@mixin icon-align-right-after          { @include iconafter("\f038"); }
+@mixin icon-align-justify-after        { @include iconafter("\f039"); }
+@mixin icon-list-after                 { @include iconafter("\f03a"); }
+@mixin icon-indent-left-after          { @include iconafter("\f03b"); }
+@mixin icon-indent-right-after         { @include iconafter("\f03c"); }
+@mixin icon-facetime-video-after       { @include iconafter("\f03d"); }
+@mixin icon-picture-after              { @include iconafter("\f03e"); }
+
+@mixin icon-pencil-after               { @include iconafter("\f040"); }
+@mixin icon-map-marker-after           { @include iconafter("\f041"); }
+@mixin icon-adjust-after               { @include iconafter("\f042"); }
+@mixin icon-tint-after                 { @include iconafter("\f043"); }
+@mixin icon-edit-after                 { @include iconafter("\f044"); }
+@mixin icon-share-after                { @include iconafter("\f045"); }
+@mixin icon-check-after                { @include iconafter("\f046"); }
+@mixin icon-move-after                 { @include iconafter("\f047"); }
+@mixin icon-step-backward-after        { @include iconafter("\f048"); }
+@mixin icon-fast-backward-after        { @include iconafter("\f049"); }
+@mixin icon-backward-after             { @include iconafter("\f04a"); }
+@mixin icon-play-after                 { @include iconafter("\f04b"); }
+@mixin icon-pause-after                { @include iconafter("\f04c"); }
+@mixin icon-stop-after                 { @include iconafter("\f04d"); }
+@mixin icon-forward-after              { @include iconafter("\f04e"); }
+
+@mixin icon-fast-forward-after         { @include iconafter("\f050"); }
+@mixin icon-step-forward-after         { @include iconafter("\f051"); }
+@mixin icon-eject-after                { @include iconafter("\f052"); }
+@mixin icon-chevron-left-after         { @include iconafter("\f053"); }
+@mixin icon-chevron-right-after        { @include iconafter("\f054"); }
+@mixin icon-plus-sign-after            { @include iconafter("\f055"); }
+@mixin icon-minus-sign-after           { @include iconafter("\f056"); }
+@mixin icon-remove-sign-after          { @include iconafter("\f057"); }
+@mixin icon-ok-sign-after              { @include iconafter("\f058"); }
+@mixin icon-question-sign-after        { @include iconafter("\f059"); }
+@mixin icon-info-sign-after            { @include iconafter("\f05a"); }
+@mixin icon-screenshot-after           { @include iconafter("\f05b"); }
+@mixin icon-remove-circle-after        { @include iconafter("\f05c"); }
+@mixin icon-ok-circle-after            { @include iconafter("\f05d"); }
+@mixin icon-ban-circle-after           { @include iconafter("\f05e"); }
+
+@mixin icon-arrow-left-after           { @include iconafter("\f060"); }
+@mixin icon-arrow-right-after          { @include iconafter("\f061"); }
+@mixin icon-arrow-up-after             { @include iconafter("\f062"); }
+@mixin icon-arrow-down-after           { @include iconafter("\f063"); }
+@mixin icon-share-alt-after            { @include iconafter("\f064"); }
+@mixin icon-resize-full-after          { @include iconafter("\f065"); }
+@mixin icon-resize-small-after         { @include iconafter("\f066"); }
+@mixin icon-plus-after                 { @include iconafter("\f067"); }
+@mixin icon-minus-after                { @include iconafter("\f068"); }
+@mixin icon-asterisk-after             { @include iconafter("\f069"); }
+@mixin icon-exclamation-sign-after     { @include iconafter("\f06a"); }
+@mixin icon-gift-after                 { @include iconafter("\f06b"); }
+@mixin icon-leaf-after                 { @include iconafter("\f06c"); }
+@mixin icon-fire-after                 { @include iconafter("\f06d"); }
+@mixin icon-eye-open-after             { @include iconafter("\f06e"); }
+
+@mixin icon-eye-close-after            { @include iconafter("\f070"); }
+@mixin icon-warning-sign-after         { @include iconafter("\f071"); }
+@mixin icon-plane-after                { @include iconafter("\f072"); }
+@mixin icon-calendar-after             { @include iconafter("\f073"); }
+@mixin icon-random-after               { @include iconafter("\f074"); }
+@mixin icon-comment-after              { @include iconafter("\f075"); }
+@mixin icon-magnet-after               { @include iconafter("\f076"); }
+@mixin icon-chevron-up-after           { @include iconafter("\f077"); }
+@mixin icon-chevron-down-after         { @include iconafter("\f078"); }
+@mixin icon-retweet-after              { @include iconafter("\f079"); }
+@mixin icon-shopping-cart-after        { @include iconafter("\f07a"); }
+@mixin icon-folder-close-after         { @include iconafter("\f07b"); }
+@mixin icon-folder-open-after          { @include iconafter("\f07c"); }
+@mixin icon-resize-vertical-after      { @include iconafter("\f07d"); }
+@mixin icon-resize-horizontal-after    { @include iconafter("\f07e"); }
+
+@mixin icon-bar-chart-after            { @include iconafter("\f080"); }
+@mixin icon-twitter-sign-after         { @include iconafter("\f081"); }
+@mixin icon-facebook-sign-after        { @include iconafter("\f082"); }
+@mixin icon-camera-retro-after         { @include iconafter("\f083"); }
+@mixin icon-key-after                  { @include iconafter("\f084"); }
+@mixin icon-cogs-after                 { @include iconafter("\f085"); }
+@mixin icon-comments-after             { @include iconafter("\f086"); }
+@mixin icon-thumbs-up-after            { @include iconafter("\f087"); }
+@mixin icon-thumbs-down-after          { @include iconafter("\f088"); }
+@mixin icon-star-half-after            { @include iconafter("\f089"); }
+@mixin icon-heart-empty-after          { @include iconafter("\f08a"); }
+@mixin icon-signout-after              { @include iconafter("\f08b"); }
+@mixin icon-linkedin-sign-after        { @include iconafter("\f08c"); }
+@mixin icon-pushpin-after              { @include iconafter("\f08d"); }
+@mixin icon-external-link-after        { @include iconafter("\f08e"); }
+
+@mixin icon-signin-after               { @include iconafter("\f090"); }
+@mixin icon-trophy-after               { @include iconafter("\f091"); }
+@mixin icon-github-sign-after          { @include iconafter("\f092"); }
+@mixin icon-upload-alt-after           { @include iconafter("\f093"); }
+@mixin icon-lemon-after                { @include iconafter("\f094"); }
+@mixin icon-phone-after                { @include iconafter("\f095"); }
+@mixin icon-check-empty-after          { @include iconafter("\f096"); }
+@mixin icon-bookmark-empty-after       { @include iconafter("\f097"); }
+@mixin icon-phone-sign-after           { @include iconafter("\f098"); }
+@mixin icon-twitter-after              { @include iconafter("\f099"); }
+@mixin icon-facebook-after             { @include iconafter("\f09a"); }
+@mixin icon-github-after               { @include iconafter("\f09b"); }
+@mixin icon-unlock-after               { @include iconafter("\f09c"); }
+@mixin icon-credit-card-after          { @include iconafter("\f09d"); }
+@mixin icon-rss-after                  { @include iconafter("\f09e"); }
+
+@mixin icon-hdd-after                  { @include iconafter("\f0a0"); }
+@mixin icon-bullhorn-after             { @include iconafter("\f0a1"); }
+@mixin icon-bell-after                 { @include iconafter("\f0a2"); }
+@mixin icon-certificate-after          { @include iconafter("\f0a3"); }
+@mixin icon-hand-right-after           { @include iconafter("\f0a4"); }
+@mixin icon-hand-left-after            { @include iconafter("\f0a5"); }
+@mixin icon-hand-up-after              { @include iconafter("\f0a6"); }
+@mixin icon-hand-down-after            { @include iconafter("\f0a7"); }
+@mixin icon-circle-arrow-left-after    { @include iconafter("\f0a8"); }
+@mixin icon-circle-arrow-right-after   { @include iconafter("\f0a9"); }
+@mixin icon-circle-arrow-up-after      { @include iconafter("\f0aa"); }
+@mixin icon-circle-arrow-down-after    { @include iconafter("\f0ab"); }
+@mixin icon-globe-after                { @include iconafter("\f0ac"); }
+@mixin icon-wrench-after               { @include iconafter("\f0ad"); }
+@mixin icon-tasks-after                { @include iconafter("\f0ae"); }
+
+@mixin icon-filter-after               { @include iconafter("\f0b0"); }
+@mixin icon-briefcase-after            { @include iconafter("\f0b1"); }
+@mixin icon-fullscreen-after           { @include iconafter("\f0b2"); }
+
+@mixin icon-group-after                { @include iconafter("\f0c0"); }
+@mixin icon-link-after                 { @include iconafter("\f0c1"); }
+@mixin icon-cloud-after                { @include iconafter("\f0c2"); }
+@mixin icon-beaker-after               { @include iconafter("\f0c3"); }
+@mixin icon-cut-after                  { @include iconafter("\f0c4"); }
+@mixin icon-copy-after                 { @include iconafter("\f0c5"); }
+@mixin icon-paper-clip-after           { @include iconafter("\f0c6"); }
+@mixin icon-save-after                 { @include iconafter("\f0c7"); }
+@mixin icon-sign-blank-after           { @include iconafter("\f0c8"); }
+@mixin icon-reorder-after              { @include iconafter("\f0c9"); }
+@mixin icon-list-ul-after              { @include iconafter("\f0ca"); }
+@mixin icon-list-ol-after              { @include iconafter("\f0cb"); }
+@mixin icon-strikethrough-after        { @include iconafter("\f0cc"); }
+@mixin icon-underline-after            { @include iconafter("\f0cd"); }
+@mixin icon-table-after                { @include iconafter("\f0ce"); }
+
+@mixin icon-magic-after                { @include iconafter("\f0d0"); }
+@mixin icon-truck-after                { @include iconafter("\f0d1"); }
+@mixin icon-pinterest-after            { @include iconafter("\f0d2"); }
+@mixin icon-pinterest-sign-after       { @include iconafter("\f0d3"); }
+@mixin icon-google-plus-sign-after     { @include iconafter("\f0d4"); }
+@mixin icon-google-plus-after          { @include iconafter("\f0d5"); }
+@mixin icon-money-after                { @include iconafter("\f0d6"); }
+@mixin icon-caret-down-after           { @include iconafter("\f0d7"); }
+@mixin icon-caret-up-after             { @include iconafter("\f0d8"); }
+@mixin icon-caret-left-after           { @include iconafter("\f0d9"); }
+@mixin icon-caret-right-after          { @include iconafter("\f0da"); }
+@mixin icon-columns-after              { @include iconafter("\f0db"); }
+@mixin icon-sort-after                 { @include iconafter("\f0dc"); }
+@mixin icon-sort-down-after            { @include iconafter("\f0dd"); }
+@mixin icon-sort-up-after              { @include iconafter("\f0de"); }
+
+@mixin icon-envelope-alt-after         { @include iconafter("\f0e0"); }
+@mixin icon-linkedin-after             { @include iconafter("\f0e1"); }
+@mixin icon-undo-after                 { @include iconafter("\f0e2"); }
+@mixin icon-legal-after                { @include iconafter("\f0e3"); }
+@mixin icon-dashboard-after            { @include iconafter("\f0e4"); }
+@mixin icon-comment-alt-after          { @include iconafter("\f0e5"); }
+@mixin icon-comments-alt-after         { @include iconafter("\f0e6"); }
+@mixin icon-bolt-after                 { @include iconafter("\f0e7"); }
+@mixin icon-sitemap-after              { @include iconafter("\f0e8"); }
+@mixin icon-umbrella-after             { @include iconafter("\f0e9"); }
+@mixin icon-paste-after                { @include iconafter("\f0ea"); }
+
+@mixin icon-user-md-after              { @include iconafter("\f200"); }
+@mixin icon-stethoscope-after          { @include iconafter("\f0f1"); }
+@mixin icon-suitcase-after-after       { @include iconafter("\f0f2"); }
+@mixin icon-bell-alt-after-after       { @include iconafter("\f0f3"); }
+@mixin icon-coffee-after-after         { @include iconafter("\f0f4"); }
+@mixin icon-food-after-after           { @include iconafter("\f0f5"); }
+@mixin icon-file-alt-after-after       { @include iconafter("\f0f6"); }
+@mixin icon-building-after-after       { @include iconafter("\f0f7"); }
+@mixin icon-hospital-after-after       { @include iconafter("\f0f8"); }
+@mixin icon-ambulance-after-after      { @include iconafter("\f0f9"); }
+@mixin icon-medkit-after-after         { @include iconafter("\f0fa"); }
+@mixin icon-fighter-jet-after          { @include iconafter("\f0fb"); }
+@mixin icon-beer-after-after           { @include iconafter("\f0fc"); }
+@mixin icon-h-sign-after-after         { @include iconafter("\f0fd"); }
+@mixin icon-plus-sign-alt-after        { @include iconafter("\f0fe"); }
+
+@mixin icon-double-angle-left-after    { @include iconafter("\f100"); }
+@mixin icon-double-angle-right-after   { @include iconafter("\f101"); }
+@mixin icon-double-angle-up-after      { @include iconafter("\f102"); }
+@mixin icon-double-angle-down-after    { @include iconafter("\f103"); }
+@mixin icon-angle-left-after           { @include iconafter("\f104"); }
+@mixin icon-angle-right-after          { @include iconafter("\f105"); }
+@mixin icon-angle-up-after-after       { @include iconafter("\f106"); }
+@mixin icon-angle-down-after           { @include iconafter("\f107"); }
+@mixin icon-desktop-after-after        { @include iconafter("\f108"); }
+@mixin icon-laptop-after-after         { @include iconafter("\f109"); }
+@mixin icon-tablet-after-after         { @include iconafter("\f10a"); }
+@mixin icon-mobile-phone-after         { @include iconafter("\f10b"); }
+@mixin icon-circle-blank-after         { @include iconafter("\f10c"); }
+@mixin icon-quote-left-after           { @include iconafter("\f10d"); }
+@mixin icon-quote-right-after          { @include iconafter("\f10e"); }
+
+@mixin icon-spinner-after-after        { @include iconafter("\f110"); }
+@mixin icon-circle-after-after         { @include iconafter("\f111"); }
+@mixin icon-reply-after-after          { @include iconafter("\f112"); }
+@mixin icon-github-alt-after           { @include iconafter("\f113"); }
+@mixin icon-folder-close-alt-after     { @include iconafter("\f114"); }
+@mixin icon-folder-open-alt-after      { @include iconafter("\f115"); }
