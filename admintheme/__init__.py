@@ -1,5 +1,5 @@
 """
-A CSS-only skin for the Django Admin app.
+Django Admin Theme is a drop-in CSS replacement for the Django Admin app.
 """
 __version_info__ = {
     'major': 0,

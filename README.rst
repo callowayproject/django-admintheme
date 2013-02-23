@@ -2,11 +2,9 @@
 Django Admin Theme
 ==================
 
-Goal
-====
-
-To provide a CSS-only skin for the Django's Admin app. This would allow adjustments to standard templates to work without modification.
-
+Django Admin Theme is a CSS-only skin for the Django's Admin app. This allows
+projects that make customizations to the standard admin templates to work
+without modification.
 
 Use
 ===
