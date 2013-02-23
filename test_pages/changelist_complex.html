@@ -1,0 +1,1160 @@
+
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Select Story to change | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/base.css" />
+
+
+
+<link rel="stylesheet" href="../admintheme/static/calloway/admin/css/admin_base.css" type="text/css" media="screen" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/changelists.css" />
+
+    <link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/forms.css" />
+
+
+
+    <script type="text/javascript" src="../admintheme/i18n_shim.js"></script>
+
+
+
+
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/ie.css" /><![endif]-->
+
+<link rel="stylesheet" type="text/css" media="screen" href="../admintheme/static/calloway/admin/css/theming.css" />
+<script type="text/javascript">window.__admin_media_prefix__ = "../admintheme/static/admin/";</script>
+
+
+	<link rel="stylesheet" href="../admintheme/static/calloway/admin/css/changelist.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="../admintheme/static/admin/js/core.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/actions.min.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/urlify.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/prepopulate.min.js"></script>
+<script type="text/javascript" src="../admintheme/static/js/genericcollections.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function($) {
+        $("tr input.action-select").actions();
+    });
+})(django.jQuery);
+</script>
+
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class="change-list">
+
+<!-- Container -->
+<div id="container">
+
+
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+
+<h1 id="site-name">Django administration</h1>
+
+        </div>
+
+        <div id="user-tools">
+            Welcome,
+            <strong>coordt</strong>.
+
+
+
+
+
+                    <a href="/admin/password_change/">
+
+                Change password</a> /
+
+
+                    <a href="/admin/logout/">
+
+                Log out</a>
+
+        </div>
+
+
+
+
+
+
+<script type="text/javascript" src="../admintheme/static/admin_tools/js/utils.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+    // Load js files syncronously and conditionally
+    var js_files = [
+        {
+            src : '../admintheme/static/admin_tools/js/jquery/jquery.min.js',
+            test: function() { return typeof(jQuery) == 'undefined'; }
+        },
+        {
+            src : '../admintheme/static/admin_tools/js/json.min.js',
+            test: function() { return typeof(JSON.stringify) == 'undefined'; }
+        },
+        {
+            src : '../admintheme/static/admin_tools/js/menu.js',
+            test: function() { return true; }
+        }
+    ];
+
+    loadScripts(js_files, function(){
+        jQuery(function($) {
+
+        });
+    });
+
+</script>
+<!--[if IE 6]>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#navigation-menu').children('li').hover(
+        function() { jQuery(this).addClass('over'); },
+        function() { jQuery(this).removeClass('over'); }
+    });
+});
+</script>
+<![endif]-->
+
+
+<ul id="navigation-menu">
+
+<li class="menu-item first"><a href="/admin/">Dashboard</a></li>
+
+<li class="menu-item selected"><a href="#"><span class="icon"></span>Content</a><ul><li class="menu-item selected"><a href="/admin/stories/story/">Stories</a></li><li class="menu-item"><a href="/admin/pollit/poll/">Polls</a></li><li class="menu-item"><a href="/admin/massmedia/audio/">Audio Clips</a></li><li class="menu-item"><a href="/admin/massmedia/collection/">Collections</a></li><li class="menu-item"><a href="/admin/massmedia/document/">Documents</a></li><li class="menu-item"><a href="/admin/massmedia/image/">Images</a></li><li class="menu-item"><a href="/admin/massmedia/video/">Videos</a></li></ul></li>
+
+<li class="menu-item"><a href="#"><span class="icon"></span>Organize</a><ul><li class="menu-item"><a href="/admin/categories/category/">Categories</a></li><li class="menu-item"><a href="/admin/hiermenu/menu/">Navigation Bar</a></li><li class="menu-item"><a href="/admin/positions/position/">Postions</a></li></ul></li>
+
+<li class="menu-item"><a href="#"><span class="icon"></span>Settings</a><ul><li class="menu-item"><a href="/admin/google_analytics/analytics/">Analytics</a></li><li class="menu-item"><a href="/admin/robots/">Robots</a></li><li class="menu-item"><a href="/admin/synagg/feed/">Syndication Feeds</a></li></ul></li>
+
+<li class="menu-item"><a href="#"><span class="icon"></span>Comments</a><ul><li class="menu-item"><a href="/admin/mptt_comments/mpttcomment/">Comments</a></li><li class="menu-item"><a href="/admin/offensivecontent/offensivecontent/">Offensive Content</a></li></ul></li>
+
+<li class="menu-item"><a href="#"><span class="icon"></span>Users</a><ul><li class="menu-item"><a href="/admin/auth/user/">Users</a></li><li class="menu-item"><a href="/admin/ban/deniedip/">Banned IPs</a></li></ul></li>
+
+</ul>
+
+
+
+
+
+    </div>
+    <!-- END Header -->
+
+    <div class="breadcrumbs">
+      <a href="../../">
+        Home
+      </a>
+       &rsaquo;
+       <a href="../">
+         Stories
+      </a>
+      &rsaquo;
+      Stories
+    </div>
+
+
+
+
+
+    <!-- Content -->
+    <div id="content" class="flex">
+
+        <h1>Select Story to change</h1>
+
+  <div id="content-main">
+
+
+        <ul class="object-tools">
+
+            <li>
+              <a href="add/" class="addlink">
+                Add Story
+              </a>
+            </li>
+
+        </ul>
+
+
+
+    <div class="module filtered" id="changelist">
+
+
+
+<div id="toolbar"><form id="changelist-search" action="" method="get">
+<div><!-- DIV needed for valid HTML -->
+<label for="searchbar"><img src="../admintheme/static/admin/img/admin/icon_searchbox.png" alt="Search" /></label>
+<input type="text" size="40" name="q" value="" id="searchbar" />
+<input type="submit" value="Search" />
+
+
+</div>
+</form></div>
+<script type="text/javascript">document.getElementById("searchbar").focus();</script>
+
+
+
+<div class="xfull">
+<ul class="toplinks">
+<li class="date-back"><a href="?publish_date__year=2011">&lsaquo; 2011</a></li>
+
+<li> <a href="?publish_date__month=6&amp;publish_date__year=2011&amp;publish_date__day=7">June 7</a></li>
+
+</ul><br class="clear" />
+</div>
+
+
+
+
+
+          <div id="changelist-filter">
+            <h2>Filter</h2>
+
+<h3> By Publish Date </ h3>
+<select onchange="window.location = window.location.pathname + options[this.selectedIndex].value ">
+
+    <option selected="selected" value="?">Any date</option>
+
+    <option value="?publish_date__month=2&amp;publish_date__year=2013&amp;publish_date__day=23">Today</option>
+
+    <option value="?publish_date__gte=2013-02-16&amp;publish_date__lte=2013-02-23">Past 7 days</option>
+
+    <option value="?publish_date__month=2&amp;publish_date__year=2013">This month</option>
+
+    <option value="?publish_date__year=2013">This year</option>
+
+</select>
+<h3> By Origin </ h3>
+<select onchange="window.location = window.location.pathname + options[this.selectedIndex].value ">
+
+    <option selected="selected" value="?">All</option>
+
+    <option value="?origin__exact=0">Admin</option>
+
+</select>
+<h3> By category </ h3>
+<select onchange="window.location = window.location.pathname + options[this.selectedIndex].value ">
+
+    <option selected="selected" value="?">All</option>
+
+    <option value="?categories__id__exact=26">culture</option>
+
+    <option value="?categories__id__exact=245">culture &gt; autos</option>
+
+    <option value="?categories__id__exact=145">culture &gt; books</option>
+
+    <option value="?categories__id__exact=28">culture &gt; family &amp; kids</option>
+
+    <option value="?categories__id__exact=29">culture &gt; fashion</option>
+
+    <option value="?categories__id__exact=30">culture &gt; food</option>
+
+    <option value="?categories__id__exact=33">culture &gt; gifts</option>
+
+    <option value="?categories__id__exact=32">culture &gt; health</option>
+
+    <option value="?categories__id__exact=27">culture &gt; home &amp; living</option>
+
+    <option value="?categories__id__exact=150">culture &gt; life</option>
+
+    <option value="?categories__id__exact=31">culture &gt; travel</option>
+
+    <option value="?categories__id__exact=35">culture &gt; weird</option>
+
+    <option value="?categories__id__exact=1">news</option>
+
+    <option value="?categories__id__exact=7">news &gt; business</option>
+
+    <option value="?categories__id__exact=280">news &gt; citizen-journalism</option>
+
+    <option value="?categories__id__exact=11">news &gt; corrections</option>
+
+    <option value="?categories__id__exact=151">news &gt; editor-favorites</option>
+
+    <option value="?categories__id__exact=148">news &gt; election</option>
+
+    <option value="?categories__id__exact=8">news &gt; entertainment</option>
+
+    <option value="?categories__id__exact=255">news &gt; environment</option>
+
+    <option value="?categories__id__exact=249">news &gt; headlines</option>
+
+    <option value="?categories__id__exact=10">news &gt; investigation</option>
+
+    <option value="?categories__id__exact=4">news &gt; local</option>
+
+    <option value="?categories__id__exact=3">news &gt; national</option>
+
+    <option value="?categories__id__exact=5">news &gt; politics</option>
+
+    <option value="?categories__id__exact=6">news &gt; security</option>
+
+    <option value="?categories__id__exact=9">news &gt; technology</option>
+
+    <option value="?categories__id__exact=2">news &gt; world</option>
+
+    <option value="?categories__id__exact=12">opinion</option>
+
+    <option value="?categories__id__exact=291">opinion &gt; books</option>
+
+    <option value="?categories__id__exact=15">opinion &gt; cartoons</option>
+
+    <option value="?categories__id__exact=292">opinion &gt; columns</option>
+
+    <option value="?categories__id__exact=14">opinion &gt; commentary</option>
+
+    <option value="?categories__id__exact=13">opinion &gt; editorials</option>
+
+    <option value="?categories__id__exact=16">opinion &gt; letters</option>
+
+    <option value="?categories__id__exact=17">sports</option>
+
+    <option value="?categories__id__exact=20">sports &gt; baseball</option>
+
+    <option value="?categories__id__exact=19">sports &gt; basketball</option>
+
+    <option value="?categories__id__exact=18">sports &gt; football</option>
+
+    <option value="?categories__id__exact=23">sports &gt; golf</option>
+
+    <option value="?categories__id__exact=21">sports &gt; hockey</option>
+
+    <option value="?categories__id__exact=246">sports &gt; ncaa</option>
+
+    <option value="?categories__id__exact=248">sports &gt; olympics</option>
+
+    <option value="?categories__id__exact=283">sports &gt; Other</option>
+
+    <option value="?categories__id__exact=257">sports &gt; outdoors</option>
+
+    <option value="?categories__id__exact=24">sports &gt; racing</option>
+
+    <option value="?categories__id__exact=25">sports &gt; soccer</option>
+
+    <option value="?categories__id__exact=22">sports &gt; tennis</option>
+
+    <option value="?categories__id__exact=37">UNFILED</option>
+
+</select>
+          </div>
+
+
+
+      <form id="changelist-form" action="" method="post"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='4bee291ca7c6ae20a8bb8a05666d409f' /></div>
+
+        <div><input type="hidden" name="form-TOTAL_FORMS" value="10" id="id_form-TOTAL_FORMS" /><input type="hidden" name="form-INITIAL_FORMS" value="10" id="id_form-INITIAL_FORMS" /><input type="hidden" name="form-MAX_NUM_FORMS" id="id_form-MAX_NUM_FORMS" /></div>
+
+
+
+
+<div class="actions">
+    <label>Action: <select name="action">
+<option value="" selected="selected">---------</option>
+<option value="delete_selected">Delete selected Stories</option>
+<option value="set_status_to_DRAFT">Set status to DRAFT</option>
+<option value="set_status_to_PUBLISHED">Set status to PUBLISHED</option>
+<option value="set_status_to_READY FOR EDITING">Set status to READY FOR EDITING</option>
+<option value="set_status_to_READY TO PUBLISH">Set status to READY TO PUBLISH</option>
+<option value="set_status_to_REJECTED">Set status to REJECTED</option>
+<option value="set_status_to_UN-PUBLISHED">Set status to UN-PUBLISHED</option>
+</select></label><input type="hidden" class="select-across" value="0" name="select_across" />
+    <button type="submit" class="button" title="Run the selected action" name="index" value="0">Go</button>
+
+        <script type="text/javascript">var _actions_icnt="10";</script>
+        <span class="action-counter">0 of 10 selected</span>
+
+
+</div>
+
+
+<style type="text/css" media="screen">
+	#changelist.filtered table.qe-table {
+		width: 100%;
+		color: red;
+		border: 0 !important;
+		float: left;
+		clear: left;
+		margin-right: 0 !important;
+	}
+	table.qe-table tr {
+		width: 100%;
+		border: 0;
+		float: left;
+	}
+	#changelist.filtered table.qe-table tr td {
+		border: 0;
+	}
+	.qe-table label {
+		width: 100px;
+		display: block;
+		float: left;
+	}
+	table.qe-table td.qe-long input[type="text"] {
+		width: 500px;
+	}
+	table.qe-table td.qe-long  textarea {
+		width: 500px;
+	}
+	.qe-button {
+		float:right;
+	}
+	div.qe-buttons {
+		display: block;
+		float: left;
+	}
+</style>
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+		google.load("jquery", "1.4.2");
+	}
+</script>
+<script type="text/javascript">
+	$(function(){
+		$('.quickedit').each(function(){
+			$(this).click(function(){
+				var target = "#qe-form-" + $(this).attr('id').replace('quickedit-','');
+				$(target).show();
+				$('.qe-reset',target).click(function(){
+					$(target).hide();
+				})
+			})
+		});
+	})
+</script>
+<table cellspacing="0">
+<thead>
+<tr>
+<th>Actions</th>
+<th class="action-checkbox-column">
+
+<input type="checkbox" id="action-toggle" />
+</th><th>
+<a href="?ot=asc&amp;o=1">
+Headline
+</a></th><th>
+<a href="?ot=asc&amp;o=2">
+Published Status
+</a></th><th>
+<a href="?ot=asc&amp;o=3">
+Publish Date
+</a></th><th class="sorted descending">
+<a href="?ot=asc&amp;o=4">
+Date Modified
+</a></th><th>
+<a href="?ot=asc&amp;o=5">
+Origin
+</a></th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr class="row1">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/10/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-10"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/amid-reports-of-severe-beating/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="10" name="_selected_action" /></td><th><a href="10/">Amid reports of señüøvere beatings by administrators at two primary feeder schools</a></th><td><select name="form-0-status" id="id_form-0-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 9, 2011, 11:47 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-10" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-0-headline">Headline</label>
+				<input name="form-0-headline" value="Amid reports of señüøvere beatings by administrators at two primary feeder schools" class="vTextField" maxlength="100" type="text" id="id_form-0-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-0-subhead">Subheadline</label>
+				<input id="id_form-0-subhead" type="text" class="vTextField" name="form-0-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-0-teaser">Teaser Text</label>
+				<textarea id="id_form-0-teaser" rows="10" cols="40" name="form-0-teaser" class="vLargeTextField">Another State Department report released in 2009 listed several Venezuelan security officials as collaborators in FARC narco trafficking activities including Ramon Rodriguez Chacin who was interior minister.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-0-kicker">Kicker</label>
+				<input id="id_form-0-kicker" type="text" class="vTextField" name="form-0-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-0-status">Published Status</label>
+				<select name="form-0-status" id="id_form-0-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row2">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/9/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-9"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/it-did-not-have-much-difficult/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="9" name="_selected_action" /></td><th><a href="9/">It did not have much difficulty locating these two said a former</a></th><td><select name="form-1-status" id="id_form-1-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-9" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-1-headline">Headline</label>
+				<input name="form-1-headline" value="It did not have much difficulty locating these two said a former" class="vTextField" maxlength="100" type="text" id="id_form-1-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-1-subhead">Subheadline</label>
+				<input id="id_form-1-subhead" type="text" class="vTextField" name="form-1-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-1-teaser">Teaser Text</label>
+				<textarea id="id_form-1-teaser" rows="10" cols="40" name="form-1-teaser" class="vLargeTextField">The announcement of approval for 112 new housing units in a way they have taken up the matters promptly and decisively.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-1-kicker">Kicker</label>
+				<input id="id_form-1-kicker" type="text" class="vTextField" name="form-1-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-1-status">Published Status</label>
+				<select name="form-1-status" id="id_form-1-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row1">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/8/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-8"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/there-is-a-deduction-for-peopl/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="8" name="_selected_action" /></td><th><a href="8/">There is a deduction for people who have returned to New Hampshire</a></th><td><select name="form-2-status" id="id_form-2-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-8" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-2-headline">Headline</label>
+				<input name="form-2-headline" value="There is a deduction for people who have returned to New Hampshire" class="vTextField" maxlength="100" type="text" id="id_form-2-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-2-subhead">Subheadline</label>
+				<input id="id_form-2-subhead" type="text" class="vTextField" name="form-2-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-2-teaser">Teaser Text</label>
+				<textarea id="id_form-2-teaser" rows="10" cols="40" name="form-2-teaser" class="vLargeTextField">The 2007 effort failed when a majority of senators joined a filibuster to block a legalization bill.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-2-kicker">Kicker</label>
+				<input id="id_form-2-kicker" type="text" class="vTextField" name="form-2-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-2-status">Published Status</label>
+				<select name="form-2-status" id="id_form-2-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row2">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/7/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-7"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/one-woman-said-children-from-c/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="7" name="_selected_action" /></td><th><a href="7/">One woman said children from Chicago churches are performing in the future.</a></th><td><select name="form-3-status" id="id_form-3-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-7" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-3-headline">Headline</label>
+				<input name="form-3-headline" value="One woman said children from Chicago churches are performing in the future." class="vTextField" maxlength="100" type="text" id="id_form-3-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-3-subhead">Subheadline</label>
+				<input id="id_form-3-subhead" type="text" class="vTextField" name="form-3-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-3-teaser">Teaser Text</label>
+				<textarea id="id_form-3-teaser" rows="10" cols="40" name="form-3-teaser" class="vLargeTextField">Creatively malicious use of federal money for the pro-democracy Green Movement through the political process of keeping domestic protectionist pressures under control despite a difficult environment for some of the battlefield with swarms of miniature explosives that will have the same name.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-3-kicker">Kicker</label>
+				<input id="id_form-3-kicker" type="text" class="vTextField" name="form-3-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-3-status">Published Status</label>
+				<select name="form-3-status" id="id_form-3-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row1">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/6/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-6"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/they-have-shown-a-desire-for-t/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="6" name="_selected_action" /></td><th><a href="6/">They have shown a desire for transparency in a quest for wording</a></th><td><select name="form-4-status" id="id_form-4-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-6" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-4-headline">Headline</label>
+				<input name="form-4-headline" value="They have shown a desire for transparency in a quest for wording" class="vTextField" maxlength="100" type="text" id="id_form-4-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-4-subhead">Subheadline</label>
+				<input id="id_form-4-subhead" type="text" class="vTextField" name="form-4-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-4-teaser">Teaser Text</label>
+				<textarea id="id_form-4-teaser" rows="10" cols="40" name="form-4-teaser" class="vLargeTextField">Several participants said they are out from under the disguise of a front line an area of operations has fundamentally changed Mister Pappas said 105 people including five science-fiction authors seven futurists and 14 academics attended the event.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-4-kicker">Kicker</label>
+				<input id="id_form-4-kicker" type="text" class="vTextField" name="form-4-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-4-status">Published Status</label>
+				<select name="form-4-status" id="id_form-4-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row2">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/5/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-5"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/colombian-authorities-suggest-/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="5" name="_selected_action" /></td><th><a href="5/">Colombian authorities suggest Venezuela may have aided previous FARC attempts to gain</a></th><td><select name="form-5-status" id="id_form-5-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-5" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-5-headline">Headline</label>
+				<input name="form-5-headline" value="Colombian authorities suggest Venezuela may have aided previous FARC attempts to gain" class="vTextField" maxlength="100" type="text" id="id_form-5-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-5-subhead">Subheadline</label>
+				<input id="id_form-5-subhead" type="text" class="vTextField" name="form-5-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-5-teaser">Teaser Text</label>
+				<textarea id="id_form-5-teaser" rows="10" cols="40" name="form-5-teaser" class="vLargeTextField">The Obama strategy of speaking loudly and carrying no stick has caught up with this White House and it is perceived how it responded to the Spanish indictment e-mails between FARC commanders corroborated by police on Tuesday.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-5-kicker">Kicker</label>
+				<input id="id_form-5-kicker" type="text" class="vTextField" name="form-5-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-5-status">Published Status</label>
+				<select name="form-5-status" id="id_form-5-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row1">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/4/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-4"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/i-dont-believe-abortion-should/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="4" name="_selected_action" /></td><th><a href="4/">I don&#39;t believe abortion should be paid for with tax money Ms.</a></th><td><select name="form-6-status" id="id_form-6-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-4" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-6-headline">Headline</label>
+				<input name="form-6-headline" value="I don&#39;t believe abortion should be paid for with tax money Ms." class="vTextField" maxlength="100" type="text" id="id_form-6-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-6-subhead">Subheadline</label>
+				<input id="id_form-6-subhead" type="text" class="vTextField" name="form-6-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-6-teaser">Teaser Text</label>
+				<textarea id="id_form-6-teaser" rows="10" cols="40" name="form-6-teaser" class="vLargeTextField">Mister Shantsev said he expects to resume indirect peace negotiations.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-6-kicker">Kicker</label>
+				<input id="id_form-6-kicker" type="text" class="vTextField" name="form-6-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-6-status">Published Status</label>
+				<select name="form-6-status" id="id_form-6-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row2">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/3/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-3"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/gates-flew-to-kandahar-early-t/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="3" name="_selected_action" /></td><th><a href="3/">Gates flew to Kandahar early Tuesday for meetings with US and British</a></th><td><select name="form-7-status" id="id_form-7-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-3" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-7-headline">Headline</label>
+				<input name="form-7-headline" value="Gates flew to Kandahar early Tuesday for meetings with US and British" class="vTextField" maxlength="100" type="text" id="id_form-7-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-7-subhead">Subheadline</label>
+				<input name="form-7-subhead" value="In January a Somali man was dead said Riyani who had been seen in the Ministry of" class="vTextField" maxlength="200" type="text" id="id_form-7-subhead" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-7-teaser">Teaser Text</label>
+				<textarea id="id_form-7-teaser" rows="10" cols="40" name="form-7-teaser" class="vLargeTextField">Local media and two Indonesian authorities who did not trust the government as director of the discussions was the huge gap on right-track wrong-track.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-7-kicker">Kicker</label>
+				<input id="id_form-7-kicker" type="text" class="vTextField" name="form-7-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-7-status">Published Status</label>
+				<select name="form-7-status" id="id_form-7-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row1">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/2/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-2"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/another-state-department-repor/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="2" name="_selected_action" /></td><th><a href="2/">Another State Department report released in 2009 listed several Venezuelan security officials</a></th><td><select name="form-8-status" id="id_form-8-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-2" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-8-headline">Headline</label>
+				<input name="form-8-headline" value="Another State Department report released in 2009 listed several Venezuelan security officials" class="vTextField" maxlength="100" type="text" id="id_form-8-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-8-subhead">Subheadline</label>
+				<input name="form-8-subhead" value="The event held at the Center for Strategic and International Studies." class="vTextField" maxlength="200" type="text" id="id_form-8-subhead" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-8-teaser">Teaser Text</label>
+				<textarea id="id_form-8-teaser" rows="10" cols="40" name="form-8-teaser" class="vLargeTextField">Mister Chavez to assure him that his policies have been unable to bridge the gaps on those tough issues.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-8-kicker">Kicker</label>
+				<input id="id_form-8-kicker" type="text" class="vTextField" name="form-8-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-8-status">Published Status</label>
+				<select name="form-8-status" id="id_form-8-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+
+<tr class="row2">
+	<td>
+		<div class="qe-buttons">
+			<a href="/admin/stories/story/1/"><img src="../admintheme/static/img/019.png" alt="Edit" title="Edit this item" width="10" height="10"></a>
+			<a href="#" class="quickedit" id="quickedit-1"><img src="../admintheme/static/img/133.png" alt="Quick Edit" title="Show Quick Edit form" width="10" height="10"></a>
+			<a href="/news/2011/jun/7/when-youre-in-washington-folks/" target="_blank"><img src="../admintheme/static/img/049.png" alt="View on site" title="View on site" width="10" height="10"></a>
+		</div>
+	</td><td class="action-checkbox"><input type="checkbox" class="action-select" value="1" name="_selected_action" /></td><th><a href="1/">When you&#39;re in Washington folks respond to every issue every decision every</a></th><td><select name="form-9-status" id="id_form-9-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select></td><td class="nowrap">June 7, 2011</td><td class="nowrap">June 7, 2011, 9:20 a.m.</td><td>Admin</td>
+</tr>
+<tr class="quickedit-row" id="qe-form-1" style="display: None">
+	<td colspan="6" >
+		<table border="0" class="qe-table">
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-9-headline">Headline</label>
+				<input name="form-9-headline" value="When you&#39;re in Washington folks respond to every issue every decision every" class="vTextField" maxlength="100" type="text" id="id_form-9-headline" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-9-subhead">Subheadline</label>
+				<input id="id_form-9-subhead" type="text" class="vTextField" name="form-9-subhead" maxlength="200" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="qe-long">
+				<label for="id_form-9-teaser">Teaser Text</label>
+				<textarea id="id_form-9-teaser" rows="10" cols="40" name="form-9-teaser" class="vLargeTextField">One of the bill an emergency measure exempting it from stricter budget rules enacted just last month.</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="id_form-9-kicker">Kicker</label>
+				<input id="id_form-9-kicker" type="text" class="vTextField" name="form-9-kicker" maxlength="50" />
+			</td>
+			<td>
+				<label for="id_form-9-status">Published Status</label>
+				<select name="form-9-status" id="id_form-9-status">
+<option value="1" selected="selected">DRAFT</option>
+<option value="2">READY FOR EDITING</option>
+<option value="3">READY TO PUBLISH</option>
+<option value="4">PUBLISHED</option>
+<option value="5">REJECTED</option>
+<option value="6">UN-PUBLISHED</option>
+</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="reset" value="Reset" class="qe-reset left" style="margin-right:10px;">
+				<input type="submit" value="Save" class="qe-button left" name="_save">
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+<div class="actions">
+    <label>Action: <select name="action">
+<option value="" selected="selected">---------</option>
+<option value="delete_selected">Delete selected Stories</option>
+<option value="set_status_to_DRAFT">Set status to DRAFT</option>
+<option value="set_status_to_PUBLISHED">Set status to PUBLISHED</option>
+<option value="set_status_to_READY FOR EDITING">Set status to READY FOR EDITING</option>
+<option value="set_status_to_READY TO PUBLISH">Set status to READY TO PUBLISH</option>
+<option value="set_status_to_REJECTED">Set status to REJECTED</option>
+<option value="set_status_to_UN-PUBLISHED">Set status to UN-PUBLISHED</option>
+</select></label><input type="hidden" class="select-across" value="0" name="select_across" />
+    <button type="submit" class="button" title="Run the selected action" name="index" value="1">Go</button>
+
+        <script type="text/javascript">var _actions_icnt="10";</script>
+        <span class="action-counter">0 of 10 selected</span>
+
+
+</div>
+
+
+
+
+<p class="paginator">
+
+10 Stories
+
+<input type="submit" name="_save" class="default" value="Save"/>
+</p>
+
+      </form>
+    </div>
+  </div>
+
+
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>

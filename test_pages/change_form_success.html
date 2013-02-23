@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Change simple model | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/forms.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/ie.css" /><![endif]-->
+
+<script type="text/javascript">window.__admin_media_prefix__ = "../admintheme/static/admin/";</script>
+
+
+<script type="text/javascript" src="../admintheme/i18n_shim.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/core.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/actions.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/urlify.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/prepopulate.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/calendar.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/DateTimeShortcuts.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/SelectBox.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/SelectFilter2.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/collapse.js"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class="simpleapp-simplemodel change-form">
+
+<!-- Container -->
+<div id="container">
+
+
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+
+<h1 id="site-name">Django administration</h1>
+
+        </div>
+
+        <div id="user-tools">
+            Welcome,
+            <strong>coordt</strong>.
+
+
+
+                <a href="/admin/password_change/">Change password</a> /
+                <a href="/admin/logout/">Log out</a>
+
+        </div>
+
+
+    </div>
+    <!-- END Header -->
+
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/simpleapp/">Simpleapp</a>
+&rsaquo; <a href="/admin/simpleapp/simplemodel/">Simple models</a>
+&rsaquo; A simple charfield
+</div>
+
+
+
+
+
+        <ul class="messagelist">
+          <li class="info">The simple model &quot;A simple charfield&quot; was changed successfully. You may edit it again below.</li>
+        </ul>
+
+
+
+    <!-- Content -->
+    <div id="content" class="colM">
+
+        <h1>Change simple model</h1>
+        <div id="content-main">
+
+
+  <ul class="object-tools">
+
+    <li><a href="history/" class="historylink">History</a></li>
+    <li><a href="../../../r/8/1/" class="viewsitelink">View on site</a></li>
+
+  </ul>
+
+
+<form enctype="multipart/form-data" action="" method="post" id="simplemodel_form"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='w2cUS12ZfkfJWtksNauQldc2BCbG6hNz' /></div>
+<div>
+
+
+
+
+
+
+  <fieldset class="module aligned wide">
+
+
+
+        <div class="form-row field-char_field">
+
+
+                <div>
+
+
+                        <label for="id_char_field" class="required">Char field:</label>
+
+                            <input name="char_field" value="A simple charfield" class="vTextField" maxlength="255" type="text" id="id_char_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-slug_field">
+
+
+                <div>
+
+
+                        <label for="id_slug_field" class="required">Slug field:</label>
+
+                            <input name="slug_field" value="simple-charfield" class="vTextField" maxlength="50" type="text" id="id_slug_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-email_field">
+
+
+                <div>
+
+
+                        <label for="id_email_field" class="required">Email field:</label>
+
+                            <input name="email_field" value="jdoe@example.com" class="vTextField" maxlength="75" type="text" id="id_email_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-text_field">
+
+
+                <div>
+
+
+                        <label for="id_text_field" class="required">Text field:</label>
+
+                            <textarea id="id_text_field" rows="10" cols="40" name="text_field" class="vLargeTextField">This is a long text field filled with lots and lots of text. I&#39;m adding some more</textarea>
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Numerical Fields</h2>
+
+        <div class="description">These fields are numerical in nature.</div>
+
+
+        <div class="form-row field-biginteger_field">
+
+
+                <div>
+
+
+                        <label for="id_biginteger_field">Biginteger field:</label>
+
+                            <input id="id_biginteger_field" type="text" class="vIntegerField" value="1234567890" name="biginteger_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-integer_field">
+
+
+                <div>
+
+
+                        <label for="id_integer_field">Integer field:</label>
+
+                            <input id="id_integer_field" type="text" class="vIntegerField" value="123456" name="integer_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-positiveinteger_field">
+
+
+                <div>
+
+
+                        <label for="id_positiveinteger_field">Positiveinteger field:</label>
+
+                            <input id="id_positiveinteger_field" type="text" class="vIntegerField" value="1" name="positiveinteger_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-smallinteger_field">
+
+
+                <div>
+
+
+                        <label for="id_smallinteger_field">Smallinteger field:</label>
+
+                            <input id="id_smallinteger_field" type="text" class="vIntegerField" value="1" name="smallinteger_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-possmallinteger_field">
+
+
+                <div>
+
+
+                        <label for="id_possmallinteger_field">Possmallinteger field:</label>
+
+                            <input id="id_possmallinteger_field" type="text" class="vIntegerField" value="1" name="possmallinteger_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-decimal_field">
+
+
+                <div>
+
+
+                        <label for="id_decimal_field">Decimal field:</label>
+
+                            <input type="text" name="decimal_field" value="1" id="id_decimal_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-float_field">
+
+
+                <div>
+
+
+                        <label for="id_float_field">Float field:</label>
+
+                            <input type="text" name="float_field" value="1.0" id="id_float_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-csi_field">
+
+
+                <div>
+
+
+                        <label for="id_csi_field">Csi field:</label>
+
+                            <input name="csi_field" value="1,2,3,4" class="vTextField" maxlength="255" type="text" id="id_csi_field" />
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Boolean Fields</h2>
+
+
+        <div class="form-row field-boolean_field">
+
+
+                <div>
+
+
+                        <input checked="checked" type="checkbox" name="boolean_field" id="id_boolean_field" /><label for="id_boolean_field" class="vCheckboxLabel">Boolean field</label>
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-nullboolean_field">
+
+
+                <div>
+
+
+                        <label for="id_nullboolean_field">Nullboolean field:</label>
+
+                            <select name="nullboolean_field" id="id_nullboolean_field">
+<option value="1" selected="selected">Unknown</option>
+<option value="2">Yes</option>
+<option value="3">No</option>
+</select>
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Temporal Fields</h2>
+
+
+        <div class="form-row field-date_field">
+
+
+                <div>
+
+
+                        <label for="id_date_field">Date field:</label>
+
+                            <input name="date_field" value="2013-01-11" class="vDateField" type="text" id="id_date_field" size="10" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-time_field">
+
+
+                <div>
+
+
+                        <label for="id_time_field">Time field:</label>
+
+                            <input name="time_field" value="12:57:00" class="vTimeField" type="text" id="id_time_field" size="8" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-datetime_field">
+
+
+                <div>
+
+
+                        <label for="id_datetime_field_0">Datetime field:</label>
+
+                            <p class="datetime">Date: <input name="datetime_field_0" value="2013-01-11" class="vDateField" type="text" id="id_datetime_field_0" size="10" /><br />Time: <input name="datetime_field_1" value="23:58:00" class="vTimeField" type="text" id="id_datetime_field_1" size="8" /></p>
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>File-based Fields</h2>
+
+
+        <div class="form-row field-file_field">
+
+
+                <div>
+
+
+                        <label for="id_file_field">File field:</label>
+
+                            <input type="file" name="file_field" id="id_file_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-filepath_field">
+
+
+                <div>
+
+
+                        <label for="id_filepath_field">Filepath field:</label>
+
+                            <select name="filepath_field" id="id_filepath_field">
+<option value="">---------</option>
+<option value="/Users/coordt/Projects/django-admintheme/example/simpleapp/templates/simpleapp/simplemodel_detail.html" selected="selected">simplemodel_detail.html</option>
+<option value="/Users/coordt/Projects/django-admintheme/example/simpleapp/templates/simpleapp/simplemodel_list.html">simplemodel_list.html</option>
+</select>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-image_field">
+
+
+                <div>
+
+
+                        <label for="id_image_field">Image field:</label>
+
+                            <input type="file" name="image_field" id="id_image_field" />
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned collapse">
+    <h2>Misc Fields</h2>
+
+
+        <div class="form-row field-ipaddress_field">
+
+
+                <div>
+
+
+                        <label for="id_ipaddress_field">Ipaddress field:</label>
+
+                            <input type="text" name="ipaddress_field" value="10.1.2.3" id="id_ipaddress_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-genericipaddress_field">
+
+
+                <div>
+
+
+                        <label for="id_genericipaddress_field">Genericipaddress field:</label>
+
+                            <input type="text" name="genericipaddress_field" value="10.2.3.4" id="id_genericipaddress_field" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-url_field">
+
+
+                <div>
+
+
+                        <label for="id_url_field">Url field:</label>
+
+                            <input name="url_field" value="http://nowhere.com/" class="vURLField" maxlength="200" type="text" id="id_url_field" />
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Related Fields</h2>
+
+
+        <div class="form-row field-foreignkey_field">
+
+
+                <div>
+
+
+                        <label for="id_foreignkey_field">Foreignkey field:</label>
+
+                            <input class="vForeignKeyRawIdAdminField" type="text" name="foreignkey_field" value="24" id="id_foreignkey_field" /><a href="/admin/simpleapp/lookupmodel/?t=id" class="related-lookup" id="lookup_id_foreignkey_field" onclick="return showRelatedObjectLookupPopup(this);"> <img src="../admintheme/static/admin/img/selector-search.gif" width="16" height="16" alt="Lookup" /></a>&nbsp;<strong>omega</strong>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-manytomany_horiz">
+
+
+                <div>
+
+
+                        <label for="id_manytomany_horiz">Manytomany horiz:</label>
+
+                            <select multiple="multiple" class="selectfilter" name="manytomany_horiz" id="id_manytomany_horiz">
+<option value="1">alpha</option>
+<option value="2">beta</option>
+<option value="3">gamma</option>
+<option value="4">delta</option>
+<option value="5">epsilon</option>
+<option value="6">zeta</option>
+<option value="7">eta</option>
+<option value="8">theta</option>
+<option value="9">iota</option>
+<option value="10">kappa</option>
+<option value="11">lambda</option>
+<option value="12">mu</option>
+<option value="13">nu</option>
+<option value="14">xi</option>
+<option value="15">omicron</option>
+<option value="16">pi</option>
+<option value="17">rho</option>
+<option value="18">sigma</option>
+<option value="19">tau</option>
+<option value="20">upsilon</option>
+<option value="21">phi</option>
+<option value="22">chi</option>
+<option value="23">psi</option>
+<option value="24">omega</option>
+</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_manytomany_horiz", "manytomany horiz", 0, "../admintheme/static/admin/"); });</script>
+<a href="/admin/simpleapp/lookupmodel/add/" class="add-another" id="add_id_manytomany_horiz" onclick="return showAddAnotherPopup(this);"> <img src="../admintheme/static/admin/img/icon_addlink.gif" width="10" height="10" alt="Add Another"/></a>
+
+
+
+                        <p class="help"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-manytomany_vert">
+
+
+                <div>
+
+
+                        <label for="id_manytomany_vert">Manytomany vert:</label>
+
+                            <select multiple="multiple" class="selectfilterstacked" name="manytomany_vert" id="id_manytomany_vert">
+<option value="1">alpha</option>
+<option value="2">beta</option>
+<option value="3">gamma</option>
+<option value="4">delta</option>
+<option value="5">epsilon</option>
+<option value="6">zeta</option>
+<option value="7">eta</option>
+<option value="8">theta</option>
+<option value="9">iota</option>
+<option value="10">kappa</option>
+<option value="11">lambda</option>
+<option value="12">mu</option>
+<option value="13">nu</option>
+<option value="14">xi</option>
+<option value="15">omicron</option>
+<option value="16">pi</option>
+<option value="17">rho</option>
+<option value="18">sigma</option>
+<option value="19">tau</option>
+<option value="20">upsilon</option>
+<option value="21">phi</option>
+<option value="22">chi</option>
+<option value="23">psi</option>
+<option value="24">omega</option>
+</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_manytomany_vert", "manytomany vert", 1, "../admintheme/static/admin/"); });</script>
+<a href="/admin/simpleapp/lookupmodel/add/" class="add-another" id="add_id_manytomany_vert" onclick="return showAddAnotherPopup(this);"> <img src="../admintheme/static/admin/img/icon_addlink.gif" width="10" height="10" alt="Add Another"/></a>
+
+
+
+                        <p class="help"> Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+<input type="submit" value="Save" class="default" name="_save" />
+<p class="deletelink-box"><a href="delete/" class="deletelink">Delete</a></p>
+
+<input type="submit" value="Save and add another" name="_addanother"  />
+<input type="submit" value="Save and continue editing" name="_continue" />
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+(function($) {
+    var field;
+
+
+})(django.jQuery);
+</script>
+
+
+</div>
+</form></div>
+
+
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>

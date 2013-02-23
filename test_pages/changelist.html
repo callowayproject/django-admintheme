@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Select lookup model to change | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/base.css" />
+
+<link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/changelists.css" />
+
+
+
+
+    <script type="text/javascript" src="../admintheme/i18n_shim.js"></script>
+
+
+
+
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/ie.css" /><![endif]-->
+
+<script type="text/javascript">window.__admin_media_prefix__ = "../admintheme/static/admin/";</script>
+
+
+<script type="text/javascript" src="../admintheme/static/admin/js/core.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/actions.js"></script>
+
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function($) {
+        $("tr input.action-select").actions();
+    });
+})(django.jQuery);
+</script>
+
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class="change-list">
+
+<!-- Container -->
+<div id="container">
+
+
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+
+<h1 id="site-name">Django administration</h1>
+
+        </div>
+
+        <div id="user-tools">
+            Welcome,
+            <strong>coordt</strong>.
+
+
+
+                <a href="/admin/password_change/">Change password</a> /
+                <a href="/admin/logout/">Log out</a>
+
+        </div>
+
+
+    </div>
+    <!-- END Header -->
+
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/simpleapp/">Simpleapp</a>
+&rsaquo; Lookup models
+</div>
+
+
+
+
+
+
+
+    <!-- Content -->
+    <div id="content" class="flex">
+
+        <h1>Select lookup model to change</h1>
+
+  <div id="content-main">
+
+
+        <ul class="object-tools">
+
+            <li>
+              <a href="/admin/simpleapp/lookupmodel/add/" class="addlink">
+                Add lookup model
+              </a>
+            </li>
+
+        </ul>
+
+
+
+    <div class="module filtered" id="changelist">
+
+
+<div id="toolbar"><form id="changelist-search" action="" method="get">
+<div><!-- DIV needed for valid HTML -->
+<label for="searchbar"><img src="../admintheme/static/admin/img/icon_searchbox.png" alt="Search" /></label>
+<input type="text" size="40" name="q" value="" id="searchbar" />
+<input type="submit" value="Search" />
+
+
+</div>
+</form></div>
+<script type="text/javascript">document.getElementById("searchbar").focus();</script>
+
+
+
+<div class="xfull">
+<ul class="toplinks">
+<li class="date-back"><a href="?publish_date__year=2011">&lsaquo; 2011</a></li>
+
+<li> <a href="?publish_date__month=6&amp;publish_date__year=2011&amp;publish_date__day=7">June 7</a></li>
+
+</ul><br class="clear" />
+</div>
+
+
+          <div id="changelist-filter">
+            <h2>Filter</h2>
+
+<h3> By staff status </h3>
+<ul>
+
+    <li class="selected">
+    <a href="?">All</a></li>
+
+    <li>
+    <a href="?is_staff__exact=1">Yes</a></li>
+
+    <li>
+    <a href="?is_staff__exact=0">No</a></li>
+
+</ul>
+
+<h3> By superuser status </h3>
+<ul>
+
+    <li class="selected">
+    <a href="?">All</a></li>
+
+    <li>
+    <a href="?is_superuser__exact=1">Yes</a></li>
+
+    <li>
+    <a href="?is_superuser__exact=0">No</a></li>
+
+</ul>
+
+<h3> By active </h3>
+<ul>
+
+    <li class="selected">
+    <a href="?">All</a></li>
+
+    <li>
+    <a href="?is_active__exact=1">Yes</a></li>
+
+    <li>
+    <a href="?is_active__exact=0">No</a></li>
+
+</ul>
+
+          </div>
+
+
+
+
+
+      <form id="changelist-form" action="" method="post"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='OayU5RQgpkDNv0NMRNJC5JFFXkN2SoTA' /></div>
+
+
+
+
+<div class="actions">
+    <label>Action: <select name="action">
+<option value="" selected="selected">---------</option>
+<option value="delete_selected">Delete selected lookup models</option>
+</select></label><input type="hidden" class="select-across" value="0" name="select_across" />
+    <button type="submit" class="button" title="Run the selected action" name="index" value="0">Go</button>
+
+        <script type="text/javascript">var _actions_icnt="5";</script>
+        <span class="action-counter">0 of 5 selected</span>
+
+        <span class="all">All 24 selected</span>
+        <span class="question">
+            <a href="javascript:;" title="Click here to select the objects across all pages">Select all 24 lookup models</a>
+        </span>
+        <span class="clear"><a href="javascript:;">Clear selection</a></span>
+
+
+</div>
+
+
+
+
+<div class="results">
+<table id="result_list">
+<thead>
+<tr>
+
+<th scope="col"  class="action-checkbox-column">
+
+   <div class="text"><span><input type="checkbox" id="action-toggle" /></span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col" >
+
+   <div class="text"><span>Lookup model</span></div>
+   <div class="clear"></div>
+</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" class="action-select" value="24" name="_selected_action" /></td><th><a href="24/">omega</a></th></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" class="action-select" value="23" name="_selected_action" /></td><th><a href="23/">psi</a></th></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" class="action-select" value="22" name="_selected_action" /></td><th><a href="22/">chi</a></th></tr>
+
+
+<tr class="row2"><td class="action-checkbox"><input type="checkbox" class="action-select" value="21" name="_selected_action" /></td><th><a href="21/">phi</a></th></tr>
+
+
+<tr class="row1"><td class="action-checkbox"><input type="checkbox" class="action-select" value="20" name="_selected_action" /></td><th><a href="20/">upsilon</a></th></tr>
+
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+<p class="paginator">
+
+
+    <span class="this-page">1</span>
+
+    <a href="?p=1">2</a>
+
+    <a href="?p=2">3</a>
+
+    <a href="?p=3">4</a>
+
+    <a href="?p=4" class="end">5</a>
+
+
+24 lookup models
+&nbsp;&nbsp;<a href="?all=" class="showall">Show all</a>
+
+</p>
+
+      </form>
+    </div>
+  </div>
+
+
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>

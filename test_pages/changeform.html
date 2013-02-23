@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+<title>Change user | Django site admin</title>
+  <link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/base.css">
+  <link rel="stylesheet" type="text/css" href="../admintheme/static/admin/css/forms.css">
+<script type="text/javascript">window.__admin_media_prefix__ = "../admintheme/static/admin/";</script>
+
+
+<script type="text/javascript" src="../admintheme/i18n_shim.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/core.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/actions.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/SelectBox.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/SelectFilter2.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/calendar.js"></script>
+<script type="text/javascript" src="../admintheme/static/admin/js/admin/DateTimeShortcuts.js"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class="auth-user change-form">
+
+<!-- Container -->
+<div id="container">
+
+
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+
+<h1 id="site-name">Django administration</h1>
+
+        </div>
+
+        <div id="user-tools">
+            Welcome,
+            <strong>coordt</strong>.
+
+
+
+                <a href="/admin/password_change/">Change password</a> /
+                <a href="/admin/logout/">Log out</a>
+
+        </div>
+
+
+    </div>
+    <!-- END Header -->
+
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/auth/">Auth</a>
+&rsaquo; <a href="/admin/auth/user/">Users</a>
+&rsaquo; coordt
+</div>
+
+
+
+
+
+
+
+    <!-- Content -->
+    <div id="content" class="colM">
+
+        <h1>Change user</h1>
+        <div id="content-main">
+
+
+  <ul class="object-tools">
+
+    <li><a href="history/" class="historylink">History</a></li>
+    <li><a href="../../../r/4/1/" class="viewsitelink">View on site</a></li>
+
+  </ul>
+
+
+<form enctype="multipart/form-data" action="" method="post" id="user_form"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='t0KTVlcxUZGzfPF5BgmPPkjsPGsupw2w' /></div>
+<div>
+
+
+
+    <p class="errornote">
+    Please correct the error below.
+    </p>
+
+
+
+
+
+  <fieldset class="module aligned ">
+
+
+
+        <div class="form-row errors field-username">
+            <ul class="errorlist"><li>This field is required.</li></ul>
+
+                <div>
+
+
+                        <label for="id_username" class="required">Username:</label>
+
+                            <input id="id_username" type="text" name="username" maxlength="30" />
+
+
+
+                        <p class="help">Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-password">
+
+
+                <div>
+
+
+                        <label for="id_password">Password:</label>
+
+                            None
+
+
+
+                        <p class="help">Raw passwords are not stored, so there is no way to see this user's password, but you can change the password using <a href="password/">this form</a>.</p>
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Personal info</h2>
+
+
+        <div class="form-row field-first_name">
+
+
+                <div>
+
+
+                        <label for="id_first_name">First name:</label>
+
+                            <input id="id_first_name" type="text" class="vTextField" name="first_name" maxlength="30" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-last_name">
+
+
+                <div>
+
+
+                        <label for="id_last_name">Last name:</label>
+
+                            <input id="id_last_name" type="text" class="vTextField" name="last_name" maxlength="30" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-email">
+
+
+                <div>
+
+
+                        <label for="id_email">E-mail address:</label>
+
+                            <input name="email" value="c@o.org" class="vTextField" maxlength="75" type="text" id="id_email" />
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Permissions</h2>
+
+
+        <div class="form-row field-is_active">
+
+
+                <div>
+
+
+                        <input checked="checked" type="checkbox" name="is_active" value="on" id="id_is_active" /><label for="id_is_active" class="vCheckboxLabel">Active</label>
+
+
+                        <p class="help">Designates whether this user should be treated as active. Unselect this instead of deleting accounts.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-is_staff">
+
+
+                <div>
+
+
+                        <input checked="checked" type="checkbox" name="is_staff" value="on" id="id_is_staff" /><label for="id_is_staff" class="vCheckboxLabel">Staff status</label>
+
+
+                        <p class="help">Designates whether the user can log into this admin site.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-is_superuser">
+
+
+                <div>
+
+
+                        <input checked="checked" type="checkbox" name="is_superuser" value="on" id="id_is_superuser" /><label for="id_is_superuser" class="vCheckboxLabel">Superuser status</label>
+
+
+                        <p class="help">Designates that this user has all permissions without explicitly assigning them.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-groups">
+
+
+                <div>
+
+
+                        <label for="id_groups">Groups:</label>
+
+                            <select multiple="multiple" name="groups" id="id_groups">
+</select><a href="/admin/auth/group/add/" class="add-another" id="add_id_groups" onclick="return showAddAnotherPopup(this);"> <img src="../admintheme/static/admin/img/icon_addlink.gif" width="10" height="10" alt="Add Another"/></a>
+
+
+
+                        <p class="help">The groups this user belongs to. A user will get all permissions granted to each of his/her group. Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-user_permissions">
+
+
+                <div>
+
+
+                        <label for="id_user_permissions">User permissions:</label>
+
+                            <select multiple="multiple" class="selectfilter" name="user_permissions" id="id_user_permissions">
+<option value="1">admin | log entry | Can add log entry</option>
+<option value="2">admin | log entry | Can change log entry</option>
+<option value="3">admin | log entry | Can delete log entry</option>
+<option value="7">auth | group | Can add group</option>
+<option value="8">auth | group | Can change group</option>
+<option value="9">auth | group | Can delete group</option>
+<option value="4">auth | permission | Can add permission</option>
+<option value="5">auth | permission | Can change permission</option>
+<option value="6">auth | permission | Can delete permission</option>
+<option value="10">auth | user | Can add user</option>
+<option value="11">auth | user | Can change user</option>
+<option value="12">auth | user | Can delete user</option>
+<option value="13">contenttypes | content type | Can add content type</option>
+<option value="14">contenttypes | content type | Can change content type</option>
+<option value="15">contenttypes | content type | Can delete content type</option>
+<option value="16">sessions | session | Can add session</option>
+<option value="17">sessions | session | Can change session</option>
+<option value="18">sessions | session | Can delete session</option>
+<option value="22">simpleapp | simple model | Can add simple model</option>
+<option value="23">simpleapp | simple model | Can change simple model</option>
+<option value="24">simpleapp | simple model | Can delete simple model</option>
+<option value="19">sites | site | Can add site</option>
+<option value="20">sites | site | Can change site</option>
+<option value="21">sites | site | Can delete site</option>
+</select><script type="text/javascript">addEvent(window, "load", function(e) {SelectFilter.init("id_user_permissions", "user permissions", 0, "../admintheme/static/admin/"); });</script>
+
+
+
+
+                        <p class="help">Specific permissions for this user. Hold down "Control", or "Command" on a Mac, to select more than one.</p>
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+  <fieldset class="module aligned ">
+    <h2>Important dates</h2>
+
+
+        <div class="form-row field-last_login">
+
+
+                <div>
+
+
+                        <label for="id_last_login_0" class="required">Last login:</label>
+
+                            <p class="datetime">Date: <input name="last_login_0" value="2013-01-04" class="vDateField" type="text" id="id_last_login_0" size="10" /><br />Time: <input name="last_login_1" value="14:21:44" class="vTimeField" type="text" id="id_last_login_1" size="8" /></p><input type="hidden" name="initial-last_login_0" value="2013-01-04" id="initial-id_last_login_0" /><input type="hidden" name="initial-last_login_1" value="14:21:44" id="initial-id_last_login_1" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-date_joined">
+
+
+                <div>
+
+
+                        <label for="id_date_joined_0" class="required">Date joined:</label>
+
+                            <p class="datetime">Date: <input name="date_joined_0" value="2012-12-29" class="vDateField" type="text" id="id_date_joined_0" size="10" /><br />Time: <input name="date_joined_1" value="07:40:23" class="vTimeField" type="text" id="id_date_joined_1" size="8" /></p><input type="hidden" name="initial-date_joined_0" value="2012-12-29" id="initial-id_date_joined_0" /><input type="hidden" name="initial-date_joined_1" value="07:40:23" id="initial-id_date_joined_1" />
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+<input type="submit" value="Save" class="default" name="_save" />
+<p class="deletelink-box"><a href="delete/" class="deletelink">Delete</a></p>
+
+<input type="submit" value="Save and add another" name="_addanother"  />
+<input type="submit" value="Save and continue editing" name="_continue" />
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+(function($) {
+    var field;
+
+
+})(django.jQuery);
+</script>
+
+
+</div>
+</form></div>
+
+
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>
