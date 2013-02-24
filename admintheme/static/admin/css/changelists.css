@@ -160,8 +160,8 @@ input[type="submit"].default:hover, button.default:hover {
   min-height: 400px;
 }
 /* line 14, ../scss/sass/changelists.scss */
-#changelist.filtered .actions, #changelist.filtered .results, #changelist.filtered .xfull, #changelist.filtered .paginator {
-  margin-right: 160px;
+#changelist.filtered .actions, #changelist.filtered .results, #changelist.filtered .xfull, #changelist.filtered .paginator, #changelist.filtered #toolbar {
+  margin-right: 170px;
 }
 
 /* line 18, ../scss/sass/changelists.scss */
@@ -172,11 +172,11 @@ input[type="submit"].default:hover, button.default:hover {
   z-index: 1000;
   width: 160px;
   border: 1px solid #dddddd;
-  -webkit-border-radius: 0 4px 0 0;
-  -moz-border-radius: 0 4px 0 0;
-  -ms-border-radius: 0 4px 0 0;
-  -o-border-radius: 0 4px 0 0;
-  border-radius: 0 4px 0 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   background: white;
   margin: 0;
 }

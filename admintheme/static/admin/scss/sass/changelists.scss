@@ -11,8 +11,8 @@
 
 #changelist.filtered {
     min-height: 400px;
-    .actions, .results, .xfull, .paginator {
-        margin-right: 160px;
+    .actions, .results, .xfull, .paginator, #toolbar {
+        margin-right: 170px;
     }
 }
 #changelist-filter {
@@ -22,7 +22,7 @@
     z-index: 1000;
     width: 160px;
     border: $table-border;
-    @include border-radius(0 $border-radius 0 0);
+    @include border-radius($border-radius);
     background: $filter-bkgnd;
     margin: 0;
 
