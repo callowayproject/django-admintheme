@@ -1,3 +1,4 @@
+@import "config";
 @import "buttons";
 @import "icons";
 
@@ -67,17 +68,29 @@
             &:before {
                 margin-right: .2em;
             }
+            a {
+                @include admin-link-color;
+                text-decoration: none;
+            }
         }
         li.changelink {
             @include icon-edit;
             &:before {
                 margin-right: .2em;
             }
+            a {
+                @include admin-link-color;
+                text-decoration: none;
+            }
         }
         li.addlink {
             @include icon-plus;
             &:before {
                 margin-right: .2em;
+            }
+            a {
+                @include admin-link-color;
+                text-decoration: none;
             }
         }
     }

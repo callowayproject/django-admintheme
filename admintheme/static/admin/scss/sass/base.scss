@@ -8,9 +8,6 @@
 @import "tables";
 @import "pagination";
 
-@mixin admin-link-color {
-    @include link-colors($link-color-normal, $link-color-hover, $link-color-active, $link-color-visited, $link-color-focus);
-}
 
 ul {
     margin: 0;

@@ -20,6 +20,9 @@ $link-color-active: tint(#5b80b2, 15%);
 $link-color-visited:#5b80b2;
 $link-color-focus:  #5b80b2;
 
+@mixin admin-link-color {
+    @include link-colors($link-color-normal, $link-color-hover, $link-color-active, $link-color-visited, $link-color-focus);
+}
 
 $body-bkgnd:  #eee;
 $header-background: linear-gradient(#6C7A95, #4D5B76);
@@ -48,3 +51,4 @@ $tabletools-bkgnd: #f5f5f5;
 $placeholder-color: #999;
 $error-color: #b94a48;
 $error-bkgnd: #f2dede;
+

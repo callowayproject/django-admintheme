@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* line 14, ../scss/sass/_icons.scss */
+/* line 14, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .fontawesome {
   font-family: FontAwesome;
   font-weight: normal;
@@ -14,11 +14,11 @@
   line-height: .9em;
 }
 
-/* line 57, ../scss/sass/_icons.scss */
+/* line 57, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-2x {
   font-size: 2em;
 }
-/* line 59, ../scss/sass/_icons.scss */
+/* line 59, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -28,11 +28,11 @@
   border-radius: 4px;
 }
 
-/* line 64, ../scss/sass/_icons.scss */
+/* line 64, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-3x {
   font-size: 3em;
 }
-/* line 66, ../scss/sass/_icons.scss */
+/* line 66, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-3x.icon-border {
   border-width: 3px;
   -webkit-border-radius: 5px;
@@ -42,11 +42,11 @@
   border-radius: 5px;
 }
 
-/* line 71, ../scss/sass/_icons.scss */
+/* line 71, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-4x {
   font-size: 4em;
 }
-/* line 73, ../scss/sass/_icons.scss */
+/* line 73, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .icon-4x.icon-border {
   border-width: 4px;
   -webkit-border-radius: 6px;
@@ -58,7 +58,7 @@
 
 /* \f020 doesn't work in Safari. all shifted one down */
 /* \f020 doesn't work in Safari. all shifted one down */
-/* line 18, ../scss/sass/_wells.scss */
+/* line 18, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well {
   min-height: 20px;
   padding: 19px;
@@ -74,13 +74,13 @@
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 12, ../scss/sass/_wells.scss */
+/* line 12, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
-/* line 22, ../scss/sass/_wells.scss */
+/* line 22, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well-large {
   min-height: 20px;
   padding: 24px;
@@ -96,13 +96,13 @@
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 12, ../scss/sass/_wells.scss */
+/* line 12, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well-large blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
-/* line 25, ../scss/sass/_wells.scss */
+/* line 25, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well-small {
   min-height: 20px;
   padding: 9px;
@@ -118,13 +118,13 @@
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 12, ../scss/sass/_wells.scss */
+/* line 12, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .well-small blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
-/* line 95, ../scss/sass/_buttons.scss */
+/* line 95, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button,
 input[type="reset"],
 input[type="button"],
@@ -167,7 +167,7 @@ input[type="file"] > input[type="button"] {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
-/* line 28, ../scss/sass/_buttons.scss */
+/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -189,7 +189,7 @@ input[type="file"] > input[type="button"]:hover {
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, ../scss/sass/_buttons.scss */
+/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus,
@@ -199,7 +199,7 @@ input[type="file"] > input[type="button"]:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, ../scss/sass/_buttons.scss */
+/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button:active,
 input[type="reset"]:active,
 input[type="button"]:active,
@@ -208,7 +208,7 @@ input[type="file"] > input[type="button"]:active {
   position: relative;
   top: 1px;
 }
-/* line 50, ../scss/sass/_buttons.scss */
+/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button a,
 input[type="reset"] a,
 input[type="button"] a,
@@ -218,7 +218,7 @@ input[type="file"] > input[type="button"] a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 button a:active, button a:focus,
 input[type="reset"] a:active,
 input[type="reset"] a:focus,
@@ -230,7 +230,7 @@ input[type="file"] > input[type="button"] a:active,
 input[type="file"] > input[type="button"] a:focus {
   outline: none;
 }
-/* line 97, ../scss/sass/_buttons.scss */
+/* line 97, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -239,7 +239,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border: none;
 }
 
-/* line 102, ../scss/sass/_buttons.scss */
+/* line 102, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 input[type="submit"].default, button.default {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -255,7 +255,7 @@ input[type="submit"].default, button.default {
   border-color: #62c462 #62c462 #51a351;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-/* line 64, ../scss/sass/_buttons.scss */
+/* line 64, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 input[type="submit"].default:hover, button.default:hover {
   color: white;
   background-color: #51a351;
@@ -273,17 +273,17 @@ input[type="submit"].default:hover, button.default:hover {
   transition-duration: 0.1s;
 }
 
-/* line 4, ../scss/sass/_calendarwidget.scss */
+/* line 4, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .datetime {
   margin-left: 200px;
   line-height: 2rem;
 }
 
-/* line 8, ../scss/sass/_calendarwidget.scss */
+/* line 8, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .datetimeshortcuts {
   font-size: .8em;
 }
-/* line 10, ../scss/sass/_calendarwidget.scss */
+/* line 10, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .datetimeshortcuts a {
   display: inline-block;
   *display: inline;
@@ -329,7 +329,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-radius: 3px;
   padding: 0 6px;
 }
-/* line 28, ../scss/sass/_buttons.scss */
+/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .datetimeshortcuts a:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -347,67 +347,67 @@ input[type="submit"].default:hover, button.default:hover {
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, ../scss/sass/_buttons.scss */
+/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .datetimeshortcuts a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, ../scss/sass/_buttons.scss */
+/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .datetimeshortcuts a:active {
   position: relative;
   top: 1px;
 }
-/* line 50, ../scss/sass/_buttons.scss */
+/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .datetimeshortcuts a a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .datetimeshortcuts a a:active, .datetimeshortcuts a a:focus {
   outline: none;
 }
 
-/* line 16, ../scss/sass/_calendarwidget.scss */
+/* line 16, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .clockbox {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   font-size: .8rem;
 }
-/* line 19, ../scss/sass/_calendarwidget.scss */
+/* line 19, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .clockbox li, .clockbox .calendar-cancel {
   padding: 2px 5px;
 }
-/* line 22, ../scss/sass/_calendarwidget.scss */
+/* line 22, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .clockbox li:hover, .clockbox .calendar-cancel:hover {
   background-color: #b1c6ec;
 }
-/* line 25, ../scss/sass/_calendarwidget.scss */
+/* line 25, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .clockbox a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .clockbox a:active, .clockbox a:focus {
   outline: none;
 }
 
-/* line 30, ../scss/sass/_calendarwidget.scss */
+/* line 30, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarbox {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
 }
 
-/* line 33, ../scss/sass/_calendarwidget.scss */
+/* line 33, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .module .calendar {
   margin: 0;
   padding: 0;
 }
-/* line 37, ../scss/sass/_calendarwidget.scss */
+/* line 37, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .module .calendar table {
   margin: 0;
   padding: 0;
@@ -415,7 +415,7 @@ input[type="submit"].default:hover, button.default:hover {
   background: white;
   width: 100%;
 }
-/* line 43, ../scss/sass/_calendarwidget.scss */
+/* line 43, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .module .calendar table th {
   font-size: 10px;
   color: #666;
@@ -425,7 +425,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-bottom: 1px solid #ddd;
   width: auto;
 }
-/* line 52, ../scss/sass/_calendarwidget.scss */
+/* line 52, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .module .calendar table td {
   font-size: 11px;
   text-align: center;
@@ -434,7 +434,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-bottom: none;
 }
 
-/* line 61, ../scss/sass/_calendarwidget.scss */
+/* line 61, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar table caption, .calendarbox h2 {
   margin: 0;
   font-size: 11px;
@@ -442,22 +442,22 @@ input[type="submit"].default:hover, button.default:hover {
   border-top: none;
 }
 
-/* line 68, ../scss/sass/_calendarwidget.scss */
+/* line 68, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td.selected a {
   background: #C9DBED;
 }
 
-/* line 72, ../scss/sass/_calendarwidget.scss */
+/* line 72, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td.nonday {
   background: #efefef;
 }
 
-/* line 76, ../scss/sass/_calendarwidget.scss */
+/* line 76, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td.today a {
   background: #ffc;
 }
 
-/* line 80, ../scss/sass/_calendarwidget.scss */
+/* line 80, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td a, .timelist a {
   display: block;
   font-weight: bold;
@@ -466,19 +466,19 @@ input[type="submit"].default:hover, button.default:hover {
   color: #444;
 }
 
-/* line 88, ../scss/sass/_calendarwidget.scss */
+/* line 88, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td a:hover, .timelist a:hover {
   background: #5b80b2;
   color: white;
 }
 
-/* line 93, ../scss/sass/_calendarwidget.scss */
+/* line 93, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar td a:active, .timelist a:active {
   background: #036;
   color: white;
 }
 
-/* line 98, ../scss/sass/_calendarwidget.scss */
+/* line 98, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarnav {
   font-size: 10px;
   text-align: center;
@@ -487,17 +487,17 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 1px 3px;
 }
 
-/* line 106, ../scss/sass/_calendarwidget.scss */
+/* line 106, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarnav a:link, #calendarnav a:visited, #calendarnav a:hover {
   color: #999;
 }
 
-/* line 110, ../scss/sass/_calendarwidget.scss */
+/* line 110, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar-shortcuts, .calendar-cancel {
   line-height: 1.2rem;
   padding: 4px;
 }
-/* line 113, ../scss/sass/_calendarwidget.scss */
+/* line 113, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar-shortcuts a, .calendar-cancel a {
   display: inline-block;
   *display: inline;
@@ -543,7 +543,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-radius: 3px;
   padding: 0 6px;
 }
-/* line 28, ../scss/sass/_buttons.scss */
+/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .calendar-shortcuts a:hover, .calendar-cancel a:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -561,34 +561,34 @@ input[type="submit"].default:hover, button.default:hover {
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, ../scss/sass/_buttons.scss */
+/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .calendar-shortcuts a:focus, .calendar-cancel a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, ../scss/sass/_buttons.scss */
+/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .calendar-shortcuts a:active, .calendar-cancel a:active {
   position: relative;
   top: 1px;
 }
-/* line 50, ../scss/sass/_buttons.scss */
+/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .calendar-shortcuts a a, .calendar-cancel a a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .calendar-shortcuts a a:active, .calendar-shortcuts a a:focus, .calendar-cancel a a:active, .calendar-cancel a a:focus {
   outline: none;
 }
 
-/* line 118, ../scss/sass/_calendarwidget.scss */
+/* line 118, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar-cancel {
   background: #e1e1e1;
   border-top: 1px solid #ddd;
 }
-/* line 121, ../scss/sass/_calendarwidget.scss */
+/* line 121, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendar-cancel a {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -604,7 +604,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-color: #ee5f5b #ee5f5b #bd362f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-/* line 64, ../scss/sass/_buttons.scss */
+/* line 64, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .calendar-cancel a:hover {
   color: white;
   background-color: #bd362f;
@@ -622,7 +622,7 @@ input[type="submit"].default:hover, button.default:hover {
   transition-duration: 0.1s;
 }
 
-/* line 126, ../scss/sass/_calendarwidget.scss */
+/* line 126, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarbox .calendarnav-previous, .calendarbox .calendarnav-next {
   display: block;
   position: absolute;
@@ -633,18 +633,18 @@ input[type="submit"].default:hover, button.default:hover {
   color: white;
 }
 
-/* line 136, ../scss/sass/_calendarwidget.scss */
+/* line 136, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarnav-previous:hover, .calendarnav-next:hover {
   background: #036;
 }
 
-/* line 140, ../scss/sass/_calendarwidget.scss */
+/* line 140, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarnav-previous {
   top: 0;
   left: 0;
 }
 
-/* line 145, ../scss/sass/_calendarwidget.scss */
+/* line 145, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_calendarwidget.scss */
 .calendarnav-next {
   top: 0;
   right: 0;
@@ -989,7 +989,7 @@ textarea::-webkit-input-placeholder {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 24, ../scss/sass/_icons.scss */
+/* line 24, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .errornote:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1038,7 +1038,7 @@ textarea::-webkit-input-placeholder {
   line-height: 18px;
   text-indent: -20px;
 }
-/* line 24, ../scss/sass/_icons.scss */
+/* line 24, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_icons.scss */
 .help:before {
   font-family: FontAwesome;
   font-weight: normal;
@@ -1099,7 +1099,7 @@ a.related-lookup {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 a.related-lookup:active, a.related-lookup:focus {
   outline: none;
 }
@@ -1122,7 +1122,7 @@ a.related-lookup:active, a.related-lookup:focus {
   padding: 9px;
   text-align: right;
 }
-/* line 12, ../scss/sass/_wells.scss */
+/* line 12, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .submit-row blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
@@ -1192,7 +1192,7 @@ a.related-lookup:active, a.related-lookup:focus {
   border-color: #ee5f5b #ee5f5b #bd362f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-/* line 28, ../scss/sass/_buttons.scss */
+/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .submit-row .deletelink:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -1210,28 +1210,28 @@ a.related-lookup:active, a.related-lookup:focus {
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, ../scss/sass/_buttons.scss */
+/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .submit-row .deletelink:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, ../scss/sass/_buttons.scss */
+/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .submit-row .deletelink:active {
   position: relative;
   top: 1px;
 }
-/* line 50, ../scss/sass/_buttons.scss */
+/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .submit-row .deletelink a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .submit-row .deletelink a:active, .submit-row .deletelink a:focus {
   outline: none;
 }
-/* line 64, ../scss/sass/_buttons.scss */
+/* line 64, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
 .submit-row .deletelink:hover {
   color: white;
   background-color: #bd362f;
