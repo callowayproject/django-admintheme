@@ -30,4 +30,5 @@ Contents
    :glob:
 
    getting_started
+   testing
    reference/index

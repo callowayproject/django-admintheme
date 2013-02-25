@@ -1,33 +1,31 @@
-===============
-Model Reference
-===============
+======================
+Using SASS and Compass
+======================
 
-ModelName
-=========
 
-.. py:class:: ModelName
+Installing SASS and Compass
+===========================
 
-   .. py:attribute:: parent
-   
-      :py:class:`TreeForeignKey` ``(self)``
-   
-      The category's parent category. Leave this blank for an root category.
+SASS_ and Compass_ are built in Ruby, but you don't need to know any Ruby to use them.
 
-   .. py:attribute:: name
-   
-      **Required** ``CharField(100)``
-   
-      The name of the category.
+#. From the command line, install SASS::
 
-   .. py:attribute:: slug
-   
-      **Required** ``SlugField``
-   
-      URL-friendly title. It is automatically generated from the title.
+   sudo gem install sass
 
-   .. py:attribute:: active
-   
-      **Required** ``BooleanField`` *default:* ``True``
-   
-      Is this item active. If it is inactive, all children are set to inactive as well.
+#. Then install compass::
 
+   sudo install compass
+
+
+.. _SASS: http://sass-lang.com/
+.. _Compass: http://compass-style.org/
+
+
+Compiling the style sheets
+==========================
+
+Compass can watch a directory for changes and automatically update the generated CSS. From the root ``django-admintheme`` directory (the same level where the ``README.txt`` and ``setup.py`` files are) run this command::
+
+   compass watch admintheme/static/admin/scss
+
+Every time you make a change to a source file, it will update the CSS.
