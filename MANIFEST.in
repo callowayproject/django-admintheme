@@ -1,7 +1,8 @@
 recursive-include doc_src *
 recursive-include docs *
 
-recursive-include admintheme/static *
+recursive-include admintheme/static *.js *.gif *.png *.css *.scss *.eot *.svg *.ttf *.woff *.otf
+
 
 include LICENSE
 include README.rst
