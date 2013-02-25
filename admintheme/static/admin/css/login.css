@@ -662,7 +662,23 @@ fieldset {
   border: 0;
 }
 
-/* line 17, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 16, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+fieldset.collapsed * {
+  display: none;
+}
+
+/* line 20, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+fieldset.collapsed h2, fieldset.collapsed {
+  display: block !important;
+}
+
+/* line 24, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+fieldset.collapsed .collapse-toggle {
+  background: transparent;
+  display: inline !important;
+}
+
+/* line 29, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 fieldset .description {
   color: #595959;
   display: block;
@@ -674,7 +690,7 @@ fieldset .description {
   padding-bottom: 20px;
 }
 
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 40, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 legend {
   display: block;
   width: 100%;
@@ -686,13 +702,13 @@ legend {
   border: 0;
   border-bottom: 1px solid #dddddd;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 legend small {
   font-size: 15px;
   color: #999999;
 }
 
-/* line 48, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 60, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 label,
 input,
 button,
@@ -705,7 +721,7 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 59, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 71, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input,
 button,
 select,
@@ -714,7 +730,7 @@ textarea {
   *display: inline-block;
   *margin-left: 0;
 }
-/* line 63, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 75, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input:first-child,
 button:first-child,
 select:first-child,
@@ -722,7 +738,7 @@ textarea:first-child {
   *padding-left: 20px;
 }
 
-/* line 68, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 80, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 label {
   display: block;
   margin-bottom: 5px;
@@ -733,12 +749,12 @@ label {
   text-align: right;
 }
 
-/* line 77, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 89, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 label.required {
   font-weight: bold;
 }
 
-/* line 97, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 109, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 select,
 textarea,
 input[type="text"],
@@ -770,18 +786,18 @@ input[type="color"],
   vertical-align: middle;
 }
 
-/* line 108, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 120, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input {
   width: 206px;
 }
 
-/* line 112, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 124, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 textarea {
   height: auto;
   width: 400px;
 }
 
-/* line 132, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 144, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -824,7 +840,7 @@ input[type="color"],
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 141, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 153, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -850,7 +866,7 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-/* line 151, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 163, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0;
@@ -863,7 +879,7 @@ input[type="checkbox"] {
   margin-left: 180px;
 }
 
-/* line 161, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 173, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   float: none;
@@ -873,7 +889,7 @@ input[type="checkbox"] + label {
   margin-left: 10px;
 }
 
-/* line 175, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 187, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input[type="file"],
 input[type="image"],
 input[type="submit"],
@@ -884,7 +900,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
-/* line 180, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 192, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 select,
 input[type="file"] {
   height: 26px;
@@ -894,21 +910,21 @@ input[type="file"] {
   line-height: 26px;
 }
 
-/* line 187, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 199, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 select {
   width: 220px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
 }
 
-/* line 194, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 206, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 select[multiple],
 select[size] {
   height: auto;
   min-height: 300px;
 }
 
-/* line 202, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 214, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -918,31 +934,31 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-/* line 209, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 221, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #999999;
 }
 
-/* line 214, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 226, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #999999;
 }
 
-/* line 219, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 231, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-/* line 228, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 240, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row.errors label,
 .form-row.errors .help {
   color: #b94a48;
 }
 
-/* line 236, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 248, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row.errors .checkbox,
 .form-row.errors .radio,
 .form-row.errors input,
@@ -951,7 +967,7 @@ textarea::-webkit-input-placeholder {
   color: #b94a48;
 }
 
-/* line 242, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 254, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row.errors input,
 .form-row.errors select,
 .form-row.errors textarea {
@@ -961,7 +977,7 @@ textarea::-webkit-input-placeholder {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 249, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 261, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row.errors input:focus,
 .form-row.errors select:focus,
 .form-row.errors textarea:focus {
@@ -971,7 +987,7 @@ textarea::-webkit-input-placeholder {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 
-/* line 255, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 267, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .errornote, .errorlist {
   color: #b94a48;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -979,7 +995,7 @@ textarea::-webkit-input-placeholder {
   background-color: #F2DEDE;
 }
 
-/* line 262, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 274, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .errornote {
   padding: 8px 35px 8px 14px;
   margin-bottom: 10px;
@@ -999,17 +1015,17 @@ textarea::-webkit-input-placeholder {
   content: "\f05e";
 }
 
-/* line 269, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 281, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .errorlist {
   padding: 0 35px 0 14px;
   margin: 4px 0;
 }
-/* line 272, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 284, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .errorlist li {
   list-style: none;
 }
 
-/* line 280, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 292, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-actions {
   padding: 19px 20px 20px;
   margin-top: 20px;
@@ -1017,18 +1033,18 @@ textarea::-webkit-input-placeholder {
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
 }
-/* line 287, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 299, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-actions:before, .form-actions:after {
   display: table;
   line-height: 0;
   content: "";
 }
-/* line 293, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 305, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-actions:after {
   clear: both;
 }
 
-/* line 303, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 315, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .help {
   color: #595959;
   display: block;
@@ -1048,13 +1064,13 @@ textarea::-webkit-input-placeholder {
   content: "\f05a";
 }
 
-/* line 314, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 326, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .help.help-tooltip {
   margin: 0;
   display: inline-block;
 }
 
-/* line 323, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 335, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
@@ -1069,31 +1085,31 @@ input.search-query {
   border-radius: 15px;
 }
 
-/* line 334, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 346, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 339, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 351, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 344, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 356, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .form-row:first-child {
   margin-top: 10px;
 }
 
-/* line 348, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 360, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 h2 + .form-row {
   margin-top: 10px;
   -webkit-margin-top-collapse: separate;
 }
 
-/* line 353, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 365, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 a.related-lookup {
   color: inherit;
   text-decoration: inherit;
@@ -1104,7 +1120,7 @@ a.related-lookup:active, a.related-lookup:focus {
   outline: none;
 }
 
-/* line 357, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 369, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .submit-row {
   min-height: 20px;
   padding: 19px;
@@ -1121,26 +1137,27 @@ a.related-lookup:active, a.related-lookup:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 9px;
   text-align: right;
+  margin-bottom: 10px;
 }
 /* line 12, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_wells.scss */
 .submit-row blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-/* line 361, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 374, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .submit-row input {
   margin: 0 0 0 5px;
 }
-/* line 364, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 377, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .submit-row p.deletelink-box {
   float: left;
   margin: 0;
 }
-/* line 368, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 381, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .submit-row .default {
   float: right;
 }
-/* line 371, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
+/* line 384, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/forms.scss */
 .submit-row .deletelink {
   display: inline-block;
   *display: inline;

@@ -13,6 +13,18 @@ fieldset {
   margin: 0;
   border: 0;
 }
+fieldset.collapsed * {
+  display: none;
+}
+
+fieldset.collapsed h2, fieldset.collapsed {
+  display: block !important;
+}
+
+fieldset.collapsed .collapse-toggle {
+  background: transparent;
+  display: inline !important;
+}
 
 fieldset .description {
   color: lighten($text-color, 15%); // lighten the text some for contrast
@@ -358,6 +370,7 @@ a.related-lookup {
   @include well;
   padding: 9px;
   text-align: right;
+  margin-bottom: 10px;
   input {
       margin: 0 0 0 5px;
   }
