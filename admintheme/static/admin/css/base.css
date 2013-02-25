@@ -23,10 +23,9 @@ input[type="file"] > input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -54,12 +53,10 @@ input[type="file"] > input[type="button"]:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -69,7 +66,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="file"] > input[type="button"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -92,7 +89,7 @@ input[type="file"] > input[type="button"] a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 button a:active, button a:focus,
 input[type="reset"] a:active,
 input[type="reset"] a:focus,
@@ -124,7 +121,6 @@ input[type="submit"].default, button.default {
   background-image: -webkit-linear-gradient(#62c462, #51a351);
   background-image: -moz-linear-gradient(#62c462, #51a351);
   background-image: -o-linear-gradient(#62c462, #51a351);
-  background-image: -ms-linear-gradient(#62c462, #51a351);
   background-image: linear-gradient(#62c462, #51a351);
   border-color: #62c462 #62c462 #51a351;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -137,12 +133,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -214,7 +208,7 @@ input[type="submit"].default:hover, button.default:hover {
   font-size: .8rem;
   color: #999;
   border-top: 1px solid white;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #cccccc;
   text-align: left;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
@@ -240,7 +234,7 @@ input[type="submit"].default:hover, button.default:hover {
 /* line 11, ../scss/sass/_selectorwidget.scss */
 .selector .selector-filter {
   background: white;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-width: 0 1px;
   padding: 3px;
   font-size: .625rem;
@@ -276,7 +270,7 @@ input[type="submit"].default:hover, button.default:hover {
 }
 /* line 44, ../scss/sass/_selectorwidget.scss */
 .selector-available h2, .selector-chosen h2 {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 /* line 49, ../scss/sass/_selectorwidget.scss */
@@ -323,10 +317,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -357,18 +350,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .selector-add:focus, .selector-remove:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -383,7 +374,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .selector-add a:active, .selector-add a:focus, .selector-remove a:active, .selector-remove a:focus {
   outline: none;
 }
@@ -429,10 +420,9 @@ a.selector-chooseall, a.selector-clearall {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -463,18 +453,16 @@ a.selector-chooseall:hover, a.selector-clearall:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 a.selector-chooseall:focus, a.selector-clearall:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -489,7 +477,7 @@ a.selector-chooseall a, a.selector-clearall a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 a.selector-chooseall a:active, a.selector-chooseall a:focus, a.selector-clearall a:active, a.selector-clearall a:focus {
   outline: none;
 }
@@ -566,7 +554,7 @@ a.selector-clearall:before {
   *zoom: 1;
   padding-left: 160px;
 }
-/* line 60, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .stacked ul.selector-chooser li {
   list-style-image: none;
   list-style-type: none;
@@ -577,15 +565,15 @@ a.selector-clearall:before {
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 48, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .stacked ul.selector-chooser li:first-child, .stacked ul.selector-chooser li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .stacked ul.selector-chooser li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 .stacked ul.selector-chooser li.last {
   padding-right: 0;
 }
@@ -758,7 +746,6 @@ table thead th {
   background: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background: -moz-linear-gradient(#ffffff, #e6e6e6);
   background: -o-linear-gradient(#ffffff, #e6e6e6);
-  background: -ms-linear-gradient(#ffffff, #e6e6e6);
   background: linear-gradient(#ffffff, #e6e6e6);
   font-size: .8rem;
 }
@@ -774,7 +761,6 @@ table thead th:hover {
   background: -webkit-linear-gradient(#e6e6e6, #d9d9d9);
   background: -moz-linear-gradient(#e6e6e6, #d9d9d9);
   background: -o-linear-gradient(#e6e6e6, #d9d9d9);
-  background: -ms-linear-gradient(#e6e6e6, #d9d9d9);
   background: linear-gradient(#e6e6e6, #d9d9d9);
 }
 /* line 24, ../scss/sass/_icons.scss */
@@ -809,7 +795,7 @@ table tbody tr.row2 {
 }
 /* line 59, ../scss/sass/_tables.scss */
 table tbody tr:hover, table tbody tr.row2:hover {
-  background: #f5f5f5;
+  background: whitesmoke;
 }
 
 /* line 24, ../scss/sass/_icons.scss */
@@ -856,10 +842,9 @@ input[type="file"] > input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -887,12 +872,10 @@ input[type="file"] > input[type="button"]:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -902,7 +885,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="file"] > input[type="button"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -925,7 +908,7 @@ input[type="file"] > input[type="button"] a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 button a:active, button a:focus,
 input[type="reset"] a:active,
 input[type="reset"] a:focus,
@@ -957,7 +940,6 @@ input[type="submit"].default, button.default {
   background-image: -webkit-linear-gradient(#62c462, #51a351);
   background-image: -moz-linear-gradient(#62c462, #51a351);
   background-image: -o-linear-gradient(#62c462, #51a351);
-  background-image: -ms-linear-gradient(#62c462, #51a351);
   background-image: linear-gradient(#62c462, #51a351);
   border-color: #62c462 #62c462 #51a351;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -970,12 +952,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -985,20 +965,16 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 5px;
   margin: 0;
   background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-top: 0;
   color: #999;
   vertical-align: middle;
   font-size: 13px;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
-  -ms-border-bottom-left-radius: 4px;
-  -o-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
-  -ms-border-bottom-right-radius: 4px;
-  -o-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 /* line 6, ../scss/sass/_pagination.scss */
@@ -1022,10 +998,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1055,7 +1030,6 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #ffffff);
   background-image: -moz-linear-gradient(#ffffff, #ffffff);
   background-image: -o-linear-gradient(#ffffff, #ffffff);
-  background-image: -ms-linear-gradient(#ffffff, #ffffff);
   background-image: linear-gradient(#ffffff, #ffffff);
   border-color: white white white;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1069,18 +1043,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .paginator .this-page:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1095,7 +1067,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .paginator .this-page a:active, .paginator .this-page a:focus {
   outline: none;
 }
@@ -1107,12 +1079,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -1137,10 +1107,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1171,18 +1140,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .paginator a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1197,7 +1164,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .paginator a a:active, .paginator a a:focus {
   outline: none;
 }
@@ -1222,10 +1189,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1256,18 +1222,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .paginator .showall:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1282,7 +1246,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .paginator .showall a:active, .paginator .showall a:focus {
   outline: none;
 }
@@ -1305,8 +1269,8 @@ body {
 /* line 25, ../scss/sass/base.scss */
 h1 {
   font-size: 1.3rem;
-  padding: 0 .4rem 0 0;
-  margin: 0 0 .2rem 0;
+  padding: 0 0.4rem 0 0;
+  margin: 0 0 0.2rem 0;
   font-weight: bold;
   line-height: 2.2rem;
 }
@@ -1317,7 +1281,6 @@ h1 {
   background: -webkit-linear-gradient(#6c7a95, #4d5b76);
   background: -moz-linear-gradient(#6c7a95, #4d5b76);
   background: -o-linear-gradient(#6c7a95, #4d5b76);
-  background: -ms-linear-gradient(#6c7a95, #4d5b76);
   background: linear-gradient(#6c7a95, #4d5b76);
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
@@ -1340,7 +1303,7 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
-  padding: .5rem 10px;
+  padding: 0.5rem 10px;
   font-size: .8rem;
   text-align: right;
 }
@@ -1349,7 +1312,7 @@ h1 {
   text-decoration: none;
   color: white;
 }
-/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 #user-tools a:hover {
   text-decoration: underline;
 }
@@ -1375,10 +1338,9 @@ h1 {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1410,18 +1372,16 @@ h1 {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .add-another:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1436,7 +1396,7 @@ h1 {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .add-another a:active, .add-another a:focus {
   outline: none;
 }
@@ -1477,7 +1437,7 @@ h1 {
 .module {
   margin-bottom: .3rem;
   background: white;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   line-height: 1.63rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1500,21 +1460,21 @@ h1 {
   color: #5b80b2;
   text-decoration: none;
 }
-/* line 18, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .module table th a:visited {
   color: #5b80b2;
 }
-/* line 21, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .module table th a:focus {
   color: #5b80b2;
 }
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .module table th a:hover {
-  color: shade(#5b80b2, 15%);
+  color: #4d6c97;
 }
-/* line 27, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .module table th a:active {
-  color: tint(#5b80b2, 15%);
+  color: #7393bd;
 }
 /* line 123, ../scss/sass/base.scss */
 .module caption, .module h2 {
@@ -1532,9 +1492,8 @@ h1 {
   background: -webkit-linear-gradient(#ffffff, #efefef);
   background: -moz-linear-gradient(#ffffff, #efefef);
   background: -o-linear-gradient(#ffffff, #efefef);
-  background: -ms-linear-gradient(#ffffff, #efefef);
   background: linear-gradient(#ffffff, #efefef);
-  border-bottom: 1px solid #C8C8CB;
+  border-bottom: 1px solid #c8c8cb;
 }
 /* line 98, ../scss/sass/base.scss */
 .module caption a, .module h2 a {
@@ -1542,7 +1501,7 @@ h1 {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .module caption a:active, .module caption a:focus, .module h2 a:active, .module h2 a:focus {
   outline: none;
 }
@@ -1585,10 +1544,9 @@ h1 {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1618,18 +1576,16 @@ h1 {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .object-tools li:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1644,7 +1600,7 @@ h1 {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .object-tools li a:active, .object-tools li a:focus {
   outline: none;
 }
@@ -1657,13 +1613,9 @@ h1 {
   margin-left: 0;
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
-  -ms-border-bottom-left-radius: 4px;
-  -o-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 /* line 155, ../scss/sass/base.scss */
@@ -1671,13 +1623,9 @@ h1 {
   margin-right: 0;
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
-  -ms-border-bottom-right-radius: 4px;
-  -o-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 /* line 35, ../scss/sass/_icons.scss */

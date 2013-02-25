@@ -149,10 +149,9 @@ input[type="file"] > input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -180,12 +179,10 @@ input[type="file"] > input[type="button"]:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -195,7 +192,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="file"] > input[type="button"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -218,7 +215,7 @@ input[type="file"] > input[type="button"] a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 button a:active, button a:focus,
 input[type="reset"] a:active,
 input[type="reset"] a:focus,
@@ -250,7 +247,6 @@ input[type="submit"].default, button.default {
   background-image: -webkit-linear-gradient(#62c462, #51a351);
   background-image: -moz-linear-gradient(#62c462, #51a351);
   background-image: -o-linear-gradient(#62c462, #51a351);
-  background-image: -ms-linear-gradient(#62c462, #51a351);
   background-image: linear-gradient(#62c462, #51a351);
   border-color: #62c462 #62c462 #51a351;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -263,12 +259,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -304,10 +298,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -338,18 +331,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .datetimeshortcuts a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -364,7 +355,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .datetimeshortcuts a a:active, .datetimeshortcuts a a:focus {
   outline: none;
 }
@@ -390,7 +381,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .clockbox a:active, .clockbox a:focus {
   outline: none;
 }
@@ -422,7 +413,7 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 2px 3px;
   text-align: center;
   background: #e1e1e1 url(../img/nav-bg.gif) 0 50% repeat-x;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   width: auto;
 }
 /* line 52, ../scss/sass/_calendarwidget.scss */
@@ -430,7 +421,7 @@ input[type="submit"].default:hover, button.default:hover {
   font-size: 11px;
   text-align: center;
   padding: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
   border-bottom: none;
 }
 
@@ -518,10 +509,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -552,18 +542,16 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .calendar-shortcuts a:focus, .calendar-cancel a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -578,7 +566,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .calendar-shortcuts a a:active, .calendar-shortcuts a a:focus, .calendar-cancel a a:active, .calendar-cancel a a:focus {
   outline: none;
 }
@@ -586,7 +574,7 @@ input[type="submit"].default:hover, button.default:hover {
 /* line 118, ../scss/sass/_calendarwidget.scss */
 .calendar-cancel {
   background: #e1e1e1;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
 }
 /* line 121, ../scss/sass/_calendarwidget.scss */
 .calendar-cancel a {
@@ -599,7 +587,6 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ee5f5b, #bd362f);
   background-image: -moz-linear-gradient(#ee5f5b, #bd362f);
   background-image: -o-linear-gradient(#ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(#ee5f5b, #bd362f);
   background-image: linear-gradient(#ee5f5b, #bd362f);
   border-color: #ee5f5b #ee5f5b #bd362f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -612,12 +599,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -821,22 +806,18 @@ input[type="color"],
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition-property: border;
   -moz-transition-property: border;
-  -ms-transition-property: border;
   -o-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   -webkit-transition-property: box-shadow;
   -moz-transition-property: box-shadow;
-  -ms-transition-property: box-shadow;
   -o-transition-property: box-shadow;
   transition-property: box-shadow;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
@@ -929,7 +910,7 @@ select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -991,7 +972,7 @@ textarea::-webkit-input-placeholder {
 .errornote, .errorlist {
   color: #b94a48;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  border: 1px solid #EED3D7;
+  border: 1px solid #eed3d7;
   background-color: #F2DEDE;
 }
 
@@ -1115,7 +1096,7 @@ a.related-lookup {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 a.related-lookup:active, a.related-lookup:focus {
   outline: none;
 }
@@ -1178,10 +1159,9 @@ a.related-lookup:active, a.related-lookup:focus {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1204,7 +1184,6 @@ a.related-lookup:active, a.related-lookup:focus {
   background-image: -webkit-linear-gradient(#ee5f5b, #bd362f);
   background-image: -moz-linear-gradient(#ee5f5b, #bd362f);
   background-image: -o-linear-gradient(#ee5f5b, #bd362f);
-  background-image: -ms-linear-gradient(#ee5f5b, #bd362f);
   background-image: linear-gradient(#ee5f5b, #bd362f);
   border-color: #ee5f5b #ee5f5b #bd362f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -1218,18 +1197,16 @@ a.related-lookup:active, a.related-lookup:focus {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
 /* line 38, ../scss/sass/_buttons.scss */
 .submit-row .deletelink:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1244,7 +1221,7 @@ a.related-lookup:active, a.related-lookup:focus {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .submit-row .deletelink a:active, .submit-row .deletelink a:focus {
   outline: none;
 }
@@ -1256,12 +1233,10 @@ a.related-lookup:active, a.related-lookup:focus {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }

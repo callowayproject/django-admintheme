@@ -1,4 +1,4 @@
-/* line 95, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 95, ../scss/sass/_buttons.scss */
 button,
 input[type="reset"],
 input[type="button"],
@@ -23,10 +23,9 @@ input[type="file"] > input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -41,7 +40,7 @@ input[type="file"] > input[type="button"] {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 28, ../scss/sass/_buttons.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -54,26 +53,24 @@ input[type="file"] > input[type="button"]:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 38, ../scss/sass/_buttons.scss */
 button:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus,
 input[type="file"] > input[type="button"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 44, ../scss/sass/_buttons.scss */
 button:active,
 input[type="reset"]:active,
 input[type="button"]:active,
@@ -82,7 +79,7 @@ input[type="file"] > input[type="button"]:active {
   position: relative;
   top: 1px;
 }
-/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 50, ../scss/sass/_buttons.scss */
 button a,
 input[type="reset"] a,
 input[type="button"] a,
@@ -92,7 +89,7 @@ input[type="file"] > input[type="button"] a {
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 button a:active, button a:focus,
 input[type="reset"] a:active,
 input[type="reset"] a:focus,
@@ -104,7 +101,7 @@ input[type="file"] > input[type="button"] a:active,
 input[type="file"] > input[type="button"] a:focus {
   outline: none;
 }
-/* line 97, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 97, ../scss/sass/_buttons.scss */
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
@@ -113,7 +110,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border: none;
 }
 
-/* line 102, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 102, ../scss/sass/_buttons.scss */
 input[type="submit"].default, button.default {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -124,12 +121,11 @@ input[type="submit"].default, button.default {
   background-image: -webkit-linear-gradient(#62c462, #51a351);
   background-image: -moz-linear-gradient(#62c462, #51a351);
   background-image: -o-linear-gradient(#62c462, #51a351);
-  background-image: -ms-linear-gradient(#62c462, #51a351);
   background-image: linear-gradient(#62c462, #51a351);
   border-color: #62c462 #62c462 #51a351;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-/* line 64, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 64, ../scss/sass/_buttons.scss */
 input[type="submit"].default:hover, button.default:hover {
   color: white;
   background-color: #51a351;
@@ -137,12 +133,10 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -186,7 +180,6 @@ input[type="submit"].default:hover, button.default:hover {
   background: -webkit-linear-gradient(#eeeef3, #d6dadf);
   background: -moz-linear-gradient(#eeeef3, #d6dadf);
   background: -o-linear-gradient(#eeeef3, #d6dadf);
-  background: -ms-linear-gradient(#eeeef3, #d6dadf);
   background: linear-gradient(#eeeef3, #d6dadf);
   -webkit-border-radius: 0 4px 0 0;
   -moz-border-radius: 0 4px 0 0;
@@ -209,7 +202,7 @@ input[type="submit"].default:hover, button.default:hover {
   line-height: 1.3em;
   padding-left: 0;
 }
-/* line 11, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 #changelist-filter ul li {
   list-style-image: none;
   list-style-type: none;
@@ -220,7 +213,7 @@ input[type="submit"].default:hover, button.default:hover {
   text-decoration: none;
   color: #333;
 }
-/* line 4, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 #changelist-filter ul a:hover {
   text-decoration: underline;
 }
@@ -237,19 +230,15 @@ input[type="submit"].default:hover, button.default:hover {
 #changelist-search {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   line-height: 20px;
   border: 1px solid #dddddd;
   margin-bottom: 0;
   padding: 5px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 /* line 65, ../scss/sass/changelists.scss */
 #changelist-search label {
@@ -292,10 +281,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -318,7 +306,7 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 0 6px;
   margin-top: 0;
 }
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 28, ../scss/sass/_buttons.scss */
 #changelist-search input[type=submit]:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -327,33 +315,31 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 38, ../scss/sass/_buttons.scss */
 #changelist-search input[type=submit]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 44, ../scss/sass/_buttons.scss */
 #changelist-search input[type=submit]:active {
   position: relative;
   top: 1px;
 }
-/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 50, ../scss/sass/_buttons.scss */
 #changelist-search input[type=submit] a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 #changelist-search input[type=submit] a:active, #changelist-search input[type=submit] a:focus {
   outline: none;
 }
@@ -390,7 +376,7 @@ input[type="submit"].default:hover, button.default:hover {
 .actions {
   vertical-align: middle;
   line-height: 20px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   padding: 5px;
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
@@ -416,7 +402,7 @@ input[type="submit"].default:hover, button.default:hover {
 .actions .action-counter, .actions .all {
   display: inline-block;
   color: #999;
-  margin: 0 .5em;
+  margin: 0 0.5em;
   vertical-align: middle;
   font-size: 13px;
   display: none;
@@ -442,10 +428,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -468,7 +453,7 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 0 6px;
   margin: 0;
 }
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 28, ../scss/sass/_buttons.scss */
 .actions .button:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -477,33 +462,31 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 38, ../scss/sass/_buttons.scss */
 .actions .button:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 44, ../scss/sass/_buttons.scss */
 .actions .button:active {
   position: relative;
   top: 1px;
 }
-/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 50, ../scss/sass/_buttons.scss */
 .actions .button a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .actions .button a:active, .actions .button a:focus {
   outline: none;
 }
@@ -532,10 +515,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -557,7 +539,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-radius: 3px;
   padding: 0 6px;
 }
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 28, ../scss/sass/_buttons.scss */
 .actions .clear a:hover, .actions .question a:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -566,33 +548,31 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 38, ../scss/sass/_buttons.scss */
 .actions .clear a:focus, .actions .question a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 44, ../scss/sass/_buttons.scss */
 .actions .clear a:active, .actions .question a:active {
   position: relative;
   top: 1px;
 }
-/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 50, ../scss/sass/_buttons.scss */
 .actions .clear a a, .actions .question a a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .actions .clear a a:active, .actions .clear a a:focus, .actions .question a a:active, .actions .question a a:focus {
   outline: none;
 }
@@ -601,7 +581,7 @@ input[type="submit"].default:hover, button.default:hover {
 .xfull {
   vertical-align: middle;
   line-height: 20px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   padding: 5px;
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
@@ -632,10 +612,9 @@ input[type="submit"].default:hover, button.default:hover {
   background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
   background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
   background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
   background-image: linear-gradient(#ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   *border: 0;
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -657,7 +636,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-radius: 3px;
   padding: 0 6px;
 }
-/* line 28, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 28, ../scss/sass/_buttons.scss */
 .xfull .toplinks li:hover {
   color: #333333;
   background-color: #e6e6e6;
@@ -666,33 +645,31 @@ input[type="submit"].default:hover, button.default:hover {
   background-position: 0 -15px;
   -webkit-transition-property: background-position;
   -moz-transition-property: background-position;
-  -ms-transition-property: background-position;
   -o-transition-property: background-position;
   transition-property: background-position;
   -webkit-transition-duration: 0.1s;
   -moz-transition-duration: 0.1s;
-  -ms-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
-/* line 38, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 38, ../scss/sass/_buttons.scss */
 .xfull .toplinks li:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-/* line 44, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 44, ../scss/sass/_buttons.scss */
 .xfull .toplinks li:active {
   position: relative;
   top: 1px;
 }
-/* line 50, /Users/coordt/Projects/django-admintheme/admintheme/static/admin/scss/sass/_buttons.scss */
+/* line 50, ../scss/sass/_buttons.scss */
 .xfull .toplinks li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
 }
-/* line 6, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 .xfull .toplinks li a:active, .xfull .toplinks li a:focus {
   outline: none;
 }
