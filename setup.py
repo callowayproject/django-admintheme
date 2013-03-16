@@ -25,7 +25,7 @@ DESC = " ".join(__import__('admintheme').__doc__.splitlines()).strip()
 setup(
     name="django-admintheme",
     version=__import__('admintheme').get_version().replace(' ', '-'),
-    url='http://callowayproject.com/',
+    url='https://github.com/callowayproject/django-admintheme',
     author='Calloway Project',
     author_email='webmaster@callowayproject.com',
     description=DESC,

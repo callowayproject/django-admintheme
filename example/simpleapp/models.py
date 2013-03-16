@@ -53,3 +53,19 @@ class SimpleModel(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('simplemodel_detail_view_name', [str(self.id)])
+
+
+class TabularModel(models.Model):
+    parent = models.ForeignKey(SimpleModel)
+    name = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return self.name
+
+
+class StackedModel(models.Model):
+    parent = models.ForeignKey(SimpleModel)
+    name = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return self.name

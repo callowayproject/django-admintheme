@@ -14,6 +14,11 @@ var django = {
             inp.attr("required", "required");
             inp.attr("placeholder", "Required");
         });
+        $(".inline-related .required").each(function (i, elem) {
+            var inp = $(elem).next("input,textarea");
+            inp.attr("required", "");
+        });
+
         $("#searchbar").each(function(i, elem) {elem.type = "search";});
     });
 })(django.jQuery);

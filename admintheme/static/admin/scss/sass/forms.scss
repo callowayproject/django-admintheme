@@ -3,6 +3,7 @@
 @import "icons";
 @import "wells";
 @import "calendarwidget";
+@import "modules";
 
 form {
   margin: 0 0 $base-line-height;
@@ -385,4 +386,148 @@ a.related-lookup {
     @include button;
     @include cancelBackground;
   }
+}
+.inline-group {
+    padding: 0;
+    border: $table-border;
+    margin: 10px 0;
+    @include border-radius($border-radius);
+    h2 {
+      line-height: 1.63rem;
+      @include module-head;
+    }
+}
+
+.inline-group .aligned label {
+    width: 8em;
+}
+
+.inline-related {
+    position: relative;
+    @include border-radius($border-radius);
+    td.delete input[type="checkbox"]{
+      margin-left: 0;
+    }
+    .form-row {
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+      color: #666;
+      padding: 3px 5px;
+      font-size: .7rem;
+      background: #fff;
+      span.delete {
+          float: right;
+      }
+    }
+    border-bottom: $table-border;
+}
+
+.inline-related.tabular {
+  border-bottom: 0;
+}
+
+.inline-related h3 span.delete label {
+    margin-left: 2px;
+    font-size: 11px;
+}
+
+.inline-related fieldset {
+    margin: 0;
+    background: #fff;
+    border: none;
+    @include border-radius($border-radius);
+}
+
+.inline-related fieldset.module h3 {
+    margin: 0;
+    padding: 2px 5px 3px 5px;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+    background: #bcd;
+    color: #fff;
+}
+
+.inline-group .tabular fieldset.module {
+    border: none;
+}
+
+.inline-related.tabular fieldset.module table {
+    width: 100%;
+}
+
+.last-related fieldset {
+    border: none;
+}
+
+.inline-group .tabular tr.has_original td {
+    padding-top: 2em;
+}
+
+.inline-group .tabular tr td.original {
+    padding: 2px 0 0 0;
+    width: 0;
+    _position: relative;
+}
+
+.inline-group .tabular th.original {
+    width: 0px;
+    padding: 0;
+}
+
+.inline-group .tabular td.original p {
+    position: absolute;
+    left: 0;
+    height: 1.1em;
+    padding: 2px 7px;
+    margin: 0;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #666;
+    _width: 700px;
+}
+
+.inline-group ul.tools {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.inline-group ul.tools li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.inline-group div.add-row,
+.inline-group .tabular tr.add-row td {
+    color: #666;
+    padding: 3px 5px;
+    border-bottom: $table-border;
+    border-top: $table-border;
+    background: $tabletools-bkgnd;
+    @include border-radius(0 0 $border-radius $border-radius);
+}
+
+.inline-group .tabular tr.add-row td {
+    padding: 4px 5px 3px;
+    border-bottom: none;
+}
+
+.inline-group ul.tools a.add,
+.inline-group div.add-row a,
+.inline-group .tabular tr.add-row td a {
+    @include button;
+    @include icon-plus;
+}
+
+.inline-deletelink {
+  @include button;
+  @include icon-remove;
+  @include cancelBackground;
+}
+
+.empty-form {
+    display: none;
 }

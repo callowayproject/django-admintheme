@@ -6,6 +6,7 @@ table {
     th, td {
         line-height: $base-line-height;
         text-align: left;
+        vertical-align: top;
         border-top: 1px solid $table-border;
         border-left: 1px solid $table-border;
         padding: 5px;

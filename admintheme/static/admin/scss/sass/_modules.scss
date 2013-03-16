@@ -1,0 +1,51 @@
+/* A module is a box used in a variety of ways in the admin:
+    Dashboard:
+        Apps: Each app is a module containing a table
+        Recent Actions: Module with an h2, h3 and a p or a ul;
+*/
+
+@mixin module-head {
+    margin: 0;
+    padding: 2px 5px 3px 5px;
+    font-size: .9rem;
+    text-align: left;
+    font-weight: bold;
+    @include border-radius(8px 8px 0 0);
+    @include background($module-head-bkgnd);
+    border-bottom: 1px solid #C8C8CB;
+    a {
+        @include unstyled-link;
+    }
+}
+
+.module {
+    margin-bottom: .3rem;
+    background: white;
+    border: 1px solid #D4D4D4;
+    line-height: 1.63rem;
+    @include border-radius(4px);
+    //@include box-shadow(rgba(#000, 0.4) 0 0 5px);
+
+    table {
+        width: 100%;
+        font-size: .9em;
+        th {
+            font-weight: bold;
+            width: 100%;
+            a {
+                @include admin-link-color;
+                text-decoration: none;
+            }
+        }
+    }
+    caption, h2 {
+        @include module-head;
+    }
+    h3 {
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 5px;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+}

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import SimpleModel, LookupModel
+from .models import SimpleModel, LookupModel, TabularModel, StackedModel
 
 
 class LookupAdmin(admin.ModelAdmin):
@@ -8,6 +8,14 @@ class LookupAdmin(admin.ModelAdmin):
     list_per_page = 5
 
 admin.site.register(LookupModel, LookupAdmin)
+
+
+class TabularModelInline(admin.TabularInline):
+    model = TabularModel
+
+
+class StackedModelInline(admin.StackedInline):
+    model = StackedModel
 
 
 class SimpleModelAdmin(admin.ModelAdmin):
@@ -43,6 +51,7 @@ class SimpleModelAdmin(admin.ModelAdmin):
     raw_id_fields = ("foreignkey_field", )
     filter_vertical = ("manytomany_vert", )
     filter_horizontal = ("manytomany_horiz", )
+    inlines = (TabularModelInline, StackedModelInline)
 
 
 admin.site.register(SimpleModel, SimpleModelAdmin)
