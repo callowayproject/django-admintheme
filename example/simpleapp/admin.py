@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import SimpleModel, LookupModel, TabularModel, StackedModel
+from .models import SimpleModel, LookupModel, TabularModel, StackedModel, NoInlineModel
 
 
 class LookupAdmin(admin.ModelAdmin):
@@ -18,10 +18,16 @@ class StackedModelInline(admin.StackedInline):
     model = StackedModel
 
 
+class NoInlineModelInline(admin.TabularInline):
+    model = NoInlineModel
+    extra = 0
+
+
 class SimpleModelAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug_field': ('char_field',)}
     search_fields = ('char_field',)
     list_display = ('char_field', 'integer_field', 'decimal_field', 'float_field', 'boolean_field')
+    list_display_links = ('char_field', 'integer_field', )
     fieldsets = (
         (None, {
             'fields': ('char_field', 'slug_field', 'email_field', 'text_field'),
@@ -51,7 +57,7 @@ class SimpleModelAdmin(admin.ModelAdmin):
     raw_id_fields = ("foreignkey_field", )
     filter_vertical = ("manytomany_vert", )
     filter_horizontal = ("manytomany_horiz", )
-    inlines = (TabularModelInline, StackedModelInline)
+    inlines = (TabularModelInline, StackedModelInline, NoInlineModelInline)
 
 
 admin.site.register(SimpleModel, SimpleModelAdmin)

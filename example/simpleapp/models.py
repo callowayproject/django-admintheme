@@ -69,3 +69,11 @@ class StackedModel(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class NoInlineModel(models.Model):
+    parent = models.ForeignKey(SimpleModel)
+    name = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return self.name

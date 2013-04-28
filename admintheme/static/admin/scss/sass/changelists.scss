@@ -102,6 +102,12 @@
             margin: 0;
         }
     }
+    td a {
+        text-decoration: none;
+        &:visited {
+            color: #5b80b2;
+        }
+    }
 }
 
 .actions {

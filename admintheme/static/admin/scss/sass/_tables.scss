@@ -25,10 +25,11 @@ table {
             border-top: 0;
             @include background($table-head-bkgnd);
             font-size: .8rem;
-            .text a {
-                display: block;
-                cursor: pointer;
-                padding: 2px 5px;
+            .text {
+                a {
+                    display: block;
+                    cursor: pointer;
+                }
             }
             &:hover {
                 .sortremove {
@@ -37,14 +38,19 @@ table {
                 @include background($table-head-bkgnd-hover);
             }
         }
-        th.sorted .sortoptions {
-            display: block;
-            float: right;
-            text-align: right;
-            a {
-                display: inline-block;
-                width: 14px;
-                height: 1.1em;
+        th.sorted {
+            .text {
+                padding-right: 42px;
+            }
+            .sortoptions {
+                display: block;
+                float: right;
+                text-align: right;
+                a {
+                    display: inline-block;
+                    width: 14px;
+                    height: 1.1em;
+                }
             }
         }
     }
@@ -52,6 +58,7 @@ table {
         th, td {
             border-top: 1px solid $table-border;
             @include background($table-bkgnd);
+            padding: 5px;
         }
         tr {
             &.row2 {
