@@ -371,10 +371,6 @@ input[type="submit"].default:hover, button.default:hover {
 .clockbox li, .clockbox .calendar-cancel {
   padding: 2px 5px;
 }
-/* line 22, ../scss/sass/_calendarwidget.scss */
-.clockbox li:hover, .clockbox .calendar-cancel:hover {
-  background-color: #b1c6ec;
-}
 /* line 25, ../scss/sass/_calendarwidget.scss */
 .clockbox a {
   color: inherit;
@@ -385,20 +381,25 @@ input[type="submit"].default:hover, button.default:hover {
 .clockbox a:active, .clockbox a:focus {
   outline: none;
 }
+/* line 28, ../scss/sass/_calendarwidget.scss */
+.clockbox .timelist {
+  list-style-type: none;
+  padding: 0;
+}
 
-/* line 30, ../scss/sass/_calendarwidget.scss */
+/* line 34, ../scss/sass/_calendarwidget.scss */
 .calendarbox {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px;
 }
 
-/* line 33, ../scss/sass/_calendarwidget.scss */
+/* line 37, ../scss/sass/_calendarwidget.scss */
 .module .calendar {
   margin: 0;
   padding: 0;
 }
-/* line 37, ../scss/sass/_calendarwidget.scss */
+/* line 41, ../scss/sass/_calendarwidget.scss */
 .module .calendar table {
   margin: 0;
   padding: 0;
@@ -406,7 +407,7 @@ input[type="submit"].default:hover, button.default:hover {
   background: white;
   width: 100%;
 }
-/* line 43, ../scss/sass/_calendarwidget.scss */
+/* line 47, ../scss/sass/_calendarwidget.scss */
 .module .calendar table th {
   font-size: 10px;
   color: #666;
@@ -416,7 +417,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-bottom: 1px solid #dddddd;
   width: auto;
 }
-/* line 52, ../scss/sass/_calendarwidget.scss */
+/* line 56, ../scss/sass/_calendarwidget.scss */
 .module .calendar table td {
   font-size: 11px;
   text-align: center;
@@ -425,7 +426,7 @@ input[type="submit"].default:hover, button.default:hover {
   border-bottom: none;
 }
 
-/* line 61, ../scss/sass/_calendarwidget.scss */
+/* line 65, ../scss/sass/_calendarwidget.scss */
 .calendar table caption, .calendarbox h2 {
   margin: 0;
   font-size: 11px;
@@ -433,22 +434,22 @@ input[type="submit"].default:hover, button.default:hover {
   border-top: none;
 }
 
-/* line 68, ../scss/sass/_calendarwidget.scss */
+/* line 72, ../scss/sass/_calendarwidget.scss */
 .calendar td.selected a {
   background: #C9DBED;
 }
 
-/* line 72, ../scss/sass/_calendarwidget.scss */
+/* line 76, ../scss/sass/_calendarwidget.scss */
 .calendar td.nonday {
   background: #efefef;
 }
 
-/* line 76, ../scss/sass/_calendarwidget.scss */
+/* line 80, ../scss/sass/_calendarwidget.scss */
 .calendar td.today a {
   background: #ffc;
 }
 
-/* line 80, ../scss/sass/_calendarwidget.scss */
+/* line 84, ../scss/sass/_calendarwidget.scss */
 .calendar td a, .timelist a {
   display: block;
   font-weight: bold;
@@ -457,19 +458,19 @@ input[type="submit"].default:hover, button.default:hover {
   color: #444;
 }
 
-/* line 88, ../scss/sass/_calendarwidget.scss */
+/* line 92, ../scss/sass/_calendarwidget.scss */
 .calendar td a:hover, .timelist a:hover {
   background: #5b80b2;
   color: white;
 }
 
-/* line 93, ../scss/sass/_calendarwidget.scss */
+/* line 97, ../scss/sass/_calendarwidget.scss */
 .calendar td a:active, .timelist a:active {
   background: #036;
   color: white;
 }
 
-/* line 98, ../scss/sass/_calendarwidget.scss */
+/* line 102, ../scss/sass/_calendarwidget.scss */
 .calendarnav {
   font-size: 10px;
   text-align: center;
@@ -478,17 +479,17 @@ input[type="submit"].default:hover, button.default:hover {
   padding: 1px 3px;
 }
 
-/* line 106, ../scss/sass/_calendarwidget.scss */
+/* line 110, ../scss/sass/_calendarwidget.scss */
 .calendarnav a:link, #calendarnav a:visited, #calendarnav a:hover {
   color: #999;
 }
 
-/* line 110, ../scss/sass/_calendarwidget.scss */
+/* line 114, ../scss/sass/_calendarwidget.scss */
 .calendar-shortcuts, .calendar-cancel {
   line-height: 1.2rem;
   padding: 4px;
 }
-/* line 113, ../scss/sass/_calendarwidget.scss */
+/* line 117, ../scss/sass/_calendarwidget.scss */
 .calendar-shortcuts a, .calendar-cancel a {
   display: inline-block;
   *display: inline;
@@ -571,12 +572,7 @@ input[type="submit"].default:hover, button.default:hover {
   outline: none;
 }
 
-/* line 118, ../scss/sass/_calendarwidget.scss */
-.calendar-cancel {
-  background: #e1e1e1;
-  border-top: 1px solid #dddddd;
-}
-/* line 121, ../scss/sass/_calendarwidget.scss */
+/* line 125, ../scss/sass/_calendarwidget.scss */
 .calendar-cancel a {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -607,7 +603,7 @@ input[type="submit"].default:hover, button.default:hover {
   transition-duration: 0.1s;
 }
 
-/* line 126, ../scss/sass/_calendarwidget.scss */
+/* line 130, ../scss/sass/_calendarwidget.scss */
 .calendarbox .calendarnav-previous, .calendarbox .calendarnav-next {
   display: block;
   position: absolute;
@@ -618,18 +614,18 @@ input[type="submit"].default:hover, button.default:hover {
   color: white;
 }
 
-/* line 136, ../scss/sass/_calendarwidget.scss */
+/* line 140, ../scss/sass/_calendarwidget.scss */
 .calendarnav-previous:hover, .calendarnav-next:hover {
   background: #036;
 }
 
-/* line 140, ../scss/sass/_calendarwidget.scss */
+/* line 144, ../scss/sass/_calendarwidget.scss */
 .calendarnav-previous {
   top: 0;
   left: 0;
 }
 
-/* line 145, ../scss/sass/_calendarwidget.scss */
+/* line 149, ../scss/sass/_calendarwidget.scss */
 .calendarnav-next {
   top: 0;
   right: 0;

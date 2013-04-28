@@ -19,11 +19,15 @@
   li, .calendar-cancel {
     padding: 2px 5px;
   }
-  li:hover, .calendar-cancel:hover {
-    background-color: #b1c6ec;
-  }
+  // li:hover, .calendar-cancel:hover {
+  //   background-color: #b1c6ec;
+  // }
   a {
     @include unstyled-link;
+  }
+  .timelist {
+    list-style-type: none;
+    padding: 0;
   }
 }
 
@@ -116,8 +120,8 @@
 }
 
 .calendar-cancel {
-    background: #e1e1e1 ;
-    border-top: 1px solid #ddd;
+    // background: #e1e1e1 ;
+    // border-top: 1px solid #ddd;
     a {
       @include cancelBackground;
     }
