@@ -160,6 +160,25 @@ input[type="color"],
   }
 }
 
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  width: 80%;
+}
+
+input[type="text"].vForeignKeyRawIdAdminField {
+  width: auto;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0;
@@ -405,11 +424,13 @@ a.related-lookup {
 .inline-related {
     position: relative;
     @include border-radius($border-radius);
+    background: #fff;
     td.delete input[type="checkbox"]{
       margin-left: 0;
     }
     .form-row {
       margin: 0;
+      padding: 3px 0;
     }
     h3 {
       margin: 0;

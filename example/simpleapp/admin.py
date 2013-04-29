@@ -18,7 +18,7 @@ class StackedModelInline(admin.StackedInline):
     model = StackedModel
 
 
-class NoInlineModelInline(admin.TabularInline):
+class NoInlineModelInline(admin.StackedInline):
     model = NoInlineModel
     extra = 0
 

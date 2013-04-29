@@ -929,7 +929,28 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-/* line 164, ../scss/sass/forms.scss */
+/* line 174, ../scss/sass/forms.scss */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  width: 80%;
+}
+
+/* line 178, ../scss/sass/forms.scss */
+input[type="text"].vForeignKeyRawIdAdminField {
+  width: auto;
+}
+
+/* line 183, ../scss/sass/forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0;
@@ -942,7 +963,7 @@ input[type="checkbox"] {
   margin-left: 180px;
 }
 
-/* line 174, ../scss/sass/forms.scss */
+/* line 193, ../scss/sass/forms.scss */
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   float: none;
@@ -952,7 +973,7 @@ input[type="checkbox"] + label {
   margin-left: 10px;
 }
 
-/* line 188, ../scss/sass/forms.scss */
+/* line 207, ../scss/sass/forms.scss */
 input[type="file"],
 input[type="image"],
 input[type="submit"],
@@ -963,7 +984,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
-/* line 193, ../scss/sass/forms.scss */
+/* line 212, ../scss/sass/forms.scss */
 select,
 input[type="file"] {
   height: 26px;
@@ -973,21 +994,21 @@ input[type="file"] {
   line-height: 26px;
 }
 
-/* line 200, ../scss/sass/forms.scss */
+/* line 219, ../scss/sass/forms.scss */
 select {
   width: 220px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
 }
 
-/* line 207, ../scss/sass/forms.scss */
+/* line 226, ../scss/sass/forms.scss */
 select[multiple],
 select[size] {
   height: auto;
   min-height: 300px;
 }
 
-/* line 215, ../scss/sass/forms.scss */
+/* line 234, ../scss/sass/forms.scss */
 select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -997,31 +1018,31 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-/* line 222, ../scss/sass/forms.scss */
+/* line 241, ../scss/sass/forms.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #999999;
 }
 
-/* line 227, ../scss/sass/forms.scss */
+/* line 246, ../scss/sass/forms.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #999999;
 }
 
-/* line 232, ../scss/sass/forms.scss */
+/* line 251, ../scss/sass/forms.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-/* line 241, ../scss/sass/forms.scss */
+/* line 260, ../scss/sass/forms.scss */
 .form-row.errors label,
 .form-row.errors .help {
   color: #b94a48;
 }
 
-/* line 249, ../scss/sass/forms.scss */
+/* line 268, ../scss/sass/forms.scss */
 .form-row.errors .checkbox,
 .form-row.errors .radio,
 .form-row.errors input,
@@ -1030,7 +1051,7 @@ textarea::-webkit-input-placeholder {
   color: #b94a48;
 }
 
-/* line 255, ../scss/sass/forms.scss */
+/* line 274, ../scss/sass/forms.scss */
 .form-row.errors input,
 .form-row.errors select,
 .form-row.errors textarea {
@@ -1040,7 +1061,7 @@ textarea::-webkit-input-placeholder {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 262, ../scss/sass/forms.scss */
+/* line 281, ../scss/sass/forms.scss */
 .form-row.errors input:focus,
 .form-row.errors select:focus,
 .form-row.errors textarea:focus {
@@ -1050,7 +1071,7 @@ textarea::-webkit-input-placeholder {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 
-/* line 268, ../scss/sass/forms.scss */
+/* line 287, ../scss/sass/forms.scss */
 .errornote, .errorlist {
   color: #b94a48;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -1058,7 +1079,7 @@ textarea::-webkit-input-placeholder {
   background-color: #F2DEDE;
 }
 
-/* line 275, ../scss/sass/forms.scss */
+/* line 294, ../scss/sass/forms.scss */
 .errornote {
   padding: 8px 35px 8px 14px;
   margin-bottom: 10px;
@@ -1078,17 +1099,17 @@ textarea::-webkit-input-placeholder {
   content: "\f05e";
 }
 
-/* line 282, ../scss/sass/forms.scss */
+/* line 301, ../scss/sass/forms.scss */
 .errorlist {
   padding: 0 35px 0 14px;
   margin: 4px 0;
 }
-/* line 285, ../scss/sass/forms.scss */
+/* line 304, ../scss/sass/forms.scss */
 .errorlist li {
   list-style: none;
 }
 
-/* line 293, ../scss/sass/forms.scss */
+/* line 312, ../scss/sass/forms.scss */
 .form-actions {
   padding: 19px 20px 20px;
   margin-top: 20px;
@@ -1096,18 +1117,18 @@ textarea::-webkit-input-placeholder {
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
 }
-/* line 300, ../scss/sass/forms.scss */
+/* line 319, ../scss/sass/forms.scss */
 .form-actions:before, .form-actions:after {
   display: table;
   line-height: 0;
   content: "";
 }
-/* line 306, ../scss/sass/forms.scss */
+/* line 325, ../scss/sass/forms.scss */
 .form-actions:after {
   clear: both;
 }
 
-/* line 316, ../scss/sass/forms.scss */
+/* line 335, ../scss/sass/forms.scss */
 .help {
   color: #595959;
   display: block;
@@ -1127,13 +1148,13 @@ textarea::-webkit-input-placeholder {
   content: "\f05a";
 }
 
-/* line 327, ../scss/sass/forms.scss */
+/* line 346, ../scss/sass/forms.scss */
 .help.help-tooltip {
   margin: 0;
   display: inline-block;
 }
 
-/* line 336, ../scss/sass/forms.scss */
+/* line 355, ../scss/sass/forms.scss */
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
@@ -1148,31 +1169,31 @@ input.search-query {
   border-radius: 15px;
 }
 
-/* line 347, ../scss/sass/forms.scss */
+/* line 366, ../scss/sass/forms.scss */
 .form-row {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 352, ../scss/sass/forms.scss */
+/* line 371, ../scss/sass/forms.scss */
 .form-row:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 357, ../scss/sass/forms.scss */
+/* line 376, ../scss/sass/forms.scss */
 .form-row:first-child {
   margin-top: 10px;
 }
 
-/* line 361, ../scss/sass/forms.scss */
+/* line 380, ../scss/sass/forms.scss */
 h2 + .form-row {
   margin-top: 10px;
   -webkit-margin-top-collapse: separate;
 }
 
-/* line 366, ../scss/sass/forms.scss */
+/* line 385, ../scss/sass/forms.scss */
 a.related-lookup {
   color: inherit;
   text-decoration: inherit;
@@ -1183,7 +1204,7 @@ a.related-lookup:active, a.related-lookup:focus {
   outline: none;
 }
 
-/* line 370, ../scss/sass/forms.scss */
+/* line 389, ../scss/sass/forms.scss */
 .submit-row {
   min-height: 20px;
   padding: 19px;
@@ -1207,20 +1228,20 @@ a.related-lookup:active, a.related-lookup:focus {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-/* line 375, ../scss/sass/forms.scss */
+/* line 394, ../scss/sass/forms.scss */
 .submit-row input {
   margin: 0 0 0 5px;
 }
-/* line 378, ../scss/sass/forms.scss */
+/* line 397, ../scss/sass/forms.scss */
 .submit-row p.deletelink-box {
   float: left;
   margin: 0;
 }
-/* line 382, ../scss/sass/forms.scss */
+/* line 401, ../scss/sass/forms.scss */
 .submit-row .default {
   float: right;
 }
-/* line 385, ../scss/sass/forms.scss */
+/* line 404, ../scss/sass/forms.scss */
 .submit-row .deletelink {
   display: inline-block;
   *display: inline;
@@ -1323,7 +1344,7 @@ a.related-lookup:active, a.related-lookup:focus {
   transition-duration: 0.1s;
 }
 
-/* line 390, ../scss/sass/forms.scss */
+/* line 409, ../scss/sass/forms.scss */
 .inline-group {
   padding: 0;
   border: 1px solid #dddddd;
@@ -1334,7 +1355,7 @@ a.related-lookup:active, a.related-lookup:focus {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 395, ../scss/sass/forms.scss */
+/* line 414, ../scss/sass/forms.scss */
 .inline-group h2 {
   line-height: 1.63rem;
   margin: 0;
@@ -1365,12 +1386,12 @@ a.related-lookup:active, a.related-lookup:focus {
   outline: none;
 }
 
-/* line 401, ../scss/sass/forms.scss */
+/* line 420, ../scss/sass/forms.scss */
 .inline-group .aligned label {
   width: 8em;
 }
 
-/* line 405, ../scss/sass/forms.scss */
+/* line 424, ../scss/sass/forms.scss */
 .inline-related {
   position: relative;
   -webkit-border-radius: 4px;
@@ -1378,17 +1399,19 @@ a.related-lookup:active, a.related-lookup:focus {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  background: #fff;
   border-bottom: 1px solid #dddddd;
 }
-/* line 408, ../scss/sass/forms.scss */
+/* line 428, ../scss/sass/forms.scss */
 .inline-related td.delete input[type="checkbox"] {
   margin-left: 0;
 }
-/* line 411, ../scss/sass/forms.scss */
+/* line 431, ../scss/sass/forms.scss */
 .inline-related .form-row {
   margin: 0;
+  padding: 3px 0;
 }
-/* line 414, ../scss/sass/forms.scss */
+/* line 435, ../scss/sass/forms.scss */
 .inline-related h3 {
   margin: 0;
   color: #666;
@@ -1396,23 +1419,23 @@ a.related-lookup:active, a.related-lookup:focus {
   font-size: .7rem;
   background: #fff;
 }
-/* line 420, ../scss/sass/forms.scss */
+/* line 441, ../scss/sass/forms.scss */
 .inline-related h3 span.delete {
   float: right;
 }
 
-/* line 427, ../scss/sass/forms.scss */
+/* line 448, ../scss/sass/forms.scss */
 .inline-related.tabular {
   border-bottom: 0;
 }
 
-/* line 431, ../scss/sass/forms.scss */
+/* line 452, ../scss/sass/forms.scss */
 .inline-related h3 span.delete label {
   margin-left: 2px;
   font-size: 11px;
 }
 
-/* line 436, ../scss/sass/forms.scss */
+/* line 457, ../scss/sass/forms.scss */
 .inline-related fieldset {
   margin: 0;
   background: #fff;
@@ -1424,7 +1447,7 @@ a.related-lookup:active, a.related-lookup:focus {
   border-radius: 4px;
 }
 
-/* line 443, ../scss/sass/forms.scss */
+/* line 464, ../scss/sass/forms.scss */
 .inline-related fieldset.module h3 {
   margin: 0;
   padding: 2px 5px 3px 5px;
@@ -1435,40 +1458,40 @@ a.related-lookup:active, a.related-lookup:focus {
   color: #fff;
 }
 
-/* line 453, ../scss/sass/forms.scss */
+/* line 474, ../scss/sass/forms.scss */
 .inline-group .tabular fieldset.module {
   border: none;
 }
 
-/* line 457, ../scss/sass/forms.scss */
+/* line 478, ../scss/sass/forms.scss */
 .inline-related.tabular fieldset.module table {
   width: 100%;
 }
 
-/* line 461, ../scss/sass/forms.scss */
+/* line 482, ../scss/sass/forms.scss */
 .last-related fieldset {
   border: none;
 }
 
-/* line 465, ../scss/sass/forms.scss */
+/* line 486, ../scss/sass/forms.scss */
 .inline-group .tabular tr.has_original td {
   padding-top: 2em;
 }
 
-/* line 469, ../scss/sass/forms.scss */
+/* line 490, ../scss/sass/forms.scss */
 .inline-group .tabular tr td.original {
   padding: 2px 0 0 0;
   width: 0;
   _position: relative;
 }
 
-/* line 475, ../scss/sass/forms.scss */
+/* line 496, ../scss/sass/forms.scss */
 .inline-group .tabular th.original {
   width: 0px;
   padding: 0;
 }
 
-/* line 480, ../scss/sass/forms.scss */
+/* line 501, ../scss/sass/forms.scss */
 .inline-group .tabular td.original p {
   position: absolute;
   left: 0;
@@ -1481,20 +1504,20 @@ a.related-lookup:active, a.related-lookup:focus {
   _width: 700px;
 }
 
-/* line 492, ../scss/sass/forms.scss */
+/* line 513, ../scss/sass/forms.scss */
 .inline-group ul.tools {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 498, ../scss/sass/forms.scss */
+/* line 519, ../scss/sass/forms.scss */
 .inline-group ul.tools li {
   display: inline;
   padding: 0 5px;
 }
 
-/* line 504, ../scss/sass/forms.scss */
+/* line 525, ../scss/sass/forms.scss */
 .inline-group div.add-row,
 .inline-group .tabular tr.add-row td {
   color: #666;
@@ -1509,13 +1532,13 @@ a.related-lookup:active, a.related-lookup:focus {
   border-radius: 0 0 4px 4px;
 }
 
-/* line 513, ../scss/sass/forms.scss */
+/* line 534, ../scss/sass/forms.scss */
 .inline-group .tabular tr.add-row td {
   padding: 4px 5px 3px;
   border-bottom: none;
 }
 
-/* line 520, ../scss/sass/forms.scss */
+/* line 541, ../scss/sass/forms.scss */
 .inline-group ul.tools a.add,
 .inline-group div.add-row a,
 .inline-group .tabular tr.add-row td a {
@@ -1616,7 +1639,7 @@ a.related-lookup:active, a.related-lookup:focus {
   content: "\f067";
 }
 
-/* line 525, ../scss/sass/forms.scss */
+/* line 546, ../scss/sass/forms.scss */
 .inline-deletelink {
   display: inline-block;
   *display: inline;
@@ -1728,7 +1751,7 @@ a.related-lookup:active, a.related-lookup:focus {
   transition-duration: 0.1s;
 }
 
-/* line 531, ../scss/sass/forms.scss */
+/* line 552, ../scss/sass/forms.scss */
 .empty-form {
   display: none;
 }
