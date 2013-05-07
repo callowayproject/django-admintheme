@@ -123,3 +123,13 @@ h1 {
         width: auto;
     }
 }
+
+.clear {
+    @include pie-clearfix;
+}
+
+.login .errornote {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}

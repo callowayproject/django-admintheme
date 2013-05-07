@@ -1729,3 +1729,21 @@ h1 {
 #change-history thead th {
   width: auto;
 }
+
+/* line 127, ../scss/sass/base.scss */
+.clear {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 131, ../scss/sass/base.scss */
+.login .errornote {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
