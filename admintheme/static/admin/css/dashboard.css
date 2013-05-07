@@ -204,6 +204,7 @@ input[type="submit"].default:hover, button.default:hover {
 /* line 6, ../scss/sass/dashboard.scss */
 .dashboard #content-main {
   float: left;
+  width: 100%;
 }
 /* line 10, ../scss/sass/dashboard.scss */
 .dashboard table td, .dashboard table th {
