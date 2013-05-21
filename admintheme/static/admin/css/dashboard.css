@@ -206,15 +206,15 @@ input[type="submit"].default:hover, button.default:hover {
   float: left;
   width: 100%;
 }
-/* line 10, ../scss/sass/dashboard.scss */
+/* line 11, ../scss/sass/dashboard.scss */
 .dashboard table td, .dashboard table th {
   border-left: 0;
 }
-/* line 14, ../scss/sass/dashboard.scss */
+/* line 15, ../scss/sass/dashboard.scss */
 .dashboard table tr:first-child td, .dashboard table tr:first-child th {
   border-top: 0;
 }
-/* line 22, ../scss/sass/dashboard.scss */
+/* line 23, ../scss/sass/dashboard.scss */
 .dashboard a.addlink, .dashboard button.addlink, .dashboard div.addlink {
   display: inline-block;
   *display: inline;
@@ -305,7 +305,7 @@ input[type="submit"].default:hover, button.default:hover {
   margin-right: .5em;
   content: "\f067";
 }
-/* line 27, ../scss/sass/dashboard.scss */
+/* line 28, ../scss/sass/dashboard.scss */
 .dashboard a.changelink, .dashboard button.changelink, .dashboard div.changelink {
   display: inline-block;
   *display: inline;
@@ -397,20 +397,20 @@ input[type="submit"].default:hover, button.default:hover {
   content: "\f044";
 }
 
-/* line 33, ../scss/sass/dashboard.scss */
+/* line 34, ../scss/sass/dashboard.scss */
 #content-related {
   float: right;
   width: 18em;
   position: relative;
   margin-right: -19em;
 }
-/* line 38, ../scss/sass/dashboard.scss */
+/* line 39, ../scss/sass/dashboard.scss */
 #content-related h3 {
   padding: 0;
   margin: 0;
   margin-left: 1em;
 }
-/* line 44, ../scss/sass/dashboard.scss */
+/* line 45, ../scss/sass/dashboard.scss */
 #content-related .actionlist {
   list-style: none;
   padding: 5px;
@@ -470,19 +470,19 @@ input[type="submit"].default:hover, button.default:hover {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 53, ../scss/sass/dashboard.scss */
+/* line 54, ../scss/sass/dashboard.scss */
 #content-related .actionlist li {
   margin-bottom: 8px;
 }
-/* line 56, ../scss/sass/dashboard.scss */
+/* line 57, ../scss/sass/dashboard.scss */
 #content-related .actionlist li span {
   margin-left: 1rem;
 }
-/* line 59, ../scss/sass/dashboard.scss */
+/* line 60, ../scss/sass/dashboard.scss */
 #content-related .actionlist .mini {
   font-size: .7rem;
 }
-/* line 62, ../scss/sass/dashboard.scss */
+/* line 63, ../scss/sass/dashboard.scss */
 #content-related .actionlist .quiet {
   color: #777;
   font-weight: normal;
@@ -496,11 +496,11 @@ input[type="submit"].default:hover, button.default:hover {
   margin-right: .5em;
   content: "\f00d";
 }
-/* line 68, ../scss/sass/dashboard.scss */
+/* line 69, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.deletelink:before {
   margin-right: .2em;
 }
-/* line 71, ../scss/sass/dashboard.scss */
+/* line 72, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.deletelink a {
   color: #5b80b2;
   text-decoration: none;
@@ -530,11 +530,11 @@ input[type="submit"].default:hover, button.default:hover {
   margin-right: .5em;
   content: "\f044";
 }
-/* line 78, ../scss/sass/dashboard.scss */
+/* line 79, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.changelink:before {
   margin-right: .2em;
 }
-/* line 81, ../scss/sass/dashboard.scss */
+/* line 82, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.changelink a {
   color: #5b80b2;
   text-decoration: none;
@@ -564,11 +564,11 @@ input[type="submit"].default:hover, button.default:hover {
   margin-right: .5em;
   content: "\f067";
 }
-/* line 88, ../scss/sass/dashboard.scss */
+/* line 89, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.addlink:before {
   margin-right: .2em;
 }
-/* line 91, ../scss/sass/dashboard.scss */
+/* line 92, ../scss/sass/dashboard.scss */
 #content-related .actionlist li.addlink a {
   color: #5b80b2;
   text-decoration: none;
