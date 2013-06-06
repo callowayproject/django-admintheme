@@ -59,6 +59,7 @@ table {
             border-top: 1px solid $table-border;
             @include background($table-bkgnd);
             padding: 5px;
+            white-space: nowrap;
         }
         tr {
             &.row2 {

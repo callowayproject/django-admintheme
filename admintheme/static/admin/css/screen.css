@@ -862,12 +862,13 @@ table tbody th, table tbody td {
   border-top: 1px solid 1px solid #dddddd;
   background: transparent;
   padding: 5px;
+  white-space: nowrap;
 }
-/* line 64, ../scss/sass/_tables.scss */
+/* line 65, ../scss/sass/_tables.scss */
 table tbody tr.row2 {
   background: #f9f9f9;
 }
-/* line 67, ../scss/sass/_tables.scss */
+/* line 68, ../scss/sass/_tables.scss */
 table tbody tr:hover, table tbody tr.row2:hover {
   background: whitesmoke;
 }

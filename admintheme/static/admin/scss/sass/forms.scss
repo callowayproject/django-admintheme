@@ -171,10 +171,13 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
-.uneditable-input {
+.uneditable-input, p.datetime input.vTimeField, p.datetime input.vDateField {
   width: 80%;
 }
 
+input.vTimeField, input.vDateField {
+  width: 70%;
+}
 input[type="text"].vForeignKeyRawIdAdminField {
   width: auto;
 }
